@@ -1,0 +1,69 @@
+# ATLAS 80030 - atlas_tagger round 1 - 2026-09-08 17:08:13
+# model xgb  seed 42  n_train_jets 5,000,000
+# run role final_production; 4M round-1 XGBoost is preserved pilot
+
+==============================================================================
+training on train_nominal
+==============================================================================
+  loaded           5,000,000 jets, 15 features
+  dropped by selection (n_constit < 3 or non-finite): 3
+  eligible         4,999,997 jets
+  training input   4,999,997 jets  signal 50.49%
+  training weight  signal mean 1.0000  background mean 0.9990
+  event-level split 4,499,612 train / 500,385 validation; seed 42
+    class 0: train 2,227,557 / validation 248,170; validation fraction 10.0241%
+    class 1: train 2,272,055 / validation 252,215; validation fraction 9.9916%
+  fitting xgb on 4,499,612 / validating on 500,385
+  trained in 82s
+  validation AUC (unweighted) 0.93190
+  saved model     D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_final_production_round1.joblib
+  saved split     D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_final_production_round1_split.npz
+  saved metadata  D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_final_production_round1_metadata.json
+  model SHA-256   63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c
+  split SHA-256   4f500536d3d80cc4b12e52624f822253a9f1092db36c440b9097c819a9834174
+  source SHA-256  7ce74841a213b37e8e5d1298b2fc16739be4c4895aa85d0de715acff112b8046
+
+==============================================================================
+evaluating -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\predictions
+==============================================================================
+  test_nominal   shower_weights (10306812, 27)
+  test_nominal   10,306,812 jets  dropped     1  signal 50.52%  mean score 0.4995  83s
+  esup            4,999,999 jets  dropped     1  signal 51.85%  mean score 0.5085  15s
+  esdown          4,999,999 jets  dropped     1  signal 51.85%  mean score 0.4992  15s
+  cer             4,999,756 jets  dropped   244  signal 51.81%  mean score 0.5062  16s
+  cpos            4,999,999 jets  dropped     1  signal 51.85%  mean score 0.5073  17s
+  teg             4,999,998 jets  dropped     2  signal 30.01%  mean score 0.3818  17s
+  tej             4,999,999 jets  dropped     1  signal 31.80%  mean score 0.3911  18s
+  tfl             4,999,996 jets  dropped     4  signal 18.46%  mean score 0.3136  15s
+  tfj             4,999,983 jets  dropped    17  signal 31.98%  mean score 0.3904  16s
+  bias            4,999,999 jets  dropped     1  signal 51.96%  mean score 0.5079  16s
+  ttbar_pythia      193,792 jets  dropped     0  signal 100.00%  mean score 0.7711  1s
+  ttbar_herwig      180,811 jets  dropped     0  signal 100.00%  mean score 0.7469  0s
+  cluster         5,000,002 jets  dropped     2  signal  0.00%  mean score 0.2324  15s
+  string          4,999,996 jets  dropped     5  signal  0.00%  mean score 0.2263  15s
+  angular         4,899,999 jets  dropped     1  signal  0.00%  mean score 0.2085  15s
+  dipole          4,900,000 jets  dropped     0  signal  0.00%  mean score 0.2291  14s
+
+------------------------------------------------------------------------------
+evaluation output alignment audit
+------------------------------------------------------------------------------
+  test_nominal   PASS  10,306,812 aligned eligible rows
+  esup           PASS  4,999,999 aligned eligible rows
+  esdown         PASS  4,999,999 aligned eligible rows
+  cer            PASS  4,999,756 aligned eligible rows
+  cpos           PASS  4,999,999 aligned eligible rows
+  teg            PASS  4,999,998 aligned eligible rows
+  tej            PASS  4,999,999 aligned eligible rows
+  tfl            PASS  4,999,996 aligned eligible rows
+  tfj            PASS  4,999,983 aligned eligible rows
+  bias           PASS  4,999,999 aligned eligible rows
+  ttbar_pythia   PASS  193,792 aligned eligible rows
+  ttbar_herwig   PASS  180,811 aligned eligible rows
+  cluster        PASS  5,000,002 aligned eligible rows
+  string         PASS  4,999,996 aligned eligible rows
+  angular        PASS  4,899,999 aligned eligible rows
+  dipole         PASS  4,900,000 aligned eligible rows
+
+==============================================================================
+done. predictions in D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\predictions
+==============================================================================

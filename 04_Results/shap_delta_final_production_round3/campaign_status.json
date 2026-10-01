@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "output_directory": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\Code files\\analysis_results\\shap_delta_final_production_round3",
+  "created_timestamp_utc": "2026-09-09T04:20:22.289009+00:00",
+  "round": 3,
+  "source_round": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\Code files\\analysis_results\\shap_delta_final_production_round2",
+  "remediation_only": true,
+  "tree_shap_recomputed": false,
+  "crosscheck": "PASS",
+  "model_sha256": "63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c",
+  "shap_delta_source_sha256": "33feb58a9d73d1a60394366d8a03f2bfd8f26866228068cfe981d6b0d8b2c393"
+}

@@ -1,0 +1,85 @@
+# ATLAS 80030 - produce_train_nominal round 1 - 2026-08-27 20:11:35
+# code fingerprint 0d53c1d830a1f88142af02405c4f3d72
+
+==============================================================================
+train_nominal: 50 files -> E:\ATLAS_80030_Data\hl_recomputed\train_nominal
+==============================================================================
+  [  1/50] train_nominal_000.h5  100000 jets    88.0s    1136 jets/s
+  [  2/50] train_nominal_001.h5  100000 jets    41.9s    2389 jets/s
+  [  3/50] train_nominal_002.h5  100000 jets    42.5s    2353 jets/s
+  [  4/50] train_nominal_003.h5  100000 jets    42.9s    2334 jets/s
+  [  5/50] train_nominal_004.h5  100000 jets    42.7s    2341 jets/s
+  [  6/50] train_nominal_005.h5  100000 jets    42.8s    2336 jets/s
+  [  7/50] train_nominal_006.h5  100000 jets    50.0s    1999 jets/s
+  [  8/50] train_nominal_007.h5  100000 jets    50.0s    2000 jets/s
+  [  9/50] train_nominal_008.h5  100000 jets    48.6s    2057 jets/s
+  [ 10/50] train_nominal_009.h5  100000 jets    47.4s    2111 jets/s
+  [ 11/50] train_nominal_010.h5  100000 jets    42.3s    2365 jets/s
+  [ 12/50] train_nominal_011.h5  100000 jets    43.8s    2282 jets/s
+  [ 13/50] train_nominal_012.h5  100000 jets    43.3s    2310 jets/s
+  [ 14/50] train_nominal_013.h5  100000 jets    41.8s    2394 jets/s
+  [ 15/50] train_nominal_014.h5  100000 jets    42.1s    2377 jets/s
+  [ 16/50] train_nominal_015.h5  100000 jets    42.0s    2380 jets/s
+  [ 17/50] train_nominal_016.h5  100000 jets    42.3s    2366 jets/s
+  [ 18/50] train_nominal_017.h5  100000 jets    42.3s    2363 jets/s
+  [ 19/50] train_nominal_018.h5  100000 jets    42.1s    2373 jets/s
+  [ 20/50] train_nominal_019.h5  100000 jets    42.6s    2345 jets/s
+  [ 21/50] train_nominal_020.h5  100000 jets    41.9s    2385 jets/s
+  [ 22/50] train_nominal_021.h5  100000 jets    41.9s    2386 jets/s
+  [ 23/50] train_nominal_022.h5  100000 jets    42.5s    2354 jets/s
+  [ 24/50] train_nominal_023.h5  100000 jets    42.4s    2356 jets/s
+  [ 25/50] train_nominal_024.h5  100000 jets    41.8s    2395 jets/s
+  [ 26/50] train_nominal_025.h5  100000 jets    41.9s    2384 jets/s
+  [ 27/50] train_nominal_026.h5  100000 jets    42.2s    2370 jets/s
+  [ 28/50] train_nominal_027.h5  100000 jets    41.8s    2393 jets/s
+  [ 29/50] train_nominal_028.h5  100000 jets    42.1s    2375 jets/s
+  [ 30/50] train_nominal_029.h5  100000 jets    42.9s    2330 jets/s
+  [ 31/50] train_nominal_030.h5  100000 jets    42.3s    2363 jets/s
+  [ 32/50] train_nominal_031.h5  100000 jets    42.3s    2364 jets/s
+  [ 33/50] train_nominal_032.h5  100000 jets    42.9s    2333 jets/s
+  [ 34/50] train_nominal_033.h5  100000 jets    42.4s    2359 jets/s
+  [ 35/50] train_nominal_034.h5  100000 jets    42.0s    2381 jets/s
+  [ 36/50] train_nominal_035.h5  100000 jets    42.0s    2384 jets/s
+  [ 37/50] train_nominal_036.h5  100000 jets    42.0s    2383 jets/s
+  [ 38/50] train_nominal_037.h5  100000 jets    42.4s    2360 jets/s
+  [ 39/50] train_nominal_038.h5  100000 jets    42.4s    2359 jets/s
+  [ 40/50] train_nominal_039.h5  100000 jets    42.5s    2354 jets/s
+  [ 41/50] train_nominal_040.h5  100000 jets    42.3s    2362 jets/s
+  [ 42/50] train_nominal_041.h5  100000 jets    42.9s    2330 jets/s
+  [ 43/50] train_nominal_042.h5  100000 jets    41.9s    2386 jets/s
+  [ 44/50] train_nominal_043.h5  100000 jets    42.4s    2358 jets/s
+  [ 45/50] train_nominal_044.h5  100000 jets    42.2s    2371 jets/s
+  [ 46/50] train_nominal_045.h5  100000 jets    42.2s    2371 jets/s
+  [ 47/50] train_nominal_046.h5  100000 jets    41.8s    2395 jets/s
+  [ 48/50] train_nominal_047.h5  100000 jets    42.3s    2367 jets/s
+  [ 49/50] train_nominal_048.h5  100000 jets    42.2s    2371 jets/s
+  [ 50/50] train_nominal_049.h5  100000 jets    42.2s    2371 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - train_nominal: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080778                 1.60%
+Tau2_wta              0.036081                 1.73%
+Tau3_wta              0.021256                 2.04%
+Tau4_wta              0.015905                 2.29%
+Split12                  70142                 1.72%
+Split23                  23314                 1.80%
+ECF1                1.4728e+06                 1.97%
+ECF2                1.0295e+11                 2.15%
+ECF3                 6.948e+14                 2.73%
+C2                    0.098705                 1.63%
+D2                      1.6208                 0.67%
+L2                     0.22431                 0.47%
+L3                    0.077067                 0.68%
+Qw                       61260                 1.24%
+ThrustMaj              0.84691                 0.19%
+
+median constituents  50
+signal fraction      50.49%
+non-finite values    0
+code fingerprints    1  ['0d53c1d830a1f88142af02405c4f3d72']
+
+==============================================================================
+done. cache in E:\ATLAS_80030_Data\hl_recomputed
+==============================================================================

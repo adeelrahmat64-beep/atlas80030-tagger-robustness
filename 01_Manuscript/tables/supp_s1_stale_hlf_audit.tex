@@ -1,0 +1,45 @@
+% Audited values from 04_Results/stale_hlf_audit/
+% supp_s1_stale_hlf_audit.tex, with only layout and explanatory text adapted
+% for the supplementary document. No physics-analysis result is recalculated.
+\begin{table*}[!ht]
+\centering\footnotesize
+\caption{Full-sample audit of stored high-level branches in the nine detector
+  variations. The four calorimeter-cluster samples pass the exact-key pairing
+  preflight; for every valid matched jet, all fifteen stored high-level values
+  are identical to nominal as float32 bit patterns. Exact-key hits for track
+  samples and \texttt{bias} are diagnostics only and do not support pairwise
+  identity fractions.}
+\label{tab:supp-stale-hlf}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrlll}
+\toprule
+Sample & Shards & Exact-key hits & Pairing basis & HLF identity & Constituent evidence \\
+\midrule
+\texttt{esup} & 50 & 5{,}000{,}000 & exact key (100.000\%) & 75{,}000{,}000/75{,}000{,}000 (100.000\%) & median $\Delta\Sigma p_{\mathrm T}$: +7.4068\% \\
+\texttt{esdown} & 50 & 5{,}000{,}000 & exact key (100.000\%) & 75{,}000{,}000/75{,}000{,}000 (100.000\%) & median $\Delta\Sigma p_{\mathrm T}$: -7.4068\% \\
+\texttt{cer} & 50 & 4{,}995{,}059 & exact key (99.901\%) & 74{,}925{,}885/74{,}925{,}885 (100.000\%) & RMS $\Delta\Sigma E$: 3.7701\% \\
+\texttt{cpos} & 50 & 5{,}000{,}000 & exact key (100.000\%) & 75{,}000{,}000/75{,}000{,}000 (100.000\%) & median centroid $\Delta R$: $4.9387\times10^{-5}$ \\
+\texttt{teg} & 50 & 2{,}250{,}423 & N/A / not pairable & N/A & median $N_{\mathrm c}$: 49 vs nominal 50 (unpaired) \\
+\texttt{tej} & 50 & 1{,}906{,}619 & N/A / not pairable & N/A & median $N_{\mathrm c}$: 49 vs nominal 50 (unpaired) \\
+\texttt{tfl} & 50 & 2{,}749{,}571 & N/A / not pairable & N/A & median $N_{\mathrm c}$: 48 vs nominal 50 (unpaired) \\
+\texttt{tfj} & 50 & 2{,}006{,}933 & N/A / not pairable & N/A & median $N_{\mathrm c}$: 49 vs nominal 50 (unpaired) \\
+\texttt{bias} & 50 & 4{,}167{,}067 & N/A / not pairable & N/A & N/A \\
+\bottomrule
+\end{tabular}%
+}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize
+\emph{Definitions:} $\Delta\Sigma p_{\mathrm T}=\Sigma p_{\mathrm T}^{\rm sys}/
+\Sigma p_{\mathrm T}^{\rm nom}-1$; $\Delta\Sigma E=\Sigma E^{\rm sys}/
+\Sigma E^{\rm nom}-1$. The \texttt{cer} value is the RMS of the signed
+summed-energy response, not its near-zero signed median. The \texttt{cpos}
+value is the median $\Delta R$ of the constituent-$p_{\mathrm T}$-weighted
+$\eta$--$\phi$ centroids. Track multiplicities are separate full-sample
+distributions, not matched-jet changes; the nominal median is 50.
+\texttt{teg} has 183{,}802 duplicate keys, and the other track samples
+and \texttt{bias} fall below the validated pairing-coverage floor.
+The full counts and per-branch comparisons are preserved in
+\texttt{04\_Results/stale\_hlf\_audit/}.
+\end{minipage}
+\end{table*}

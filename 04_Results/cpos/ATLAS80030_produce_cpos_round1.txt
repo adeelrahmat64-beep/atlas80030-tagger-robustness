@@ -1,0 +1,85 @@
+# ATLAS 80030 - produce_cpos round 1 - 2026-08-27 14:51:34
+# code fingerprint 0d53c1d830a1f88142af02405c4f3d72
+
+==============================================================================
+cpos: 50 files -> E:\ATLAS_80030_Data\hl_recomputed\cpos
+==============================================================================
+  [  1/50] cpos_000.h5  100000 jets    90.9s    1100 jets/s
+  [  2/50] cpos_001.h5  100000 jets    42.9s    2331 jets/s
+  [  3/50] cpos_002.h5  100000 jets    42.1s    2373 jets/s
+  [  4/50] cpos_003.h5  100000 jets    44.7s    2236 jets/s
+  [  5/50] cpos_004.h5  100000 jets    42.2s    2371 jets/s
+  [  6/50] cpos_005.h5  100000 jets    43.3s    2311 jets/s
+  [  7/50] cpos_006.h5  100000 jets    42.6s    2345 jets/s
+  [  8/50] cpos_007.h5  100000 jets    43.1s    2323 jets/s
+  [  9/50] cpos_008.h5  100000 jets    51.3s    1949 jets/s
+  [ 10/50] cpos_009.h5  100000 jets    54.6s    1830 jets/s
+  [ 11/50] cpos_010.h5  100000 jets    48.6s    2058 jets/s
+  [ 12/50] cpos_011.h5  100000 jets    45.5s    2199 jets/s
+  [ 13/50] cpos_012.h5  100000 jets    44.7s    2237 jets/s
+  [ 14/50] cpos_013.h5  100000 jets    47.5s    2105 jets/s
+  [ 15/50] cpos_014.h5  100000 jets    49.1s    2037 jets/s
+  [ 16/50] cpos_015.h5  100000 jets    44.2s    2263 jets/s
+  [ 17/50] cpos_016.h5  100000 jets    45.0s    2223 jets/s
+  [ 18/50] cpos_017.h5  100000 jets    59.4s    1685 jets/s
+  [ 19/50] cpos_018.h5  100000 jets    72.5s    1379 jets/s
+  [ 20/50] cpos_019.h5  100000 jets    65.6s    1525 jets/s
+  [ 21/50] cpos_020.h5  100000 jets    53.3s    1875 jets/s
+  [ 22/50] cpos_021.h5  100000 jets    44.3s    2258 jets/s
+  [ 23/50] cpos_022.h5  100000 jets    62.9s    1590 jets/s
+  [ 24/50] cpos_023.h5  100000 jets    61.7s    1621 jets/s
+  [ 25/50] cpos_024.h5  100000 jets    51.9s    1926 jets/s
+  [ 26/50] cpos_025.h5  100000 jets    56.1s    1783 jets/s
+  [ 27/50] cpos_026.h5  100000 jets    60.7s    1647 jets/s
+  [ 28/50] cpos_027.h5  100000 jets    64.7s    1546 jets/s
+  [ 29/50] cpos_028.h5  100000 jets    63.2s    1583 jets/s
+  [ 30/50] cpos_029.h5  100000 jets    64.0s    1563 jets/s
+  [ 31/50] cpos_030.h5  100000 jets    62.5s    1599 jets/s
+  [ 32/50] cpos_031.h5  100000 jets    60.5s    1653 jets/s
+  [ 33/50] cpos_032.h5  100000 jets    62.1s    1609 jets/s
+  [ 34/50] cpos_033.h5  100000 jets    58.2s    1719 jets/s
+  [ 35/50] cpos_034.h5  100000 jets    45.7s    2190 jets/s
+  [ 36/50] cpos_035.h5  100000 jets    47.1s    2124 jets/s
+  [ 37/50] cpos_036.h5  100000 jets    46.7s    2140 jets/s
+  [ 38/50] cpos_037.h5  100000 jets    44.0s    2273 jets/s
+  [ 39/50] cpos_038.h5  100000 jets    43.4s    2302 jets/s
+  [ 40/50] cpos_039.h5  100000 jets    43.4s    2305 jets/s
+  [ 41/50] cpos_040.h5  100000 jets    49.7s    2012 jets/s
+  [ 42/50] cpos_041.h5  100000 jets    47.6s    2099 jets/s
+  [ 43/50] cpos_042.h5  100000 jets    44.2s    2263 jets/s
+  [ 44/50] cpos_043.h5  100000 jets    43.6s    2296 jets/s
+  [ 45/50] cpos_044.h5  100000 jets    44.2s    2263 jets/s
+  [ 46/50] cpos_045.h5  100000 jets    43.2s    2315 jets/s
+  [ 47/50] cpos_046.h5  100000 jets    44.4s    2254 jets/s
+  [ 48/50] cpos_047.h5  100000 jets    42.5s    2352 jets/s
+  [ 49/50] cpos_048.h5  100000 jets    42.6s    2347 jets/s
+  [ 50/50] cpos_049.h5  100000 jets    44.7s    2237 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - cpos: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080373                 1.38%
+Tau2_wta              0.035937                 1.71%
+Tau3_wta              0.021056                 1.61%
+Tau4_wta              0.015737                 1.54%
+Split12                  70867                 1.08%
+Split23                  23909                 1.62%
+ECF1                1.5057e+06                 1.28%
+ECF2                1.0578e+11                 1.79%
+ECF3                7.0832e+14                 1.62%
+C2                    0.097879                 1.16%
+D2                      1.6187                 0.56%
+L2                     0.22464                 0.43%
+L3                     0.07724                 0.76%
+Qw                       62297                 0.96%
+ThrustMaj              0.84578                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    0
+code fingerprints    1  ['0d53c1d830a1f88142af02405c4f3d72']
+
+==============================================================================
+done. cache in E:\ATLAS_80030_Data\hl_recomputed
+==============================================================================

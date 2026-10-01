@@ -1,0 +1,1838 @@
+# ATLAS 80030 - produce_all round 1 - 2026-09-08 10:26:55
+# code fingerprint c28a262540824e9db90f34c421f10c70
+
+==============================================================================
+train_nominal: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\train_nominal
+==============================================================================
+  [  1/50] train_nominal_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] train_nominal_000.h5  100000 jets    37.8s    2645 jets/s
+  [  2/50] train_nominal_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] train_nominal_001.h5  100000 jets     6.4s   15505 jets/s
+  [  3/50] train_nominal_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] train_nominal_002.h5  100000 jets     6.4s   15618 jets/s
+  [  4/50] train_nominal_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] train_nominal_003.h5  100000 jets     7.1s   14036 jets/s
+  [  5/50] train_nominal_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] train_nominal_004.h5  100000 jets     6.8s   14625 jets/s
+  [  6/50] train_nominal_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] train_nominal_005.h5  100000 jets     6.8s   14809 jets/s
+  [  7/50] train_nominal_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] train_nominal_006.h5  100000 jets     6.6s   15117 jets/s
+  [  8/50] train_nominal_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] train_nominal_007.h5  100000 jets     6.7s   15015 jets/s
+  [  9/50] train_nominal_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] train_nominal_008.h5  100000 jets     6.8s   14650 jets/s
+  [ 10/50] train_nominal_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] train_nominal_009.h5  100000 jets     7.2s   13986 jets/s
+  [ 11/50] train_nominal_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] train_nominal_010.h5  100000 jets     8.2s   12250 jets/s
+  [ 12/50] train_nominal_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] train_nominal_011.h5  100000 jets     7.9s   12724 jets/s
+  [ 13/50] train_nominal_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] train_nominal_012.h5  100000 jets     7.6s   13145 jets/s
+  [ 14/50] train_nominal_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] train_nominal_013.h5  100000 jets     7.3s   13619 jets/s
+  [ 15/50] train_nominal_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] train_nominal_014.h5  100000 jets     7.5s   13414 jets/s
+  [ 16/50] train_nominal_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] train_nominal_015.h5  100000 jets     7.5s   13368 jets/s
+  [ 17/50] train_nominal_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] train_nominal_016.h5  100000 jets     7.3s   13789 jets/s
+  [ 18/50] train_nominal_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] train_nominal_017.h5  100000 jets     7.5s   13292 jets/s
+  [ 19/50] train_nominal_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] train_nominal_018.h5  100000 jets     7.4s   13605 jets/s
+  [ 20/50] train_nominal_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] train_nominal_019.h5  100000 jets     7.5s   13296 jets/s
+  [ 21/50] train_nominal_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] train_nominal_020.h5  100000 jets     7.1s   13992 jets/s
+  [ 22/50] train_nominal_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] train_nominal_021.h5  100000 jets     7.6s   13207 jets/s
+  [ 23/50] train_nominal_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] train_nominal_022.h5  100000 jets     7.2s   13826 jets/s
+  [ 24/50] train_nominal_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] train_nominal_023.h5  100000 jets     7.1s   14059 jets/s
+  [ 25/50] train_nominal_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] train_nominal_024.h5  100000 jets     7.6s   13119 jets/s
+  [ 26/50] train_nominal_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] train_nominal_025.h5  100000 jets     7.3s   13714 jets/s
+  [ 27/50] train_nominal_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] train_nominal_026.h5  100000 jets     7.2s   13874 jets/s
+  [ 28/50] train_nominal_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] train_nominal_027.h5  100000 jets     6.7s   15022 jets/s
+  [ 29/50] train_nominal_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] train_nominal_028.h5  100000 jets     6.6s   15092 jets/s
+  [ 30/50] train_nominal_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] train_nominal_029.h5  100000 jets     6.6s   15113 jets/s
+  [ 31/50] train_nominal_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] train_nominal_030.h5  100000 jets     7.0s   14278 jets/s
+  [ 32/50] train_nominal_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] train_nominal_031.h5  100000 jets     7.2s   13946 jets/s
+  [ 33/50] train_nominal_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] train_nominal_032.h5  100000 jets     7.3s   13649 jets/s
+  [ 34/50] train_nominal_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] train_nominal_033.h5  100000 jets     6.6s   15061 jets/s
+  [ 35/50] train_nominal_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] train_nominal_034.h5  100000 jets     6.7s   14824 jets/s
+  [ 36/50] train_nominal_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] train_nominal_035.h5  100000 jets     7.0s   14373 jets/s
+  [ 37/50] train_nominal_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] train_nominal_036.h5  100000 jets     6.9s   14524 jets/s
+  [ 38/50] train_nominal_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] train_nominal_037.h5  100000 jets     7.1s   14083 jets/s
+  [ 39/50] train_nominal_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] train_nominal_038.h5  100000 jets     6.9s   14437 jets/s
+  [ 40/50] train_nominal_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] train_nominal_039.h5  100000 jets     7.5s   13420 jets/s
+  [ 41/50] train_nominal_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] train_nominal_040.h5  100000 jets     7.1s   14101 jets/s
+  [ 42/50] train_nominal_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] train_nominal_041.h5  100000 jets     7.0s   14204 jets/s
+  [ 43/50] train_nominal_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] train_nominal_042.h5  100000 jets     6.8s   14800 jets/s
+  [ 44/50] train_nominal_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] train_nominal_043.h5  100000 jets     6.6s   15100 jets/s
+  [ 45/50] train_nominal_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] train_nominal_044.h5  100000 jets     7.3s   13746 jets/s
+  [ 46/50] train_nominal_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] train_nominal_045.h5  100000 jets     7.3s   13700 jets/s
+  [ 47/50] train_nominal_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] train_nominal_046.h5  100000 jets     7.5s   13303 jets/s
+  [ 48/50] train_nominal_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] train_nominal_047.h5  100000 jets     7.2s   13934 jets/s
+  [ 49/50] train_nominal_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] train_nominal_048.h5  100000 jets     7.3s   13765 jets/s
+  [ 50/50] train_nominal_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] train_nominal_049.h5  100000 jets     7.1s   14049 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - train_nominal: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080778                 1.60%
+Tau2_wta              0.036081                 1.73%
+Tau3_wta              0.021256                 2.04%
+Tau4_wta              0.015905                 2.29%
+Split12                  70142                 1.72%
+Split23                  23314                 1.80%
+ECF1                1.4728e+06                 1.97%
+ECF2                1.0295e+11                 2.15%
+ECF3                 6.948e+14                 2.73%
+C2                    0.098705                 1.63%
+D2                      1.6208                 0.67%
+L2                     0.22431                 0.47%
+L3                    0.077067                 0.68%
+Qw                       61260                 1.24%
+ThrustMaj              0.84691                 0.19%
+
+median constituents  50
+signal fraction      50.49%
+non-finite values    3
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+test_nominal: 104 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\test_nominal
+==============================================================================
+  [  1/104] test_nominal_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/104] test_nominal_000.h5  100000 jets     7.0s   14249 jets/s
+  [  2/104] test_nominal_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/104] test_nominal_001.h5  100000 jets     7.2s   13918 jets/s
+  [  3/104] test_nominal_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/104] test_nominal_002.h5  100000 jets     7.0s   14304 jets/s
+  [  4/104] test_nominal_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/104] test_nominal_003.h5  100000 jets     6.8s   14608 jets/s
+  [  5/104] test_nominal_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/104] test_nominal_004.h5  100000 jets     7.5s   13255 jets/s
+  [  6/104] test_nominal_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/104] test_nominal_005.h5  100000 jets     7.3s   13660 jets/s
+  [  7/104] test_nominal_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/104] test_nominal_006.h5  100000 jets     7.6s   13223 jets/s
+  [  8/104] test_nominal_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/104] test_nominal_007.h5  100000 jets     7.6s   13200 jets/s
+  [  9/104] test_nominal_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/104] test_nominal_008.h5  100000 jets     8.4s   11877 jets/s
+  [ 10/104] test_nominal_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/104] test_nominal_009.h5  100000 jets     8.1s   12301 jets/s
+  [ 11/104] test_nominal_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/104] test_nominal_010.h5  100000 jets     8.9s   11264 jets/s
+  [ 12/104] test_nominal_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/104] test_nominal_011.h5  100000 jets     8.5s   11810 jets/s
+  [ 13/104] test_nominal_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/104] test_nominal_012.h5  100000 jets     7.7s   13062 jets/s
+  [ 14/104] test_nominal_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/104] test_nominal_013.h5  100000 jets     7.6s   13226 jets/s
+  [ 15/104] test_nominal_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/104] test_nominal_014.h5  100000 jets     7.7s   13068 jets/s
+  [ 16/104] test_nominal_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/104] test_nominal_015.h5  100000 jets     7.3s   13694 jets/s
+  [ 17/104] test_nominal_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/104] test_nominal_016.h5  100000 jets     7.3s   13792 jets/s
+  [ 18/104] test_nominal_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/104] test_nominal_017.h5  100000 jets     7.3s   13616 jets/s
+  [ 19/104] test_nominal_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/104] test_nominal_018.h5  100000 jets     6.8s   14614 jets/s
+  [ 20/104] test_nominal_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/104] test_nominal_019.h5  100000 jets     7.2s   13918 jets/s
+  [ 21/104] test_nominal_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/104] test_nominal_020.h5  100000 jets     6.9s   14504 jets/s
+  [ 22/104] test_nominal_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/104] test_nominal_021.h5  100000 jets     7.3s   13766 jets/s
+  [ 23/104] test_nominal_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/104] test_nominal_022.h5  100000 jets     7.0s   14254 jets/s
+  [ 24/104] test_nominal_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/104] test_nominal_023.h5  100000 jets     7.0s   14381 jets/s
+  [ 25/104] test_nominal_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/104] test_nominal_024.h5  100000 jets     6.8s   14755 jets/s
+  [ 26/104] test_nominal_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/104] test_nominal_025.h5  100000 jets     6.9s   14587 jets/s
+  [ 27/104] test_nominal_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/104] test_nominal_026.h5  100000 jets     7.1s   14077 jets/s
+  [ 28/104] test_nominal_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/104] test_nominal_027.h5  100000 jets     7.3s   13704 jets/s
+  [ 29/104] test_nominal_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/104] test_nominal_028.h5  100000 jets     7.5s   13344 jets/s
+  [ 30/104] test_nominal_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/104] test_nominal_029.h5  100000 jets     7.5s   13381 jets/s
+  [ 31/104] test_nominal_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/104] test_nominal_030.h5  100000 jets     7.4s   13541 jets/s
+  [ 32/104] test_nominal_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/104] test_nominal_031.h5  100000 jets     7.7s   13001 jets/s
+  [ 33/104] test_nominal_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/104] test_nominal_032.h5  100000 jets     8.5s   11714 jets/s
+  [ 34/104] test_nominal_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/104] test_nominal_033.h5  100000 jets     8.4s   11901 jets/s
+  [ 35/104] test_nominal_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/104] test_nominal_034.h5  100000 jets     7.9s   12671 jets/s
+  [ 36/104] test_nominal_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/104] test_nominal_035.h5  100000 jets     7.7s   12914 jets/s
+  [ 37/104] test_nominal_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/104] test_nominal_036.h5  100000 jets     7.9s   12666 jets/s
+  [ 38/104] test_nominal_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/104] test_nominal_037.h5  100000 jets     7.5s   13393 jets/s
+  [ 39/104] test_nominal_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/104] test_nominal_038.h5  100000 jets     7.6s   13102 jets/s
+  [ 40/104] test_nominal_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/104] test_nominal_039.h5  100000 jets     7.3s   13744 jets/s
+  [ 41/104] test_nominal_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/104] test_nominal_040.h5  100000 jets     7.4s   13479 jets/s
+  [ 42/104] test_nominal_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/104] test_nominal_041.h5  100000 jets     8.2s   12191 jets/s
+  [ 43/104] test_nominal_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/104] test_nominal_042.h5  100000 jets     8.0s   12495 jets/s
+  [ 44/104] test_nominal_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/104] test_nominal_043.h5  100000 jets     8.0s   12477 jets/s
+  [ 45/104] test_nominal_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/104] test_nominal_044.h5  100000 jets     7.6s   13162 jets/s
+  [ 46/104] test_nominal_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/104] test_nominal_045.h5  100000 jets     7.8s   12889 jets/s
+  [ 47/104] test_nominal_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/104] test_nominal_046.h5  100000 jets     7.8s   12796 jets/s
+  [ 48/104] test_nominal_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/104] test_nominal_047.h5  100000 jets     8.1s   12352 jets/s
+  [ 49/104] test_nominal_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/104] test_nominal_048.h5  100000 jets     7.8s   12751 jets/s
+  [ 50/104] test_nominal_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/104] test_nominal_049.h5  100000 jets     8.1s   12406 jets/s
+  [ 51/104] test_nominal_050.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 51/104] test_nominal_050.h5  100000 jets     7.8s   12897 jets/s
+  [ 52/104] test_nominal_051.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 52/104] test_nominal_051.h5  100000 jets     8.3s   11991 jets/s
+  [ 53/104] test_nominal_052.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 53/104] test_nominal_052.h5  100000 jets     7.9s   12679 jets/s
+  [ 54/104] test_nominal_053.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 54/104] test_nominal_053.h5  100000 jets     7.8s   12849 jets/s
+  [ 55/104] test_nominal_054.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 55/104] test_nominal_054.h5  100000 jets     8.2s   12212 jets/s
+  [ 56/104] test_nominal_055.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 56/104] test_nominal_055.h5  100000 jets     7.9s   12622 jets/s
+  [ 57/104] test_nominal_056.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 57/104] test_nominal_056.h5  100000 jets     9.2s   10898 jets/s
+  [ 58/104] test_nominal_057.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 58/104] test_nominal_057.h5  100000 jets     8.5s   11768 jets/s
+  [ 59/104] test_nominal_058.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 59/104] test_nominal_058.h5  100000 jets     8.3s   12054 jets/s
+  [ 60/104] test_nominal_059.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 60/104] test_nominal_059.h5  100000 jets     7.7s   12962 jets/s
+  [ 61/104] test_nominal_060.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 61/104] test_nominal_060.h5  100000 jets     7.5s   13339 jets/s
+  [ 62/104] test_nominal_061.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 62/104] test_nominal_061.h5  100000 jets     7.4s   13433 jets/s
+  [ 63/104] test_nominal_062.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 63/104] test_nominal_062.h5  100000 jets     7.5s   13307 jets/s
+  [ 64/104] test_nominal_063.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 64/104] test_nominal_063.h5  100000 jets     8.3s   12053 jets/s
+  [ 65/104] test_nominal_064.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 65/104] test_nominal_064.h5  100000 jets     8.1s   12272 jets/s
+  [ 66/104] test_nominal_065.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 66/104] test_nominal_065.h5  100000 jets     7.5s   13402 jets/s
+  [ 67/104] test_nominal_066.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 67/104] test_nominal_066.h5  100000 jets     7.5s   13298 jets/s
+  [ 68/104] test_nominal_067.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 68/104] test_nominal_067.h5  100000 jets     7.4s   13578 jets/s
+  [ 69/104] test_nominal_068.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 69/104] test_nominal_068.h5  100000 jets     7.4s   13526 jets/s
+  [ 70/104] test_nominal_069.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 70/104] test_nominal_069.h5  100000 jets     7.4s   13424 jets/s
+  [ 71/104] test_nominal_070.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 71/104] test_nominal_070.h5  100000 jets     7.9s   12667 jets/s
+  [ 72/104] test_nominal_071.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 72/104] test_nominal_071.h5  100000 jets     8.1s   12330 jets/s
+  [ 73/104] test_nominal_072.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 73/104] test_nominal_072.h5  100000 jets     8.3s   12035 jets/s
+  [ 74/104] test_nominal_073.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 74/104] test_nominal_073.h5  100000 jets     8.1s   12374 jets/s
+  [ 75/104] test_nominal_074.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 75/104] test_nominal_074.h5  100000 jets     7.7s   12953 jets/s
+  [ 76/104] test_nominal_075.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 76/104] test_nominal_075.h5  100000 jets     8.0s   12536 jets/s
+  [ 77/104] test_nominal_076.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 77/104] test_nominal_076.h5  100000 jets     8.1s   12389 jets/s
+  [ 78/104] test_nominal_077.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 78/104] test_nominal_077.h5  100000 jets     8.0s   12486 jets/s
+  [ 79/104] test_nominal_078.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 79/104] test_nominal_078.h5  100000 jets     7.8s   12804 jets/s
+  [ 80/104] test_nominal_079.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 80/104] test_nominal_079.h5  100000 jets     7.9s   12645 jets/s
+  [ 81/104] test_nominal_080.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 81/104] test_nominal_080.h5  100000 jets     7.9s   12597 jets/s
+  [ 82/104] test_nominal_081.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 82/104] test_nominal_081.h5  100000 jets     8.1s   12333 jets/s
+  [ 83/104] test_nominal_082.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 83/104] test_nominal_082.h5  100000 jets     8.0s   12578 jets/s
+  [ 84/104] test_nominal_083.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 84/104] test_nominal_083.h5  100000 jets     8.3s   12018 jets/s
+  [ 85/104] test_nominal_084.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 85/104] test_nominal_084.h5  100000 jets    10.0s   10007 jets/s
+  [ 86/104] test_nominal_085.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 86/104] test_nominal_085.h5  100000 jets     9.2s   10911 jets/s
+  [ 87/104] test_nominal_086.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 87/104] test_nominal_086.h5  100000 jets     8.1s   12383 jets/s
+  [ 88/104] test_nominal_087.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 88/104] test_nominal_087.h5  100000 jets     8.4s   11920 jets/s
+  [ 89/104] test_nominal_088.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 89/104] test_nominal_088.h5  100000 jets     7.8s   12753 jets/s
+  [ 90/104] test_nominal_089.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 90/104] test_nominal_089.h5  100000 jets     8.2s   12231 jets/s
+  [ 91/104] test_nominal_090.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 91/104] test_nominal_090.h5  100000 jets     7.8s   12803 jets/s
+  [ 92/104] test_nominal_091.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 92/104] test_nominal_091.h5  100000 jets     8.0s   12452 jets/s
+  [ 93/104] test_nominal_092.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 93/104] test_nominal_092.h5  100000 jets     8.2s   12236 jets/s
+  [ 94/104] test_nominal_093.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 94/104] test_nominal_093.h5  100000 jets     7.9s   12672 jets/s
+  [ 95/104] test_nominal_094.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 95/104] test_nominal_094.h5  100000 jets     7.9s   12630 jets/s
+  [ 96/104] test_nominal_095.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 96/104] test_nominal_095.h5  100000 jets     8.0s   12573 jets/s
+  [ 97/104] test_nominal_096.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 97/104] test_nominal_096.h5  100000 jets     8.1s   12325 jets/s
+  [ 98/104] test_nominal_097.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 98/104] test_nominal_097.h5  100000 jets     8.0s   12480 jets/s
+  [ 99/104] test_nominal_098.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 99/104] test_nominal_098.h5  100000 jets     8.0s   12541 jets/s
+  [100/104] test_nominal_099.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [100/104] test_nominal_099.h5  100000 jets     8.3s   12112 jets/s
+  [101/104] test_nominal_100.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [101/104] test_nominal_100.h5  100000 jets     8.0s   12576 jets/s
+  [102/104] test_nominal_101.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [102/104] test_nominal_101.h5  100000 jets     7.7s   12970 jets/s
+  [103/104] test_nominal_102.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [103/104] test_nominal_102.h5  100000 jets     7.9s   12580 jets/s
+  [104/104] test_nominal_103.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [104/104] test_nominal_103.h5  6813 jets     0.7s   10016 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - test_nominal: 104 files, 10,306,813 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080883                 3.95%
+Tau2_wta              0.036117                 4.42%
+Tau3_wta              0.021263                 4.21%
+Tau4_wta              0.015926                 5.78%
+Split12                  70204                 1.76%
+Split23                  23359                 3.29%
+ECF1                1.4735e+06                 1.99%
+ECF2                1.0289e+11                 2.57%
+ECF3                6.9503e+14                 2.47%
+C2                    0.098716                 1.88%
+D2                      1.6204                 1.94%
+L2                     0.22433                 0.66%
+L3                    0.077105                 0.95%
+Qw                       61318                 1.79%
+ThrustMaj              0.84681                 0.37%
+
+median constituents  50
+signal fraction      50.52%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+esup: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\esup
+==============================================================================
+  [  1/50] esup_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] esup_000.h5  100000 jets     7.9s   12649 jets/s
+  [  2/50] esup_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] esup_001.h5  100000 jets     8.2s   12161 jets/s
+  [  3/50] esup_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] esup_002.h5  100000 jets     8.4s   11856 jets/s
+  [  4/50] esup_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] esup_003.h5  100000 jets     8.4s   11934 jets/s
+  [  5/50] esup_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] esup_004.h5  100000 jets     8.6s   11650 jets/s
+  [  6/50] esup_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] esup_005.h5  100000 jets     8.4s   11847 jets/s
+  [  7/50] esup_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] esup_006.h5  100000 jets     8.4s   11905 jets/s
+  [  8/50] esup_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] esup_007.h5  100000 jets     8.6s   11664 jets/s
+  [  9/50] esup_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] esup_008.h5  100000 jets     8.8s   11329 jets/s
+  [ 10/50] esup_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] esup_009.h5  100000 jets     8.5s   11806 jets/s
+  [ 11/50] esup_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] esup_010.h5  100000 jets     8.5s   11755 jets/s
+  [ 12/50] esup_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] esup_011.h5  100000 jets     9.1s   11012 jets/s
+  [ 13/50] esup_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] esup_012.h5  100000 jets     8.4s   11874 jets/s
+  [ 14/50] esup_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] esup_013.h5  100000 jets     8.6s   11578 jets/s
+  [ 15/50] esup_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] esup_014.h5  100000 jets     8.4s   11959 jets/s
+  [ 16/50] esup_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] esup_015.h5  100000 jets     8.6s   11647 jets/s
+  [ 17/50] esup_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] esup_016.h5  100000 jets     8.5s   11777 jets/s
+  [ 18/50] esup_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] esup_017.h5  100000 jets     8.9s   11239 jets/s
+  [ 19/50] esup_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] esup_018.h5  100000 jets     8.5s   11711 jets/s
+  [ 20/50] esup_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] esup_019.h5  100000 jets     8.5s   11788 jets/s
+  [ 21/50] esup_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] esup_020.h5  100000 jets     8.5s   11742 jets/s
+  [ 22/50] esup_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] esup_021.h5  100000 jets     8.4s   11911 jets/s
+  [ 23/50] esup_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] esup_022.h5  100000 jets     8.4s   11844 jets/s
+  [ 24/50] esup_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] esup_023.h5  100000 jets     8.6s   11629 jets/s
+  [ 25/50] esup_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] esup_024.h5  100000 jets     8.7s   11524 jets/s
+  [ 26/50] esup_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] esup_025.h5  100000 jets     8.6s   11611 jets/s
+  [ 27/50] esup_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] esup_026.h5  100000 jets     7.6s   13231 jets/s
+  [ 28/50] esup_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] esup_027.h5  100000 jets     7.7s   12912 jets/s
+  [ 29/50] esup_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] esup_028.h5  100000 jets     7.7s   12952 jets/s
+  [ 30/50] esup_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] esup_029.h5  100000 jets     7.6s   13187 jets/s
+  [ 31/50] esup_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] esup_030.h5  100000 jets     7.5s   13281 jets/s
+  [ 32/50] esup_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] esup_031.h5  100000 jets     7.5s   13391 jets/s
+  [ 33/50] esup_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] esup_032.h5  100000 jets     7.5s   13304 jets/s
+  [ 34/50] esup_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] esup_033.h5  100000 jets     7.6s   13197 jets/s
+  [ 35/50] esup_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] esup_034.h5  100000 jets     7.5s   13306 jets/s
+  [ 36/50] esup_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] esup_035.h5  100000 jets     7.4s   13454 jets/s
+  [ 37/50] esup_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] esup_036.h5  100000 jets     7.5s   13305 jets/s
+  [ 38/50] esup_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] esup_037.h5  100000 jets     8.2s   12227 jets/s
+  [ 39/50] esup_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] esup_038.h5  100000 jets     8.9s   11194 jets/s
+  [ 40/50] esup_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] esup_039.h5  100000 jets     8.6s   11662 jets/s
+  [ 41/50] esup_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] esup_040.h5  100000 jets     9.4s   10674 jets/s
+  [ 42/50] esup_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] esup_041.h5  100000 jets     9.7s   10333 jets/s
+  [ 43/50] esup_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] esup_042.h5  100000 jets     9.0s   11149 jets/s
+  [ 44/50] esup_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] esup_043.h5  100000 jets     8.6s   11672 jets/s
+  [ 45/50] esup_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] esup_044.h5  100000 jets     8.0s   12471 jets/s
+  [ 46/50] esup_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] esup_045.h5  100000 jets     8.3s   11996 jets/s
+  [ 47/50] esup_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] esup_046.h5  100000 jets     8.2s   12256 jets/s
+  [ 48/50] esup_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] esup_047.h5  100000 jets     7.7s   12946 jets/s
+  [ 49/50] esup_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] esup_048.h5  100000 jets     7.1s   14016 jets/s
+  [ 50/50] esup_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] esup_049.h5  100000 jets     7.3s   13611 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - esup: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.079432                 1.22%
+Tau2_wta              0.035386                 1.84%
+Tau3_wta              0.020685                 1.59%
+Tau4_wta               0.01545                 1.52%
+Split12                  75146                 1.08%
+Split23                  25027                 1.78%
+ECF1                1.6121e+06                 1.13%
+ECF2                1.2015e+11                 1.96%
+ECF3                8.4944e+14                 1.84%
+C2                    0.097509                 1.51%
+D2                      1.6281                 0.67%
+L2                     0.22354                 0.52%
+L3                    0.076339                 0.74%
+Qw                       65828                 1.11%
+ThrustMaj              0.84678                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+esdown: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\esdown
+==============================================================================
+  [  1/50] esdown_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] esdown_000.h5  100000 jets     7.3s   13679 jets/s
+  [  2/50] esdown_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] esdown_001.h5  100000 jets     7.5s   13418 jets/s
+  [  3/50] esdown_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] esdown_002.h5  100000 jets     7.5s   13363 jets/s
+  [  4/50] esdown_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] esdown_003.h5  100000 jets     7.4s   13552 jets/s
+  [  5/50] esdown_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] esdown_004.h5  100000 jets     8.2s   12172 jets/s
+  [  6/50] esdown_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] esdown_005.h5  100000 jets     8.4s   11897 jets/s
+  [  7/50] esdown_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] esdown_006.h5  100000 jets     8.4s   11915 jets/s
+  [  8/50] esdown_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] esdown_007.h5  100000 jets     8.5s   11733 jets/s
+  [  9/50] esdown_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] esdown_008.h5  100000 jets     8.5s   11765 jets/s
+  [ 10/50] esdown_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] esdown_009.h5  100000 jets     8.4s   11952 jets/s
+  [ 11/50] esdown_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] esdown_010.h5  100000 jets     8.3s   12048 jets/s
+  [ 12/50] esdown_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] esdown_011.h5  100000 jets     8.6s   11651 jets/s
+  [ 13/50] esdown_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] esdown_012.h5  100000 jets     8.4s   11868 jets/s
+  [ 14/50] esdown_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] esdown_013.h5  100000 jets     8.3s   11980 jets/s
+  [ 15/50] esdown_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] esdown_014.h5  100000 jets     8.5s   11774 jets/s
+  [ 16/50] esdown_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] esdown_015.h5  100000 jets     8.7s   11495 jets/s
+  [ 17/50] esdown_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] esdown_016.h5  100000 jets     8.4s   11976 jets/s
+  [ 18/50] esdown_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] esdown_017.h5  100000 jets     8.4s   11969 jets/s
+  [ 19/50] esdown_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] esdown_018.h5  100000 jets     8.3s   11985 jets/s
+  [ 20/50] esdown_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] esdown_019.h5  100000 jets     8.4s   11889 jets/s
+  [ 21/50] esdown_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] esdown_020.h5  100000 jets     8.5s   11800 jets/s
+  [ 22/50] esdown_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] esdown_021.h5  100000 jets     8.3s   12024 jets/s
+  [ 23/50] esdown_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] esdown_022.h5  100000 jets     8.3s   12012 jets/s
+  [ 24/50] esdown_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] esdown_023.h5  100000 jets     8.4s   11890 jets/s
+  [ 25/50] esdown_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] esdown_024.h5  100000 jets     8.5s   11765 jets/s
+  [ 26/50] esdown_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] esdown_025.h5  100000 jets     8.3s   12088 jets/s
+  [ 27/50] esdown_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] esdown_026.h5  100000 jets     8.3s   12043 jets/s
+  [ 28/50] esdown_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] esdown_027.h5  100000 jets     8.3s   12102 jets/s
+  [ 29/50] esdown_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] esdown_028.h5  100000 jets     8.4s   11953 jets/s
+  [ 30/50] esdown_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] esdown_029.h5  100000 jets     8.4s   11869 jets/s
+  [ 31/50] esdown_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] esdown_030.h5  100000 jets     8.5s   11742 jets/s
+  [ 32/50] esdown_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] esdown_031.h5  100000 jets     8.4s   11929 jets/s
+  [ 33/50] esdown_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] esdown_032.h5  100000 jets     8.6s   11629 jets/s
+  [ 34/50] esdown_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] esdown_033.h5  100000 jets     8.5s   11719 jets/s
+  [ 35/50] esdown_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] esdown_034.h5  100000 jets     8.6s   11629 jets/s
+  [ 36/50] esdown_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] esdown_035.h5  100000 jets     8.4s   11898 jets/s
+  [ 37/50] esdown_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] esdown_036.h5  100000 jets     8.4s   11931 jets/s
+  [ 38/50] esdown_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] esdown_037.h5  100000 jets     8.4s   11834 jets/s
+  [ 39/50] esdown_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] esdown_038.h5  100000 jets     8.5s   11756 jets/s
+  [ 40/50] esdown_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] esdown_039.h5  100000 jets     8.7s   11502 jets/s
+  [ 41/50] esdown_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] esdown_040.h5  100000 jets     8.3s   12098 jets/s
+  [ 42/50] esdown_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] esdown_041.h5  100000 jets     8.5s   11743 jets/s
+  [ 43/50] esdown_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] esdown_042.h5  100000 jets     8.4s   11905 jets/s
+  [ 44/50] esdown_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] esdown_043.h5  100000 jets     8.4s   11953 jets/s
+  [ 45/50] esdown_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] esdown_044.h5  100000 jets     8.4s   11964 jets/s
+  [ 46/50] esdown_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] esdown_045.h5  100000 jets     8.6s   11602 jets/s
+  [ 47/50] esdown_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] esdown_046.h5  100000 jets     8.7s   11507 jets/s
+  [ 48/50] esdown_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] esdown_047.h5  100000 jets     8.8s   11423 jets/s
+  [ 49/50] esdown_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] esdown_048.h5  100000 jets     8.4s   11929 jets/s
+  [ 50/50] esdown_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] esdown_049.h5  100000 jets     8.6s   11583 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - esdown: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.081423                 1.41%
+Tau2_wta              0.036523                 1.25%
+Tau3_wta               0.02144                 1.36%
+Tau4_wta              0.016044                 1.30%
+Split12                  66540                 1.10%
+Split23                  22711                 1.53%
+ECF1                1.3973e+06                 0.97%
+ECF2                9.2042e+10                 1.80%
+ECF3                5.7957e+14                 1.58%
+C2                    0.098302                 1.54%
+D2                      1.6077                 0.65%
+L2                     0.22579                 0.50%
+L3                    0.078251                 0.70%
+Qw                       58566                 0.93%
+ThrustMaj              0.84465                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+cer: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\cer
+==============================================================================
+  [  1/50] cer_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] cer_000.h5  100000 jets     8.8s   11373 jets/s
+  [  2/50] cer_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] cer_001.h5  100000 jets     8.6s   11652 jets/s
+  [  3/50] cer_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] cer_002.h5  100000 jets     8.5s   11711 jets/s
+  [  4/50] cer_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] cer_003.h5  100000 jets     8.5s   11723 jets/s
+  [  5/50] cer_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] cer_004.h5  100000 jets     8.4s   11882 jets/s
+  [  6/50] cer_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] cer_005.h5  100000 jets     8.4s   11848 jets/s
+  [  7/50] cer_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] cer_006.h5  100000 jets     8.4s   11971 jets/s
+  [  8/50] cer_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] cer_007.h5  100000 jets     8.6s   11653 jets/s
+  [  9/50] cer_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] cer_008.h5  100000 jets     8.3s   12024 jets/s
+  [ 10/50] cer_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] cer_009.h5  100000 jets     8.6s   11674 jets/s
+  [ 11/50] cer_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] cer_010.h5  100000 jets     8.5s   11696 jets/s
+  [ 12/50] cer_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] cer_011.h5  100000 jets     8.3s   12049 jets/s
+  [ 13/50] cer_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] cer_012.h5  100000 jets     8.4s   11871 jets/s
+  [ 14/50] cer_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] cer_013.h5  100000 jets     8.3s   11996 jets/s
+  [ 15/50] cer_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] cer_014.h5  100000 jets     8.4s   11866 jets/s
+  [ 16/50] cer_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] cer_015.h5  100000 jets     8.3s   12026 jets/s
+  [ 17/50] cer_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] cer_016.h5  100000 jets     8.5s   11788 jets/s
+  [ 18/50] cer_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] cer_017.h5  100000 jets     8.4s   11905 jets/s
+  [ 19/50] cer_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] cer_018.h5  100000 jets     8.8s   11304 jets/s
+  [ 20/50] cer_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] cer_019.h5  100000 jets     8.5s   11711 jets/s
+  [ 21/50] cer_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] cer_020.h5  100000 jets     8.6s   11644 jets/s
+  [ 22/50] cer_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] cer_021.h5  100000 jets     8.3s   12065 jets/s
+  [ 23/50] cer_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] cer_022.h5  100000 jets     8.9s   11263 jets/s
+  [ 24/50] cer_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] cer_023.h5  100000 jets     8.6s   11586 jets/s
+  [ 25/50] cer_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] cer_024.h5  100000 jets     7.9s   12707 jets/s
+  [ 26/50] cer_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] cer_025.h5  100000 jets     7.4s   13470 jets/s
+  [ 27/50] cer_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] cer_026.h5  100000 jets     7.3s   13678 jets/s
+  [ 28/50] cer_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] cer_027.h5  100000 jets     7.2s   13802 jets/s
+  [ 29/50] cer_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] cer_028.h5  100000 jets     7.3s   13639 jets/s
+  [ 30/50] cer_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] cer_029.h5  100000 jets     7.9s   12666 jets/s
+  [ 31/50] cer_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] cer_030.h5  100000 jets     8.6s   11688 jets/s
+  [ 32/50] cer_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] cer_031.h5  100000 jets     8.0s   12577 jets/s
+  [ 33/50] cer_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] cer_032.h5  100000 jets     7.4s   13563 jets/s
+  [ 34/50] cer_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] cer_033.h5  100000 jets     7.8s   12788 jets/s
+  [ 35/50] cer_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] cer_034.h5  100000 jets     9.9s   10065 jets/s
+  [ 36/50] cer_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] cer_035.h5  100000 jets     8.4s   11946 jets/s
+  [ 37/50] cer_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] cer_036.h5  100000 jets     8.0s   12482 jets/s
+  [ 38/50] cer_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] cer_037.h5  100000 jets     8.4s   11837 jets/s
+  [ 39/50] cer_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] cer_038.h5  100000 jets     8.4s   11958 jets/s
+  [ 40/50] cer_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] cer_039.h5  100000 jets     7.9s   12635 jets/s
+  [ 41/50] cer_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] cer_040.h5  100000 jets     7.9s   12682 jets/s
+  [ 42/50] cer_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] cer_041.h5  100000 jets     8.8s   11304 jets/s
+  [ 43/50] cer_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] cer_042.h5  100000 jets     9.4s   10629 jets/s
+  [ 44/50] cer_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] cer_043.h5  100000 jets     9.0s   11097 jets/s
+  [ 45/50] cer_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] cer_044.h5  100000 jets     8.1s   12408 jets/s
+  [ 46/50] cer_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] cer_045.h5  100000 jets     8.1s   12406 jets/s
+  [ 47/50] cer_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] cer_046.h5  100000 jets     8.6s   11643 jets/s
+  [ 48/50] cer_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] cer_047.h5  100000 jets     8.6s   11664 jets/s
+  [ 49/50] cer_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] cer_048.h5  100000 jets     8.3s   12093 jets/s
+  [ 50/50] cer_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] cer_049.h5  100000 jets     8.4s   11862 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - cer: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080233                 1.20%
+Tau2_wta              0.035859                 1.34%
+Tau3_wta              0.021003                 1.32%
+Tau4_wta              0.015696                 1.11%
+Split12                  70688                 1.12%
+Split23                  23800                 1.43%
+ECF1                1.5029e+06                 1.16%
+ECF2                1.0526e+11                 2.38%
+ECF3                 7.038e+14                 1.98%
+C2                     0.09777                 1.12%
+D2                      1.6185                 0.73%
+L2                     0.22442                 0.54%
+L3                    0.077147                 0.73%
+Qw                       62098                 0.90%
+ThrustMaj              0.84598                 0.26%
+
+median constituents  50
+signal fraction      51.81%
+non-finite values    244
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+cpos: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\cpos
+==============================================================================
+  [  1/50] cpos_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] cpos_000.h5  100000 jets     8.7s   11501 jets/s
+  [  2/50] cpos_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] cpos_001.h5  100000 jets     8.4s   11928 jets/s
+  [  3/50] cpos_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] cpos_002.h5  100000 jets     8.4s   11908 jets/s
+  [  4/50] cpos_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] cpos_003.h5  100000 jets     8.7s   11493 jets/s
+  [  5/50] cpos_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] cpos_004.h5  100000 jets     8.4s   11932 jets/s
+  [  6/50] cpos_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] cpos_005.h5  100000 jets     8.4s   11932 jets/s
+  [  7/50] cpos_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] cpos_006.h5  100000 jets     8.5s   11715 jets/s
+  [  8/50] cpos_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] cpos_007.h5  100000 jets     8.4s   11890 jets/s
+  [  9/50] cpos_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] cpos_008.h5  100000 jets     8.6s   11582 jets/s
+  [ 10/50] cpos_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] cpos_009.h5  100000 jets     8.6s   11664 jets/s
+  [ 11/50] cpos_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] cpos_010.h5  100000 jets     8.0s   12467 jets/s
+  [ 12/50] cpos_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] cpos_011.h5  100000 jets     7.4s   13449 jets/s
+  [ 13/50] cpos_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] cpos_012.h5  100000 jets     7.5s   13388 jets/s
+  [ 14/50] cpos_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] cpos_013.h5  100000 jets     7.3s   13669 jets/s
+  [ 15/50] cpos_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] cpos_014.h5  100000 jets     7.7s   12990 jets/s
+  [ 16/50] cpos_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] cpos_015.h5  100000 jets     7.6s   13191 jets/s
+  [ 17/50] cpos_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] cpos_016.h5  100000 jets     7.5s   13247 jets/s
+  [ 18/50] cpos_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] cpos_017.h5  100000 jets     7.4s   13491 jets/s
+  [ 19/50] cpos_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] cpos_018.h5  100000 jets     7.4s   13491 jets/s
+  [ 20/50] cpos_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] cpos_019.h5  100000 jets     7.6s   13132 jets/s
+  [ 21/50] cpos_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] cpos_020.h5  100000 jets     7.4s   13439 jets/s
+  [ 22/50] cpos_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] cpos_021.h5  100000 jets     7.5s   13286 jets/s
+  [ 23/50] cpos_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] cpos_022.h5  100000 jets     8.3s   12008 jets/s
+  [ 24/50] cpos_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] cpos_023.h5  100000 jets     9.0s   11103 jets/s
+  [ 25/50] cpos_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] cpos_024.h5  100000 jets     7.6s   13185 jets/s
+  [ 26/50] cpos_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] cpos_025.h5  100000 jets     7.3s   13653 jets/s
+  [ 27/50] cpos_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] cpos_026.h5  100000 jets     7.4s   13494 jets/s
+  [ 28/50] cpos_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] cpos_027.h5  100000 jets     7.4s   13597 jets/s
+  [ 29/50] cpos_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] cpos_028.h5  100000 jets     7.6s   13072 jets/s
+  [ 30/50] cpos_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] cpos_029.h5  100000 jets     7.8s   12794 jets/s
+  [ 31/50] cpos_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] cpos_030.h5  100000 jets     7.6s   13220 jets/s
+  [ 32/50] cpos_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] cpos_031.h5  100000 jets     7.5s   13361 jets/s
+  [ 33/50] cpos_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] cpos_032.h5  100000 jets     7.6s   13123 jets/s
+  [ 34/50] cpos_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] cpos_033.h5  100000 jets     8.5s   11800 jets/s
+  [ 35/50] cpos_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] cpos_034.h5  100000 jets     7.5s   13369 jets/s
+  [ 36/50] cpos_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] cpos_035.h5  100000 jets     7.3s   13701 jets/s
+  [ 37/50] cpos_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] cpos_036.h5  100000 jets     7.5s   13359 jets/s
+  [ 38/50] cpos_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] cpos_037.h5  100000 jets     7.2s   13814 jets/s
+  [ 39/50] cpos_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] cpos_038.h5  100000 jets     7.2s   13939 jets/s
+  [ 40/50] cpos_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] cpos_039.h5  100000 jets     7.3s   13742 jets/s
+  [ 41/50] cpos_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] cpos_040.h5  100000 jets     7.2s   13885 jets/s
+  [ 42/50] cpos_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] cpos_041.h5  100000 jets     7.9s   12642 jets/s
+  [ 43/50] cpos_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] cpos_042.h5  100000 jets     7.6s   13231 jets/s
+  [ 44/50] cpos_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] cpos_043.h5  100000 jets     7.9s   12601 jets/s
+  [ 45/50] cpos_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] cpos_044.h5  100000 jets     7.3s   13608 jets/s
+  [ 46/50] cpos_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] cpos_045.h5  100000 jets     7.3s   13664 jets/s
+  [ 47/50] cpos_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] cpos_046.h5  100000 jets     7.3s   13666 jets/s
+  [ 48/50] cpos_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] cpos_047.h5  100000 jets     7.7s   13052 jets/s
+  [ 49/50] cpos_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] cpos_048.h5  100000 jets     7.5s   13288 jets/s
+  [ 50/50] cpos_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] cpos_049.h5  100000 jets     7.4s   13604 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - cpos: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080373                 1.38%
+Tau2_wta              0.035937                 1.71%
+Tau3_wta              0.021056                 1.61%
+Tau4_wta              0.015737                 1.54%
+Split12                  70867                 1.08%
+Split23                  23909                 1.62%
+ECF1                1.5057e+06                 1.28%
+ECF2                1.0578e+11                 1.79%
+ECF3                7.0832e+14                 1.62%
+C2                    0.097879                 1.16%
+D2                      1.6187                 0.56%
+L2                     0.22464                 0.43%
+L3                     0.07724                 0.76%
+Qw                       62297                 0.96%
+ThrustMaj              0.84577                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+teg: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\teg
+==============================================================================
+  [  1/50] teg_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] teg_000.h5  100000 jets     7.4s   13573 jets/s
+  [  2/50] teg_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] teg_001.h5  100000 jets     7.2s   13827 jets/s
+  [  3/50] teg_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] teg_002.h5  100000 jets     7.0s   14216 jets/s
+  [  4/50] teg_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] teg_003.h5  100000 jets     7.5s   13376 jets/s
+  [  5/50] teg_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] teg_004.h5  100000 jets     8.4s   11906 jets/s
+  [  6/50] teg_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] teg_005.h5  100000 jets     8.6s   11690 jets/s
+  [  7/50] teg_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] teg_006.h5  100000 jets     7.9s   12713 jets/s
+  [  8/50] teg_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] teg_007.h5  100000 jets     7.1s   14119 jets/s
+  [  9/50] teg_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] teg_008.h5  100000 jets     7.0s   14350 jets/s
+  [ 10/50] teg_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] teg_009.h5  100000 jets     6.9s   14531 jets/s
+  [ 11/50] teg_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] teg_010.h5  100000 jets     7.0s   14311 jets/s
+  [ 12/50] teg_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] teg_011.h5  100000 jets     7.0s   14376 jets/s
+  [ 13/50] teg_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] teg_012.h5  100000 jets     6.8s   14667 jets/s
+  [ 14/50] teg_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] teg_013.h5  100000 jets     7.0s   14273 jets/s
+  [ 15/50] teg_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] teg_014.h5  100000 jets     7.2s   13908 jets/s
+  [ 16/50] teg_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] teg_015.h5  100000 jets     7.0s   14259 jets/s
+  [ 17/50] teg_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] teg_016.h5  100000 jets     6.9s   14465 jets/s
+  [ 18/50] teg_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] teg_017.h5  100000 jets     6.9s   14506 jets/s
+  [ 19/50] teg_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] teg_018.h5  100000 jets     6.9s   14476 jets/s
+  [ 20/50] teg_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] teg_019.h5  100000 jets     7.0s   14349 jets/s
+  [ 21/50] teg_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] teg_020.h5  100000 jets     6.9s   14458 jets/s
+  [ 22/50] teg_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] teg_021.h5  100000 jets     7.0s   14288 jets/s
+  [ 23/50] teg_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] teg_022.h5  100000 jets     7.1s   14115 jets/s
+  [ 24/50] teg_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] teg_023.h5  100000 jets     6.9s   14459 jets/s
+  [ 25/50] teg_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] teg_024.h5  100000 jets     6.9s   14431 jets/s
+  [ 26/50] teg_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] teg_025.h5  100000 jets     6.9s   14507 jets/s
+  [ 27/50] teg_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] teg_026.h5  100000 jets     7.0s   14367 jets/s
+  [ 28/50] teg_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] teg_027.h5  100000 jets     7.1s   14169 jets/s
+  [ 29/50] teg_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] teg_028.h5  100000 jets     6.9s   14457 jets/s
+  [ 30/50] teg_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] teg_029.h5  100000 jets     7.0s   14260 jets/s
+  [ 31/50] teg_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] teg_030.h5  100000 jets     6.9s   14455 jets/s
+  [ 32/50] teg_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] teg_031.h5  100000 jets     6.9s   14594 jets/s
+  [ 33/50] teg_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] teg_032.h5  100000 jets     7.3s   13781 jets/s
+  [ 34/50] teg_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] teg_033.h5  100000 jets     7.3s   13693 jets/s
+  [ 35/50] teg_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] teg_034.h5  100000 jets     7.2s   13859 jets/s
+  [ 36/50] teg_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] teg_035.h5  100000 jets     7.9s   12713 jets/s
+  [ 37/50] teg_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] teg_036.h5  100000 jets     7.6s   13205 jets/s
+  [ 38/50] teg_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] teg_037.h5  100000 jets     8.2s   12143 jets/s
+  [ 39/50] teg_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] teg_038.h5  100000 jets     8.5s   11704 jets/s
+  [ 40/50] teg_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] teg_039.h5  100000 jets     8.0s   12451 jets/s
+  [ 41/50] teg_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] teg_040.h5  100000 jets     9.8s   10214 jets/s
+  [ 42/50] teg_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] teg_041.h5  100000 jets     8.7s   11488 jets/s
+  [ 43/50] teg_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] teg_042.h5  100000 jets     8.0s   12539 jets/s
+  [ 44/50] teg_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] teg_043.h5  100000 jets     7.8s   12760 jets/s
+  [ 45/50] teg_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] teg_044.h5  100000 jets     7.4s   13456 jets/s
+  [ 46/50] teg_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] teg_045.h5  100000 jets     7.2s   13953 jets/s
+  [ 47/50] teg_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] teg_046.h5  100000 jets     7.4s   13477 jets/s
+  [ 48/50] teg_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] teg_047.h5  100000 jets     7.4s   13557 jets/s
+  [ 49/50] teg_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] teg_048.h5  100000 jets     7.2s   13867 jets/s
+  [ 50/50] teg_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] teg_049.h5  100000 jets     7.1s   14089 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - teg: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.076322                 2.08%
+Tau2_wta              0.032648                 2.08%
+Tau3_wta              0.020222                 2.57%
+Tau4_wta              0.015425                 2.40%
+Split12                  61328                 1.54%
+Split23                  17051                 2.29%
+ECF1                1.4484e+06                 1.60%
+ECF2                8.4902e+10                 2.24%
+ECF3                5.2569e+14                 2.93%
+C2                     0.09655                 2.15%
+D2                      1.6824                 0.90%
+L2                     0.21426                 0.73%
+L3                    0.071827                 0.73%
+Qw                       50094                 1.26%
+ThrustMaj              0.86625                 0.25%
+
+median constituents  49
+signal fraction      30.01%
+non-finite values    2
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+tej: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\tej
+==============================================================================
+  [  1/50] tej_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] tej_000.h5  100000 jets     7.3s   13705 jets/s
+  [  2/50] tej_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] tej_001.h5  100000 jets     7.1s   14001 jets/s
+  [  3/50] tej_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] tej_002.h5  100000 jets     7.2s   13865 jets/s
+  [  4/50] tej_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] tej_003.h5  100000 jets     7.1s   14031 jets/s
+  [  5/50] tej_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] tej_004.h5  100000 jets     7.1s   14083 jets/s
+  [  6/50] tej_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] tej_005.h5  100000 jets     7.1s   14049 jets/s
+  [  7/50] tej_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] tej_006.h5  100000 jets     7.1s   14065 jets/s
+  [  8/50] tej_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] tej_007.h5  100000 jets     7.2s   13981 jets/s
+  [  9/50] tej_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] tej_008.h5  100000 jets     6.9s   14461 jets/s
+  [ 10/50] tej_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] tej_009.h5  100000 jets     7.2s   13877 jets/s
+  [ 11/50] tej_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] tej_010.h5  100000 jets     6.9s   14535 jets/s
+  [ 12/50] tej_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] tej_011.h5  100000 jets     6.9s   14589 jets/s
+  [ 13/50] tej_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] tej_012.h5  100000 jets     6.8s   14630 jets/s
+  [ 14/50] tej_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] tej_013.h5  100000 jets     6.8s   14609 jets/s
+  [ 15/50] tej_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] tej_014.h5  100000 jets     6.9s   14497 jets/s
+  [ 16/50] tej_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] tej_015.h5  100000 jets     6.7s   14953 jets/s
+  [ 17/50] tej_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] tej_016.h5  100000 jets     6.4s   15626 jets/s
+  [ 18/50] tej_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] tej_017.h5  100000 jets     6.6s   15132 jets/s
+  [ 19/50] tej_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] tej_018.h5  100000 jets     6.7s   14889 jets/s
+  [ 20/50] tej_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] tej_019.h5  100000 jets     6.5s   15271 jets/s
+  [ 21/50] tej_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] tej_020.h5  100000 jets     6.7s   15038 jets/s
+  [ 22/50] tej_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] tej_021.h5  100000 jets     6.6s   15229 jets/s
+  [ 23/50] tej_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] tej_022.h5  100000 jets     6.8s   14814 jets/s
+  [ 24/50] tej_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] tej_023.h5  100000 jets     6.9s   14390 jets/s
+  [ 25/50] tej_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] tej_024.h5  100000 jets     6.9s   14519 jets/s
+  [ 26/50] tej_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] tej_025.h5  100000 jets     6.8s   14600 jets/s
+  [ 27/50] tej_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] tej_026.h5  100000 jets     7.1s   14032 jets/s
+  [ 28/50] tej_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] tej_027.h5  100000 jets     7.1s   14018 jets/s
+  [ 29/50] tej_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] tej_028.h5  100000 jets     7.3s   13700 jets/s
+  [ 30/50] tej_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] tej_029.h5  100000 jets     7.3s   13701 jets/s
+  [ 31/50] tej_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] tej_030.h5  100000 jets     6.9s   14458 jets/s
+  [ 32/50] tej_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] tej_031.h5  100000 jets     6.8s   14772 jets/s
+  [ 33/50] tej_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] tej_032.h5  100000 jets     6.6s   15061 jets/s
+  [ 34/50] tej_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] tej_033.h5  100000 jets     6.7s   14911 jets/s
+  [ 35/50] tej_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] tej_034.h5  100000 jets     6.5s   15295 jets/s
+  [ 36/50] tej_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] tej_035.h5  100000 jets     6.7s   15009 jets/s
+  [ 37/50] tej_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] tej_036.h5  100000 jets     6.5s   15362 jets/s
+  [ 38/50] tej_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] tej_037.h5  100000 jets     6.8s   14673 jets/s
+  [ 39/50] tej_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] tej_038.h5  100000 jets     7.3s   13629 jets/s
+  [ 40/50] tej_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] tej_039.h5  100000 jets     7.3s   13696 jets/s
+  [ 41/50] tej_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] tej_040.h5  100000 jets     8.1s   12369 jets/s
+  [ 42/50] tej_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] tej_041.h5  100000 jets     7.5s   13300 jets/s
+  [ 43/50] tej_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] tej_042.h5  100000 jets     7.0s   14248 jets/s
+  [ 44/50] tej_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] tej_043.h5  100000 jets     7.2s   13818 jets/s
+  [ 45/50] tej_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] tej_044.h5  100000 jets     7.1s   14092 jets/s
+  [ 46/50] tej_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] tej_045.h5  100000 jets     7.0s   14287 jets/s
+  [ 47/50] tej_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] tej_046.h5  100000 jets     7.1s   14139 jets/s
+  [ 48/50] tej_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] tej_047.h5  100000 jets     7.0s   14232 jets/s
+  [ 49/50] tej_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] tej_048.h5  100000 jets     7.2s   13795 jets/s
+  [ 50/50] tej_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] tej_049.h5  100000 jets     7.3s   13773 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - tej: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.079654                 1.43%
+Tau2_wta               0.03447                 1.54%
+Tau3_wta                0.0214                 1.50%
+Tau4_wta              0.016334                 1.87%
+Split12                  61715                 1.35%
+Split23                  17255                 1.90%
+ECF1                1.3533e+06                 1.07%
+ECF2                8.0307e+10                 2.53%
+ECF3                5.2915e+14                 3.66%
+C2                      0.1005                 1.47%
+D2                      1.6682                 0.89%
+L2                      0.2163                 0.67%
+L3                     0.07304                 1.09%
+Qw                       49934                 1.58%
+ThrustMaj              0.86404                 0.18%
+
+median constituents  49
+signal fraction      31.80%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+tfl: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\tfl
+==============================================================================
+  [  1/50] tfl_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] tfl_000.h5  100000 jets     7.2s   13921 jets/s
+  [  2/50] tfl_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] tfl_001.h5  100000 jets     7.0s   14266 jets/s
+  [  3/50] tfl_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] tfl_002.h5  100000 jets     7.1s   14018 jets/s
+  [  4/50] tfl_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] tfl_003.h5  100000 jets     6.9s   14528 jets/s
+  [  5/50] tfl_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] tfl_004.h5  100000 jets     6.8s   14670 jets/s
+  [  6/50] tfl_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] tfl_005.h5  100000 jets     6.7s   14962 jets/s
+  [  7/50] tfl_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] tfl_006.h5  100000 jets     6.7s   14840 jets/s
+  [  8/50] tfl_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] tfl_007.h5  100000 jets     6.6s   15231 jets/s
+  [  9/50] tfl_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] tfl_008.h5  100000 jets     6.7s   14970 jets/s
+  [ 10/50] tfl_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] tfl_009.h5  100000 jets     6.6s   15246 jets/s
+  [ 11/50] tfl_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] tfl_010.h5  100000 jets     6.9s   14555 jets/s
+  [ 12/50] tfl_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] tfl_011.h5  100000 jets     6.7s   14831 jets/s
+  [ 13/50] tfl_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] tfl_012.h5  100000 jets     6.6s   15252 jets/s
+  [ 14/50] tfl_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] tfl_013.h5  100000 jets     6.7s   14963 jets/s
+  [ 15/50] tfl_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] tfl_014.h5  100000 jets     6.6s   15041 jets/s
+  [ 16/50] tfl_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] tfl_015.h5  100000 jets     7.1s   14086 jets/s
+  [ 17/50] tfl_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] tfl_016.h5  100000 jets     6.9s   14597 jets/s
+  [ 18/50] tfl_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] tfl_017.h5  100000 jets     6.8s   14614 jets/s
+  [ 19/50] tfl_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] tfl_018.h5  100000 jets     7.7s   13026 jets/s
+  [ 20/50] tfl_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] tfl_019.h5  100000 jets     7.8s   12851 jets/s
+  [ 21/50] tfl_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] tfl_020.h5  100000 jets     7.4s   13470 jets/s
+  [ 22/50] tfl_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] tfl_021.h5  100000 jets     8.0s   12547 jets/s
+  [ 23/50] tfl_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] tfl_022.h5  100000 jets     7.1s   14045 jets/s
+  [ 24/50] tfl_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] tfl_023.h5  100000 jets     7.8s   12861 jets/s
+  [ 25/50] tfl_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] tfl_024.h5  100000 jets     7.9s   12672 jets/s
+  [ 26/50] tfl_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] tfl_025.h5  100000 jets     7.6s   13137 jets/s
+  [ 27/50] tfl_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] tfl_026.h5  100000 jets     7.5s   13311 jets/s
+  [ 28/50] tfl_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] tfl_027.h5  100000 jets     7.7s   12961 jets/s
+  [ 29/50] tfl_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] tfl_028.h5  100000 jets     7.6s   13074 jets/s
+  [ 30/50] tfl_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] tfl_029.h5  100000 jets     7.8s   12871 jets/s
+  [ 31/50] tfl_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] tfl_030.h5  100000 jets     7.5s   13357 jets/s
+  [ 32/50] tfl_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] tfl_031.h5  100000 jets     7.5s   13245 jets/s
+  [ 33/50] tfl_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] tfl_032.h5  100000 jets     7.7s   12961 jets/s
+  [ 34/50] tfl_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] tfl_033.h5  100000 jets     7.7s   13048 jets/s
+  [ 35/50] tfl_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] tfl_034.h5  100000 jets     7.7s   12957 jets/s
+  [ 36/50] tfl_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] tfl_035.h5  100000 jets     8.1s   12291 jets/s
+  [ 37/50] tfl_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] tfl_036.h5  100000 jets     7.9s   12592 jets/s
+  [ 38/50] tfl_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] tfl_037.h5  100000 jets     8.2s   12237 jets/s
+  [ 39/50] tfl_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] tfl_038.h5  100000 jets     8.1s   12318 jets/s
+  [ 40/50] tfl_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] tfl_039.h5  100000 jets     8.1s   12371 jets/s
+  [ 41/50] tfl_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] tfl_040.h5  100000 jets     8.2s   12175 jets/s
+  [ 42/50] tfl_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] tfl_041.h5  100000 jets     8.3s   12030 jets/s
+  [ 43/50] tfl_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] tfl_042.h5  100000 jets     8.4s   11881 jets/s
+  [ 44/50] tfl_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] tfl_043.h5  100000 jets     8.6s   11629 jets/s
+  [ 45/50] tfl_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] tfl_044.h5  100000 jets     8.6s   11590 jets/s
+  [ 46/50] tfl_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] tfl_045.h5  100000 jets     8.5s   11770 jets/s
+  [ 47/50] tfl_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] tfl_046.h5  100000 jets     8.6s   11568 jets/s
+  [ 48/50] tfl_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] tfl_047.h5  100000 jets     8.6s   11619 jets/s
+  [ 49/50] tfl_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] tfl_048.h5  100000 jets     8.5s   11825 jets/s
+  [ 50/50] tfl_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] tfl_049.h5  100000 jets     8.9s   11281 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - tfl: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.078806                 2.28%
+Tau2_wta              0.033256                 1.95%
+Tau3_wta              0.021532                 1.81%
+Tau4_wta              0.016684                 1.70%
+Split12                  54136                 2.08%
+Split23                  14045                 2.11%
+ECF1                1.2584e+06                 1.40%
+ECF2                6.4185e+10                 2.65%
+ECF3                3.7224e+14                 5.56%
+C2                     0.10178                 1.93%
+D2                      1.7076                 0.69%
+L2                     0.20942                 0.82%
+L3                    0.070046                 0.85%
+Qw                       42840                 1.44%
+ThrustMaj               0.8754                 0.21%
+
+median constituents  48
+signal fraction      18.46%
+non-finite values    4
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+tfj: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\tfj
+==============================================================================
+  [  1/50] tfj_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] tfj_000.h5  100000 jets     9.1s   10941 jets/s
+  [  2/50] tfj_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] tfj_001.h5  100000 jets     8.9s   11292 jets/s
+  [  3/50] tfj_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] tfj_002.h5  100000 jets     9.4s   10638 jets/s
+  [  4/50] tfj_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] tfj_003.h5  100000 jets    10.0s   10032 jets/s
+  [  5/50] tfj_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] tfj_004.h5  100000 jets     9.2s   10892 jets/s
+  [  6/50] tfj_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] tfj_005.h5  100000 jets     8.7s   11528 jets/s
+  [  7/50] tfj_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] tfj_006.h5  100000 jets     7.8s   12841 jets/s
+  [  8/50] tfj_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] tfj_007.h5  100000 jets     7.9s   12670 jets/s
+  [  9/50] tfj_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] tfj_008.h5  100000 jets     8.0s   12500 jets/s
+  [ 10/50] tfj_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] tfj_009.h5  100000 jets     8.0s   12451 jets/s
+  [ 11/50] tfj_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] tfj_010.h5  100000 jets     9.4s   10684 jets/s
+  [ 12/50] tfj_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] tfj_011.h5  100000 jets     9.1s   10945 jets/s
+  [ 13/50] tfj_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] tfj_012.h5  100000 jets     8.7s   11460 jets/s
+  [ 14/50] tfj_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] tfj_013.h5  100000 jets     8.6s   11577 jets/s
+  [ 15/50] tfj_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] tfj_014.h5  100000 jets     8.8s   11421 jets/s
+  [ 16/50] tfj_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] tfj_015.h5  100000 jets     8.7s   11479 jets/s
+  [ 17/50] tfj_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] tfj_016.h5  100000 jets     8.9s   11200 jets/s
+  [ 18/50] tfj_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] tfj_017.h5  100000 jets     8.9s   11221 jets/s
+  [ 19/50] tfj_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] tfj_018.h5  100000 jets     8.7s   11522 jets/s
+  [ 20/50] tfj_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] tfj_019.h5  100000 jets     8.9s   11178 jets/s
+  [ 21/50] tfj_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] tfj_020.h5  100000 jets     8.8s   11404 jets/s
+  [ 22/50] tfj_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] tfj_021.h5  100000 jets     8.7s   11486 jets/s
+  [ 23/50] tfj_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] tfj_022.h5  100000 jets     8.9s   11189 jets/s
+  [ 24/50] tfj_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] tfj_023.h5  100000 jets     8.9s   11288 jets/s
+  [ 25/50] tfj_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] tfj_024.h5  100000 jets     8.7s   11523 jets/s
+  [ 26/50] tfj_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] tfj_025.h5  100000 jets     9.0s   11096 jets/s
+  [ 27/50] tfj_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] tfj_026.h5  100000 jets     8.6s   11635 jets/s
+  [ 28/50] tfj_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] tfj_027.h5  100000 jets     9.1s   10939 jets/s
+  [ 29/50] tfj_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] tfj_028.h5  100000 jets     8.9s   11298 jets/s
+  [ 30/50] tfj_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] tfj_029.h5  100000 jets     8.8s   11373 jets/s
+  [ 31/50] tfj_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] tfj_030.h5  100000 jets     9.3s   10730 jets/s
+  [ 32/50] tfj_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] tfj_031.h5  100000 jets     8.8s   11361 jets/s
+  [ 33/50] tfj_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] tfj_032.h5  100000 jets     9.1s   10947 jets/s
+  [ 34/50] tfj_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] tfj_033.h5  100000 jets     8.8s   11360 jets/s
+  [ 35/50] tfj_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] tfj_034.h5  100000 jets     9.1s   10964 jets/s
+  [ 36/50] tfj_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] tfj_035.h5  100000 jets     8.9s   11208 jets/s
+  [ 37/50] tfj_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] tfj_036.h5  100000 jets     8.3s   12024 jets/s
+  [ 38/50] tfj_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] tfj_037.h5  100000 jets     8.0s   12564 jets/s
+  [ 39/50] tfj_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] tfj_038.h5  100000 jets     8.1s   12303 jets/s
+  [ 40/50] tfj_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] tfj_039.h5  100000 jets     8.5s   11702 jets/s
+  [ 41/50] tfj_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] tfj_040.h5  100000 jets     8.6s   11604 jets/s
+  [ 42/50] tfj_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] tfj_041.h5  100000 jets     7.7s   12935 jets/s
+  [ 43/50] tfj_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] tfj_042.h5  100000 jets     7.7s   12932 jets/s
+  [ 44/50] tfj_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] tfj_043.h5  100000 jets     8.7s   11461 jets/s
+  [ 45/50] tfj_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] tfj_044.h5  100000 jets     8.6s   11623 jets/s
+  [ 46/50] tfj_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] tfj_045.h5  100000 jets     8.3s   12109 jets/s
+  [ 47/50] tfj_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] tfj_046.h5  100000 jets     8.5s   11809 jets/s
+  [ 48/50] tfj_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] tfj_047.h5  100000 jets     8.4s   11878 jets/s
+  [ 49/50] tfj_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] tfj_048.h5  100000 jets     8.4s   11967 jets/s
+  [ 50/50] tfj_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] tfj_049.h5  100000 jets     8.7s   11516 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - tfj: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080734                 1.88%
+Tau2_wta              0.034905                 1.83%
+Tau3_wta              0.021667                 1.93%
+Tau4_wta              0.016526                 2.06%
+Split12                  61252                 1.22%
+Split23                  17142                 2.08%
+ECF1                1.3234e+06                 1.49%
+ECF2                7.7593e+10                 2.39%
+ECF3                5.1164e+14                 3.90%
+C2                     0.10087                 1.69%
+D2                      1.6594                 0.86%
+L2                     0.21651                 0.71%
+L3                    0.073447                 0.99%
+Qw                       49296                 1.44%
+ThrustMaj              0.86375                 0.29%
+
+median constituents  49
+signal fraction      31.98%
+non-finite values    17
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+bias: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\bias
+==============================================================================
+  [  1/50] bias_000.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  1/50] bias_000.h5  100000 jets     9.0s   11165 jets/s
+  [  2/50] bias_001.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  2/50] bias_001.h5  100000 jets     8.8s   11337 jets/s
+  [  3/50] bias_002.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  3/50] bias_002.h5  100000 jets     8.8s   11333 jets/s
+  [  4/50] bias_003.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  4/50] bias_003.h5  100000 jets     8.4s   11954 jets/s
+  [  5/50] bias_004.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  5/50] bias_004.h5  100000 jets     8.2s   12171 jets/s
+  [  6/50] bias_005.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  6/50] bias_005.h5  100000 jets     8.2s   12121 jets/s
+  [  7/50] bias_006.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  7/50] bias_006.h5  100000 jets     8.1s   12326 jets/s
+  [  8/50] bias_007.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  8/50] bias_007.h5  100000 jets     8.1s   12336 jets/s
+  [  9/50] bias_008.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [  9/50] bias_008.h5  100000 jets     8.0s   12576 jets/s
+  [ 10/50] bias_009.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 10/50] bias_009.h5  100000 jets     8.0s   12453 jets/s
+  [ 11/50] bias_010.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 11/50] bias_010.h5  100000 jets     9.0s   11075 jets/s
+  [ 12/50] bias_011.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 12/50] bias_011.h5  100000 jets     9.4s   10624 jets/s
+  [ 13/50] bias_012.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 13/50] bias_012.h5  100000 jets     9.1s   11013 jets/s
+  [ 14/50] bias_013.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 14/50] bias_013.h5  100000 jets     9.0s   11158 jets/s
+  [ 15/50] bias_014.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 15/50] bias_014.h5  100000 jets     8.7s   11473 jets/s
+  [ 16/50] bias_015.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 16/50] bias_015.h5  100000 jets     8.6s   11632 jets/s
+  [ 17/50] bias_016.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 17/50] bias_016.h5  100000 jets     8.6s   11635 jets/s
+  [ 18/50] bias_017.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 18/50] bias_017.h5  100000 jets     8.3s   12022 jets/s
+  [ 19/50] bias_018.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 19/50] bias_018.h5  100000 jets     8.4s   11869 jets/s
+  [ 20/50] bias_019.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 20/50] bias_019.h5  100000 jets     8.2s   12229 jets/s
+  [ 21/50] bias_020.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 21/50] bias_020.h5  100000 jets     8.3s   12081 jets/s
+  [ 22/50] bias_021.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 22/50] bias_021.h5  100000 jets     8.0s   12507 jets/s
+  [ 23/50] bias_022.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 23/50] bias_022.h5  100000 jets     8.0s   12498 jets/s
+  [ 24/50] bias_023.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 24/50] bias_023.h5  100000 jets     8.0s   12460 jets/s
+  [ 25/50] bias_024.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 25/50] bias_024.h5  100000 jets     8.0s   12578 jets/s
+  [ 26/50] bias_025.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 26/50] bias_025.h5  100000 jets     7.9s   12586 jets/s
+  [ 27/50] bias_026.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 27/50] bias_026.h5  100000 jets     8.2s   12123 jets/s
+  [ 28/50] bias_027.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 28/50] bias_027.h5  100000 jets     7.6s   13115 jets/s
+  [ 29/50] bias_028.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 29/50] bias_028.h5  100000 jets     8.0s   12543 jets/s
+  [ 30/50] bias_029.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 30/50] bias_029.h5  100000 jets     7.1s   14008 jets/s
+  [ 31/50] bias_030.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 31/50] bias_030.h5  100000 jets     7.7s   12991 jets/s
+  [ 32/50] bias_031.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 32/50] bias_031.h5  100000 jets     8.2s   12245 jets/s
+  [ 33/50] bias_032.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 33/50] bias_032.h5  100000 jets     7.8s   12747 jets/s
+  [ 34/50] bias_033.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 34/50] bias_033.h5  100000 jets     7.7s   12912 jets/s
+  [ 35/50] bias_034.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 35/50] bias_034.h5  100000 jets     7.9s   12631 jets/s
+  [ 36/50] bias_035.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 36/50] bias_035.h5  100000 jets     8.3s   12120 jets/s
+  [ 37/50] bias_036.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 37/50] bias_036.h5  100000 jets     8.1s   12369 jets/s
+  [ 38/50] bias_037.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 38/50] bias_037.h5  100000 jets     8.0s   12466 jets/s
+  [ 39/50] bias_038.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 39/50] bias_038.h5  100000 jets     8.4s   11954 jets/s
+  [ 40/50] bias_039.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 40/50] bias_039.h5  100000 jets     8.3s   11989 jets/s
+  [ 41/50] bias_040.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 41/50] bias_040.h5  100000 jets     8.5s   11830 jets/s
+  [ 42/50] bias_041.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 42/50] bias_041.h5  100000 jets     8.6s   11695 jets/s
+  [ 43/50] bias_042.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 43/50] bias_042.h5  100000 jets     8.5s   11828 jets/s
+  [ 44/50] bias_043.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 44/50] bias_043.h5  100000 jets     9.0s   11064 jets/s
+  [ 45/50] bias_044.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 45/50] bias_044.h5  100000 jets     9.0s   11168 jets/s
+  [ 46/50] bias_045.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 46/50] bias_045.h5  100000 jets     9.0s   11154 jets/s
+  [ 47/50] bias_046.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 47/50] bias_046.h5  100000 jets     8.9s   11246 jets/s
+  [ 48/50] bias_047.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 48/50] bias_047.h5  100000 jets     8.7s   11519 jets/s
+  [ 49/50] bias_048.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 49/50] bias_048.h5  100000 jets     8.7s   11435 jets/s
+  [ 50/50] bias_049.h5  written by code 0d53c1d8, this is c28a2625 - recomputing
+  [ 50/50] bias_049.h5  100000 jets     8.5s   11829 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - bias: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080463                 1.60%
+Tau2_wta                 0.036                 1.68%
+Tau3_wta              0.021085                 1.53%
+Tau4_wta              0.015757                 1.69%
+Split12                  70888                 1.08%
+Split23                  23900                 2.19%
+ECF1                1.5039e+06                 1.05%
+ECF2                1.0562e+11                 2.38%
+ECF3                7.0819e+14                 1.99%
+C2                    0.097932                 1.70%
+D2                      1.6187                 0.71%
+L2                      0.2247                 0.49%
+L3                    0.077311                 1.02%
+Qw                       62277                 1.07%
+ThrustMaj              0.84562                 0.20%
+
+median constituents  50
+signal fraction      51.96%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+ttbar_pythia: 2 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\ttbar_pythia
+==============================================================================
+  [  1/2] ttbar_pythia_000.h5  100000 jets    10.4s    9635 jets/s
+  [  2/2] ttbar_pythia_001.h5  93792 jets     9.6s    9786 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - ttbar_pythia: 2 files, 193,792 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta               0.37137                 0.01%
+Tau2_wta               0.18248                 0.19%
+Tau3_wta               0.09684                 0.07%
+Tau4_wta              0.066031                 0.07%
+Split12                  99074                 0.24%
+Split23                  44204                 0.27%
+ECF1                4.2811e+05                 0.12%
+ECF2                 4.409e+10                 0.21%
+ECF3                1.5347e+15                 0.09%
+C2                     0.34175                 0.03%
+D2                      1.3567                 0.03%
+L2                     0.26183                 0.20%
+L3                     0.11142                 0.10%
+Qw                       75702                 0.21%
+ThrustMaj              0.78095                 0.09%
+
+median constituents  68
+signal fraction      100.00%
+non-finite values    0
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+
+==============================================================================
+ttbar_herwig: 2 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\ttbar_herwig
+==============================================================================
+  [  1/2] ttbar_herwig_000.h5  100000 jets    11.1s    9026 jets/s
+  [  2/2] ttbar_herwig_001.h5  80811 jets     9.1s    8889 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - ttbar_herwig: 2 files, 180,811 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta               0.37434                 0.09%
+Tau2_wta               0.18673                 0.25%
+Tau3_wta               0.10298                 0.09%
+Tau4_wta              0.071962                 0.15%
+Split12                  99163                 0.09%
+Split23                  44069                 0.15%
+ECF1                4.2842e+05                 0.03%
+ECF2                4.4532e+10                 0.03%
+ECF3                1.5909e+15                 0.24%
+C2                     0.34734                 0.06%
+D2                      1.3675                 0.10%
+L2                     0.26637                 0.13%
+L3                     0.11335                 0.08%
+Qw                       76562                 0.10%
+ThrustMaj               0.7788                 0.09%
+
+median constituents  71
+signal fraction      100.00%
+non-finite values    0
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+
+==============================================================================
+cluster: 51 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\cluster
+==============================================================================
+  [  1/51] cluster_000.h5  100000 jets     7.5s   13281 jets/s
+  [  2/51] cluster_001.h5  100000 jets     7.8s   12878 jets/s
+  [  3/51] cluster_002.h5  100000 jets     8.0s   12496 jets/s
+  [  4/51] cluster_003.h5  100000 jets     7.9s   12616 jets/s
+  [  5/51] cluster_004.h5  100000 jets     7.8s   12811 jets/s
+  [  6/51] cluster_005.h5  100000 jets     7.0s   14253 jets/s
+  [  7/51] cluster_006.h5  100000 jets     7.4s   13576 jets/s
+  [  8/51] cluster_007.h5  100000 jets     7.1s   14026 jets/s
+  [  9/51] cluster_008.h5  100000 jets     7.9s   12613 jets/s
+  [ 10/51] cluster_009.h5  100000 jets     8.2s   12186 jets/s
+  [ 11/51] cluster_010.h5  100000 jets     8.1s   12335 jets/s
+  [ 12/51] cluster_011.h5  100000 jets     8.1s   12396 jets/s
+  [ 13/51] cluster_012.h5  100000 jets     7.7s   12920 jets/s
+  [ 14/51] cluster_013.h5  100000 jets     7.7s   12934 jets/s
+  [ 15/51] cluster_014.h5  100000 jets     7.7s   12941 jets/s
+  [ 16/51] cluster_015.h5  100000 jets     7.6s   13220 jets/s
+  [ 17/51] cluster_016.h5  100000 jets     7.8s   12773 jets/s
+  [ 18/51] cluster_017.h5  100000 jets     7.4s   13464 jets/s
+  [ 19/51] cluster_018.h5  100000 jets     7.9s   12691 jets/s
+  [ 20/51] cluster_019.h5  100000 jets     7.5s   13416 jets/s
+  [ 21/51] cluster_020.h5  100000 jets     6.8s   14631 jets/s
+  [ 22/51] cluster_021.h5  100000 jets     7.6s   13163 jets/s
+  [ 23/51] cluster_022.h5  100000 jets     7.5s   13341 jets/s
+  [ 24/51] cluster_023.h5  100000 jets     7.5s   13378 jets/s
+  [ 25/51] cluster_024.h5  100000 jets     7.5s   13374 jets/s
+  [ 26/51] cluster_025.h5  100000 jets     7.7s   13054 jets/s
+  [ 27/51] cluster_026.h5  100000 jets     8.4s   11939 jets/s
+  [ 28/51] cluster_027.h5  100000 jets     8.3s   11991 jets/s
+  [ 29/51] cluster_028.h5  100000 jets     8.0s   12452 jets/s
+  [ 30/51] cluster_029.h5  100000 jets     7.7s   13043 jets/s
+  [ 31/51] cluster_030.h5  100000 jets     7.7s   12996 jets/s
+  [ 32/51] cluster_031.h5  100000 jets     7.4s   13430 jets/s
+  [ 33/51] cluster_032.h5  100000 jets     7.4s   13481 jets/s
+  [ 34/51] cluster_033.h5  100000 jets     7.7s   13067 jets/s
+  [ 35/51] cluster_034.h5  100000 jets     7.2s   13798 jets/s
+  [ 36/51] cluster_035.h5  100000 jets     7.3s   13636 jets/s
+  [ 37/51] cluster_036.h5  100000 jets     7.5s   13263 jets/s
+  [ 38/51] cluster_037.h5  100000 jets     7.5s   13266 jets/s
+  [ 39/51] cluster_038.h5  100000 jets     7.7s   12967 jets/s
+  [ 40/51] cluster_039.h5  100000 jets     7.6s   13114 jets/s
+  [ 41/51] cluster_040.h5  100000 jets     7.7s   13065 jets/s
+  [ 42/51] cluster_041.h5  100000 jets     7.8s   12781 jets/s
+  [ 43/51] cluster_042.h5  100000 jets     7.8s   12802 jets/s
+  [ 44/51] cluster_043.h5  100000 jets     7.8s   12795 jets/s
+  [ 45/51] cluster_044.h5  100000 jets     7.9s   12699 jets/s
+  [ 46/51] cluster_045.h5  100000 jets     7.6s   13104 jets/s
+  [ 47/51] cluster_046.h5  100000 jets     7.6s   13165 jets/s
+  [ 48/51] cluster_047.h5  100000 jets     7.7s   13037 jets/s
+  [ 49/51] cluster_048.h5  100000 jets     8.1s   12322 jets/s
+  [ 50/51] cluster_049.h5  100000 jets     7.9s   12649 jets/s
+  [ 51/51] cluster_050.h5  4 jets     0.1s      28 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - cluster: 51 files, 5,000,004 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta               0.07487                 2.02%
+Tau2_wta              0.029928                 8.50%
+Tau3_wta              0.020371                 4.64%
+Tau4_wta              0.015904                 1.69%
+Split12                  46518                37.10%
+Split23                  11918                43.02%
+ECF1                1.1401e+06                43.89%
+ECF2                5.3293e+10                72.31%
+ECF3                2.4974e+14                68.54%
+C2                     0.10133                38.18%
+D2                      1.7654                32.22%
+L2                     0.19193                 6.93%
+L3                    0.062966                 9.01%
+Qw                       37395                41.09%
+ThrustMaj              0.89462                 1.02%
+
+median constituents  47
+signal fraction      0.00%
+non-finite values    2
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+string: 51 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\string
+==============================================================================
+  [  1/51] string_000.h5  100000 jets     7.9s   12623 jets/s
+  [  2/51] string_001.h5  100000 jets     7.7s   12930 jets/s
+  [  3/51] string_002.h5  100000 jets     7.5s   13334 jets/s
+  [  4/51] string_003.h5  100000 jets     7.6s   13193 jets/s
+  [  5/51] string_004.h5  100000 jets     7.9s   12735 jets/s
+  [  6/51] string_005.h5  100000 jets     7.9s   12592 jets/s
+  [  7/51] string_006.h5  100000 jets     7.9s   12599 jets/s
+  [  8/51] string_007.h5  100000 jets     8.1s   12372 jets/s
+  [  9/51] string_008.h5  100000 jets     8.0s   12521 jets/s
+  [ 10/51] string_009.h5  100000 jets     8.1s   12353 jets/s
+  [ 11/51] string_010.h5  100000 jets     8.8s   11318 jets/s
+  [ 12/51] string_011.h5  100000 jets     8.2s   12262 jets/s
+  [ 13/51] string_012.h5  100000 jets     8.1s   12345 jets/s
+  [ 14/51] string_013.h5  100000 jets     8.1s   12351 jets/s
+  [ 15/51] string_014.h5  100000 jets     7.8s   12844 jets/s
+  [ 16/51] string_015.h5  100000 jets     7.7s   12981 jets/s
+  [ 17/51] string_016.h5  100000 jets     7.7s   12965 jets/s
+  [ 18/51] string_017.h5  100000 jets     7.9s   12651 jets/s
+  [ 19/51] string_018.h5  100000 jets     7.6s   13138 jets/s
+  [ 20/51] string_019.h5  100000 jets     7.8s   12817 jets/s
+  [ 21/51] string_020.h5  100000 jets     7.9s   12652 jets/s
+  [ 22/51] string_021.h5  100000 jets     7.9s   12661 jets/s
+  [ 23/51] string_022.h5  100000 jets     8.6s   11580 jets/s
+  [ 24/51] string_023.h5  100000 jets     9.0s   11130 jets/s
+  [ 25/51] string_024.h5  100000 jets     8.8s   11346 jets/s
+  [ 26/51] string_025.h5  100000 jets     8.4s   11841 jets/s
+  [ 27/51] string_026.h5  100000 jets     8.7s   11460 jets/s
+  [ 28/51] string_027.h5  100000 jets     8.7s   11503 jets/s
+  [ 29/51] string_028.h5  100000 jets     8.7s   11433 jets/s
+  [ 30/51] string_029.h5  100000 jets     8.5s   11788 jets/s
+  [ 31/51] string_030.h5  100000 jets     8.7s   11491 jets/s
+  [ 32/51] string_031.h5  100000 jets     8.5s   11775 jets/s
+  [ 33/51] string_032.h5  100000 jets     8.1s   12296 jets/s
+  [ 34/51] string_033.h5  100000 jets     7.9s   12609 jets/s
+  [ 35/51] string_034.h5  100000 jets     8.4s   11900 jets/s
+  [ 36/51] string_035.h5  100000 jets     8.2s   12132 jets/s
+  [ 37/51] string_036.h5  100000 jets     8.1s   12361 jets/s
+  [ 38/51] string_037.h5  100000 jets     8.3s   11978 jets/s
+  [ 39/51] string_038.h5  100000 jets     8.6s   11599 jets/s
+  [ 40/51] string_039.h5  100000 jets     8.6s   11651 jets/s
+  [ 41/51] string_040.h5  100000 jets     8.4s   11836 jets/s
+  [ 42/51] string_041.h5  100000 jets     8.5s   11826 jets/s
+  [ 43/51] string_042.h5  100000 jets     8.4s   11884 jets/s
+  [ 44/51] string_043.h5  100000 jets     8.1s   12315 jets/s
+  [ 45/51] string_044.h5  100000 jets     8.3s   12024 jets/s
+  [ 46/51] string_045.h5  100000 jets     8.3s   12063 jets/s
+  [ 47/51] string_046.h5  100000 jets     8.1s   12318 jets/s
+  [ 48/51] string_047.h5  100000 jets     8.1s   12384 jets/s
+  [ 49/51] string_048.h5  100000 jets     8.1s   12292 jets/s
+  [ 50/51] string_049.h5  100000 jets     8.4s   11973 jets/s
+  [ 51/51] string_050.h5  1 jets     0.1s       8 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - string: 51 files, 5,000,001 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.060975                63.82%
+Tau2_wta              0.023989                72.49%
+Tau3_wta              0.016259               101.33%
+Tau4_wta              0.012691               103.69%
+Split12                  49966                12.48%
+Split23                  12514                27.56%
+ECF1                1.5314e+06                47.49%
+ECF2                7.4988e+10                28.60%
+ECF3                3.1635e+14               110.14%
+C2                      0.0858               110.39%
+D2                        1.81                20.57%
+L2                     0.18524                15.28%
+L3                    0.059413                15.03%
+Qw                       41062                15.05%
+ThrustMaj              0.89971                 5.28%
+
+median constituents  46
+signal fraction      0.00%
+non-finite values    5
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+angular: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\angular
+==============================================================================
+  [  1/50] angular_000.h5  100000 jets     7.4s   13445 jets/s
+  [  2/50] angular_001.h5  100000 jets     7.6s   13168 jets/s
+  [  3/50] angular_002.h5  100000 jets     7.7s   13068 jets/s
+  [  4/50] angular_003.h5  100000 jets     7.5s   13398 jets/s
+  [  5/50] angular_004.h5  100000 jets     7.4s   13503 jets/s
+  [  6/50] angular_005.h5  100000 jets     7.3s   13651 jets/s
+  [  7/50] angular_006.h5  100000 jets     7.3s   13776 jets/s
+  [  8/50] angular_007.h5  100000 jets     7.3s   13657 jets/s
+  [  9/50] angular_008.h5  100000 jets     7.0s   14333 jets/s
+  [ 10/50] angular_009.h5  100000 jets     6.8s   14793 jets/s
+  [ 11/50] angular_010.h5  100000 jets     7.2s   13900 jets/s
+  [ 12/50] angular_011.h5  100000 jets     7.4s   13507 jets/s
+  [ 13/50] angular_012.h5  100000 jets     7.3s   13715 jets/s
+  [ 14/50] angular_013.h5  100000 jets     7.5s   13310 jets/s
+  [ 15/50] angular_014.h5  100000 jets     7.6s   13229 jets/s
+  [ 16/50] angular_015.h5  100000 jets     7.7s   13045 jets/s
+  [ 17/50] angular_016.h5  100000 jets     7.6s   13166 jets/s
+  [ 18/50] angular_017.h5  100000 jets     7.5s   13269 jets/s
+  [ 19/50] angular_018.h5  100000 jets     7.4s   13543 jets/s
+  [ 20/50] angular_019.h5  100000 jets     7.5s   13310 jets/s
+  [ 21/50] angular_020.h5  100000 jets     7.2s   13852 jets/s
+  [ 22/50] angular_021.h5  100000 jets     7.2s   13883 jets/s
+  [ 23/50] angular_022.h5  100000 jets     7.6s   13119 jets/s
+  [ 24/50] angular_023.h5  100000 jets     7.1s   14056 jets/s
+  [ 25/50] angular_024.h5  100000 jets     7.0s   14297 jets/s
+  [ 26/50] angular_025.h5  100000 jets     7.2s   13881 jets/s
+  [ 27/50] angular_026.h5  100000 jets     7.3s   13762 jets/s
+  [ 28/50] angular_027.h5  100000 jets     7.1s   14020 jets/s
+  [ 29/50] angular_028.h5  100000 jets     7.3s   13659 jets/s
+  [ 30/50] angular_029.h5  100000 jets     7.6s   13146 jets/s
+  [ 31/50] angular_030.h5  100000 jets     7.5s   13345 jets/s
+  [ 32/50] angular_031.h5  100000 jets     7.3s   13670 jets/s
+  [ 33/50] angular_032.h5  100000 jets     6.9s   14488 jets/s
+  [ 34/50] angular_033.h5  100000 jets     6.7s   14947 jets/s
+  [ 35/50] angular_034.h5  100000 jets     6.5s   15334 jets/s
+  [ 36/50] angular_035.h5  100000 jets     6.4s   15583 jets/s
+  [ 37/50] angular_036.h5  100000 jets     7.0s   14341 jets/s
+  [ 38/50] angular_037.h5  100000 jets     6.4s   15628 jets/s
+  [ 39/50] angular_038.h5  100000 jets     6.3s   15786 jets/s
+  [ 40/50] angular_039.h5  100000 jets     6.2s   16239 jets/s
+  [ 41/50] angular_040.h5  100000 jets     6.1s   16462 jets/s
+  [ 42/50] angular_041.h5  100000 jets     6.2s   16211 jets/s
+  [ 43/50] angular_042.h5  100000 jets     6.0s   16582 jets/s
+  [ 44/50] angular_043.h5  100000 jets     6.2s   16204 jets/s
+  [ 45/50] angular_044.h5  100000 jets     6.1s   16492 jets/s
+  [ 46/50] angular_045.h5  100000 jets     6.3s   15829 jets/s
+  [ 47/50] angular_046.h5  100000 jets     6.2s   16013 jets/s
+  [ 48/50] angular_047.h5  100000 jets     6.5s   15400 jets/s
+  [ 49/50] angular_048.h5  100000 jets     6.7s   14973 jets/s
+  [ 50/50] angular_049.h5  0 jets     0.1s       0 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - angular: 50 files, 4,900,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta                   nan                  nan%
+Tau2_wta                   nan                  nan%
+Tau3_wta                   nan                  nan%
+Tau4_wta                   nan                  nan%
+Split12                    nan                  nan%
+Split23                    nan                  nan%
+ECF1                       nan                  nan%
+ECF2                       nan                  nan%
+ECF3                       nan                  nan%
+C2                         nan                  nan%
+D2                         nan                  nan%
+L2                         nan                  nan%
+L3                         nan                  nan%
+Qw                         nan                  nan%
+ThrustMaj                  nan                  nan%

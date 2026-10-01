@@ -1,0 +1,563 @@
+# ATLAS 80030 - produce_all round 2 - 2026-09-08 12:08:58
+# code fingerprint c28a262540824e9db90f34c421f10c70
+
+==============================================================================
+train_nominal: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\train_nominal
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - train_nominal: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080778                 1.60%
+Tau2_wta              0.036081                 1.73%
+Tau3_wta              0.021256                 2.04%
+Tau4_wta              0.015905                 2.29%
+Split12                  70142                 1.72%
+Split23                  23314                 1.80%
+ECF1                1.4728e+06                 1.97%
+ECF2                1.0295e+11                 2.15%
+ECF3                 6.948e+14                 2.73%
+C2                    0.098705                 1.63%
+D2                      1.6208                 0.67%
+L2                     0.22431                 0.47%
+L3                    0.077067                 0.68%
+Qw                       61260                 1.24%
+ThrustMaj              0.84691                 0.19%
+
+median constituents  50
+signal fraction      50.49%
+non-finite values    3
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+test_nominal: 104 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\test_nominal
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - test_nominal: 104 files, 10,306,813 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080883                 3.95%
+Tau2_wta              0.036117                 4.42%
+Tau3_wta              0.021263                 4.21%
+Tau4_wta              0.015926                 5.78%
+Split12                  70204                 1.76%
+Split23                  23359                 3.29%
+ECF1                1.4735e+06                 1.99%
+ECF2                1.0289e+11                 2.57%
+ECF3                6.9503e+14                 2.47%
+C2                    0.098716                 1.88%
+D2                      1.6204                 1.94%
+L2                     0.22433                 0.66%
+L3                    0.077105                 0.95%
+Qw                       61318                 1.79%
+ThrustMaj              0.84681                 0.37%
+
+median constituents  50
+signal fraction      50.52%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+esup: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\esup
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - esup: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.079432                 1.22%
+Tau2_wta              0.035386                 1.84%
+Tau3_wta              0.020685                 1.59%
+Tau4_wta               0.01545                 1.52%
+Split12                  75146                 1.08%
+Split23                  25027                 1.78%
+ECF1                1.6121e+06                 1.13%
+ECF2                1.2015e+11                 1.96%
+ECF3                8.4944e+14                 1.84%
+C2                    0.097509                 1.51%
+D2                      1.6281                 0.67%
+L2                     0.22354                 0.52%
+L3                    0.076339                 0.74%
+Qw                       65828                 1.11%
+ThrustMaj              0.84678                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+esdown: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\esdown
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - esdown: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.081423                 1.41%
+Tau2_wta              0.036523                 1.25%
+Tau3_wta               0.02144                 1.36%
+Tau4_wta              0.016044                 1.30%
+Split12                  66540                 1.10%
+Split23                  22711                 1.53%
+ECF1                1.3973e+06                 0.97%
+ECF2                9.2042e+10                 1.80%
+ECF3                5.7957e+14                 1.58%
+C2                    0.098302                 1.54%
+D2                      1.6077                 0.65%
+L2                     0.22579                 0.50%
+L3                    0.078251                 0.70%
+Qw                       58566                 0.93%
+ThrustMaj              0.84465                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+cer: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\cer
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - cer: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080233                 1.20%
+Tau2_wta              0.035859                 1.34%
+Tau3_wta              0.021003                 1.32%
+Tau4_wta              0.015696                 1.11%
+Split12                  70688                 1.12%
+Split23                  23800                 1.43%
+ECF1                1.5029e+06                 1.16%
+ECF2                1.0526e+11                 2.38%
+ECF3                 7.038e+14                 1.98%
+C2                     0.09777                 1.12%
+D2                      1.6185                 0.73%
+L2                     0.22442                 0.54%
+L3                    0.077147                 0.73%
+Qw                       62098                 0.90%
+ThrustMaj              0.84598                 0.26%
+
+median constituents  50
+signal fraction      51.81%
+non-finite values    244
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+cpos: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\cpos
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - cpos: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080373                 1.38%
+Tau2_wta              0.035937                 1.71%
+Tau3_wta              0.021056                 1.61%
+Tau4_wta              0.015737                 1.54%
+Split12                  70867                 1.08%
+Split23                  23909                 1.62%
+ECF1                1.5057e+06                 1.28%
+ECF2                1.0578e+11                 1.79%
+ECF3                7.0832e+14                 1.62%
+C2                    0.097879                 1.16%
+D2                      1.6187                 0.56%
+L2                     0.22464                 0.43%
+L3                     0.07724                 0.76%
+Qw                       62297                 0.96%
+ThrustMaj              0.84577                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+teg: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\teg
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - teg: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.076322                 2.08%
+Tau2_wta              0.032648                 2.08%
+Tau3_wta              0.020222                 2.57%
+Tau4_wta              0.015425                 2.40%
+Split12                  61328                 1.54%
+Split23                  17051                 2.29%
+ECF1                1.4484e+06                 1.60%
+ECF2                8.4902e+10                 2.24%
+ECF3                5.2569e+14                 2.93%
+C2                     0.09655                 2.15%
+D2                      1.6824                 0.90%
+L2                     0.21426                 0.73%
+L3                    0.071827                 0.73%
+Qw                       50094                 1.26%
+ThrustMaj              0.86625                 0.25%
+
+median constituents  49
+signal fraction      30.01%
+non-finite values    2
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+tej: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\tej
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - tej: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.079654                 1.43%
+Tau2_wta               0.03447                 1.54%
+Tau3_wta                0.0214                 1.50%
+Tau4_wta              0.016334                 1.87%
+Split12                  61715                 1.35%
+Split23                  17255                 1.90%
+ECF1                1.3533e+06                 1.07%
+ECF2                8.0307e+10                 2.53%
+ECF3                5.2915e+14                 3.66%
+C2                      0.1005                 1.47%
+D2                      1.6682                 0.89%
+L2                      0.2163                 0.67%
+L3                     0.07304                 1.09%
+Qw                       49934                 1.58%
+ThrustMaj              0.86404                 0.18%
+
+median constituents  49
+signal fraction      31.80%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+tfl: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\tfl
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - tfl: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.078806                 2.28%
+Tau2_wta              0.033256                 1.95%
+Tau3_wta              0.021532                 1.81%
+Tau4_wta              0.016684                 1.70%
+Split12                  54136                 2.08%
+Split23                  14045                 2.11%
+ECF1                1.2584e+06                 1.40%
+ECF2                6.4185e+10                 2.65%
+ECF3                3.7224e+14                 5.56%
+C2                     0.10178                 1.93%
+D2                      1.7076                 0.69%
+L2                     0.20942                 0.82%
+L3                    0.070046                 0.85%
+Qw                       42840                 1.44%
+ThrustMaj               0.8754                 0.21%
+
+median constituents  48
+signal fraction      18.46%
+non-finite values    4
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+tfj: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\tfj
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - tfj: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080734                 1.88%
+Tau2_wta              0.034905                 1.83%
+Tau3_wta              0.021667                 1.93%
+Tau4_wta              0.016526                 2.06%
+Split12                  61252                 1.22%
+Split23                  17142                 2.08%
+ECF1                1.3234e+06                 1.49%
+ECF2                7.7593e+10                 2.39%
+ECF3                5.1164e+14                 3.90%
+C2                     0.10087                 1.69%
+D2                      1.6594                 0.86%
+L2                     0.21651                 0.71%
+L3                    0.073447                 0.99%
+Qw                       49296                 1.44%
+ThrustMaj              0.86375                 0.29%
+
+median constituents  49
+signal fraction      31.98%
+non-finite values    17
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+bias: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\bias
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - bias: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080463                 1.60%
+Tau2_wta                 0.036                 1.68%
+Tau3_wta              0.021085                 1.53%
+Tau4_wta              0.015757                 1.69%
+Split12                  70888                 1.08%
+Split23                  23900                 2.19%
+ECF1                1.5039e+06                 1.05%
+ECF2                1.0562e+11                 2.38%
+ECF3                7.0819e+14                 1.99%
+C2                    0.097932                 1.70%
+D2                      1.6187                 0.71%
+L2                      0.2247                 0.49%
+L3                    0.077311                 1.02%
+Qw                       62277                 1.07%
+ThrustMaj              0.84562                 0.20%
+
+median constituents  50
+signal fraction      51.96%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+ttbar_pythia: 2 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\ttbar_pythia
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - ttbar_pythia: 2 files, 193,792 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta               0.37137                 0.01%
+Tau2_wta               0.18248                 0.19%
+Tau3_wta               0.09684                 0.07%
+Tau4_wta              0.066031                 0.07%
+Split12                  99074                 0.24%
+Split23                  44204                 0.27%
+ECF1                4.2811e+05                 0.12%
+ECF2                 4.409e+10                 0.21%
+ECF3                1.5347e+15                 0.09%
+C2                     0.34175                 0.03%
+D2                      1.3567                 0.03%
+L2                     0.26183                 0.20%
+L3                     0.11142                 0.10%
+Qw                       75702                 0.21%
+ThrustMaj              0.78095                 0.09%
+
+median constituents  68
+signal fraction      100.00%
+non-finite values    0
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+
+==============================================================================
+ttbar_herwig: 2 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\ttbar_herwig
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - ttbar_herwig: 2 files, 180,811 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta               0.37434                 0.09%
+Tau2_wta               0.18673                 0.25%
+Tau3_wta               0.10298                 0.09%
+Tau4_wta              0.071962                 0.15%
+Split12                  99163                 0.09%
+Split23                  44069                 0.15%
+ECF1                4.2842e+05                 0.03%
+ECF2                4.4532e+10                 0.03%
+ECF3                1.5909e+15                 0.24%
+C2                     0.34734                 0.06%
+D2                      1.3675                 0.10%
+L2                     0.26637                 0.13%
+L3                     0.11335                 0.08%
+Qw                       76562                 0.10%
+ThrustMaj               0.7788                 0.09%
+
+median constituents  71
+signal fraction      100.00%
+non-finite values    0
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+
+==============================================================================
+cluster: 51 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\cluster
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - cluster: 51 files, 5,000,004 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta               0.07487                 2.02%
+Tau2_wta              0.029928                 8.50%
+Tau3_wta              0.020371                 4.64%
+Tau4_wta              0.015904                 1.69%
+Split12                  46518                37.10%
+Split23                  11918                43.02%
+ECF1                1.1401e+06                43.89%
+ECF2                5.3293e+10                72.31%
+ECF3                2.4974e+14                68.54%
+C2                     0.10133                38.18%
+D2                      1.7654                32.22%
+L2                     0.19193                 6.93%
+L3                    0.062966                 9.01%
+Qw                       37395                41.09%
+ThrustMaj              0.89462                 1.02%
+
+median constituents  47
+signal fraction      0.00%
+non-finite values    2
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+string: 51 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\string
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - string: 51 files, 5,000,001 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.060975                63.82%
+Tau2_wta              0.023989                72.49%
+Tau3_wta              0.016259               101.33%
+Tau4_wta              0.012691               103.69%
+Split12                  49966                12.48%
+Split23                  12514                27.56%
+ECF1                1.5314e+06                47.49%
+ECF2                7.4988e+10                28.60%
+ECF3                3.1635e+14               110.14%
+C2                      0.0858               110.39%
+D2                        1.81                20.57%
+L2                     0.18524                15.28%
+L3                    0.059413                15.03%
+Qw                       41062                15.05%
+ThrustMaj              0.89971                 5.28%
+
+median constituents  46
+signal fraction      0.00%
+non-finite values    5
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+angular: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\angular
+==============================================================================
+
+------------------------------------------------------------------------------
+SUMMARY - angular: 50 files, 4,900,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta               0.08217                 1.59%
+Tau2_wta              0.033021                 1.33%
+Tau3_wta              0.023197                 1.15%
+Tau4_wta              0.018431                 1.13%
+Split12                  41432                 1.93%
+Split23                  10222                 1.55%
+ECF1                8.0645e+05                 0.62%
+ECF2                3.6075e+10                 1.81%
+ECF3                 1.737e+14                 3.79%
+C2                     0.11209                 0.94%
+D2                       1.746                 0.88%
+L2                     0.19155                 1.08%
+L3                    0.063416                 1.17%
+Qw                       32044                 0.91%
+ThrustMaj              0.89673                 0.20%
+
+median constituents  45
+signal fraction      0.00%
+non-finite values    1
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+*** LOOK AT THIS: more than one code version, or non-finite values present ***
+
+==============================================================================
+dipole: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed\dipole
+==============================================================================
+  [  1/50] dipole_000.h5  100000 jets    36.0s    2779 jets/s
+  [  2/50] dipole_001.h5  100000 jets     6.4s   15616 jets/s
+  [  3/50] dipole_002.h5  100000 jets     6.4s   15511 jets/s
+  [  4/50] dipole_003.h5  100000 jets     6.7s   14996 jets/s
+  [  5/50] dipole_004.h5  100000 jets     6.9s   14503 jets/s
+  [  6/50] dipole_005.h5  100000 jets     7.0s   14342 jets/s
+  [  7/50] dipole_006.h5  100000 jets     6.8s   14634 jets/s
+  [  8/50] dipole_007.h5  100000 jets     6.7s   14924 jets/s
+  [  9/50] dipole_008.h5  100000 jets     6.8s   14720 jets/s
+  [ 10/50] dipole_009.h5  100000 jets     6.8s   14694 jets/s
+  [ 11/50] dipole_010.h5  100000 jets     6.9s   14433 jets/s
+  [ 12/50] dipole_011.h5  100000 jets     7.9s   12651 jets/s
+  [ 13/50] dipole_012.h5  100000 jets     7.8s   12879 jets/s
+  [ 14/50] dipole_013.h5  100000 jets     7.6s   13072 jets/s
+  [ 15/50] dipole_014.h5  100000 jets     7.6s   13215 jets/s
+  [ 16/50] dipole_015.h5  100000 jets     8.1s   12297 jets/s
+  [ 17/50] dipole_016.h5  100000 jets     7.7s   12982 jets/s
+  [ 18/50] dipole_017.h5  100000 jets     7.9s   12595 jets/s
+  [ 19/50] dipole_018.h5  100000 jets     7.9s   12642 jets/s
+  [ 20/50] dipole_019.h5  100000 jets     8.1s   12331 jets/s
+  [ 21/50] dipole_020.h5  100000 jets     8.1s   12311 jets/s
+  [ 22/50] dipole_021.h5  100000 jets     7.5s   13346 jets/s
+  [ 23/50] dipole_022.h5  100000 jets     7.5s   13387 jets/s
+  [ 24/50] dipole_023.h5  100000 jets     7.4s   13520 jets/s
+  [ 25/50] dipole_024.h5  100000 jets     7.3s   13687 jets/s
+  [ 26/50] dipole_025.h5  100000 jets     7.2s   13889 jets/s
+  [ 27/50] dipole_026.h5  100000 jets     7.2s   13922 jets/s
+  [ 28/50] dipole_027.h5  100000 jets     7.1s   14081 jets/s
+  [ 29/50] dipole_028.h5  100000 jets     7.2s   13963 jets/s
+  [ 30/50] dipole_029.h5  100000 jets     7.5s   13421 jets/s
+  [ 31/50] dipole_030.h5  100000 jets     7.7s   12995 jets/s
+  [ 32/50] dipole_031.h5  100000 jets     7.9s   12587 jets/s
+  [ 33/50] dipole_032.h5  100000 jets     7.3s   13686 jets/s
+  [ 34/50] dipole_033.h5  100000 jets     7.3s   13627 jets/s
+  [ 35/50] dipole_034.h5  100000 jets     6.7s   14855 jets/s
+  [ 36/50] dipole_035.h5  100000 jets     7.2s   13823 jets/s
+  [ 37/50] dipole_036.h5  100000 jets     7.2s   13830 jets/s
+  [ 38/50] dipole_037.h5  100000 jets     7.5s   13313 jets/s
+  [ 39/50] dipole_038.h5  100000 jets     9.0s   11079 jets/s
+  [ 40/50] dipole_039.h5  100000 jets     8.7s   11493 jets/s
+  [ 41/50] dipole_040.h5  100000 jets     8.9s   11292 jets/s
+  [ 42/50] dipole_041.h5  100000 jets     8.9s   11239 jets/s
+  [ 43/50] dipole_042.h5  100000 jets     8.5s   11736 jets/s
+  [ 44/50] dipole_043.h5  100000 jets     8.0s   12516 jets/s
+  [ 45/50] dipole_044.h5  100000 jets     8.5s   11725 jets/s
+  [ 46/50] dipole_045.h5  100000 jets     8.1s   12274 jets/s
+  [ 47/50] dipole_046.h5  100000 jets     8.0s   12475 jets/s
+  [ 48/50] dipole_047.h5  100000 jets     7.9s   12579 jets/s
+  [ 49/50] dipole_048.h5  100000 jets     8.0s   12548 jets/s
+  [ 50/50] dipole_049.h5  0 jets     0.1s       0 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - dipole: 50 files, 4,900,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.096695                 2.07%
+Tau2_wta              0.038833                 1.38%
+Tau3_wta              0.026926                 1.36%
+Tau4_wta              0.021351                 1.15%
+Split12                  47803                 1.86%
+Split23                  11898                 1.48%
+ECF1                7.9585e+05                 0.70%
+ECF2                3.9275e+10                 1.91%
+ECF3                2.3211e+14                 4.71%
+C2                     0.12029                 1.39%
+D2                      1.5963                 0.86%
+L2                     0.19525                 0.61%
+L3                    0.069614                 0.77%
+Qw                       34531                 1.23%
+ThrustMaj              0.89653                 0.12%
+
+median constituents  49
+signal fraction      0.00%
+non-finite values    0
+code fingerprints    1  ['c28a262540824e9db90f34c421f10c70']
+
+==============================================================================
+done. cache in D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\hl_recomputed
+==============================================================================

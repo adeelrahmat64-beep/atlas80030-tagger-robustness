@@ -1,0 +1,30 @@
+# ATLAS 80030 - pair_features round 1 - 2026-08-31 22:26:43
+# pair fingerprint 7be1a72a216efdf7e2fdfc82a8ebedcf
+
+==============================================================================
+building nominal key index
+==============================================================================
+  test_nominal   104 files
+  train_nominal   50 files
+  nominal pool: 15,306,813 jets
+
+==============================================================================
+bias: 50 files -> E:\ATLAS_80030_Data\paired\bias_paired.npz
+==============================================================================
+  jets in bias            5,000,000
+  matched to nominal    4,167,067   =  83.341%
+  unmatched               832,933   =  16.659%
+    their n_constit    min=4 median=49 max=200
+    carrying ATLAS -999 sentinel: 0/832933 = 0.0%
+    *** LOOK AT THIS: the unmatched jets are NOT the sentinel jets - investigate before using this output ***
+  from test_nominal    4,167,067
+  dropped non-finite            0
+  written               4,167,067 paired jets
+  signal fraction      62.34%
+  expected floor            99.95%   -> BELOW FLOOR
+  *** LOOK AT THIS: match rate 83.341% is below this dataset's floor of 99.95% - stop and investigate before using this output ***
+  116s -> E:\ATLAS_80030_Data\paired\bias_paired.npz
+
+==============================================================================
+done. paired frames in E:\ATLAS_80030_Data\paired
+==============================================================================

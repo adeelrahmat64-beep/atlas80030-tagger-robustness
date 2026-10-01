@@ -1,0 +1,9 @@
+PAIRED SHAP-DELTA: frozen final 5M XGBoost
+model SHA-256: 63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c
+reconstruction fingerprint: c28a262540824e9db90f34c421f10c70
+
+Outputs retain absolute Delta_SHAP as the primary quantity.
+esup: paired=4,999,999, jointly eligible=4,999,999, match=100.00000%
+esdown: paired=4,999,999, jointly eligible=4,999,999, match=100.00000%
+cpos: paired=4,999,999, jointly eligible=4,999,999, match=100.00000%
+cer: paired=4,995,058, jointly eligible=4,995,058, match=99.90118%

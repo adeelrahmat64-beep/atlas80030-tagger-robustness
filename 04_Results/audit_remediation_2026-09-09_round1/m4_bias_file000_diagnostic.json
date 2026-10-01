@@ -1,0 +1,297 @@
+{
+  "created_timestamp_utc": "2026-09-09T04:13:47.815595+00:00",
+  "classification": "STALE ARTIFACT plus diagnostic premise qualification",
+  "issue": "M-4 bias pairing",
+  "scope": "one bias shard; identity columns only; all test_nominal shards",
+  "bias_file": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\ATLAS_80030_Data\\hl_recomputed\\bias\\bias_000.npz",
+  "bias_file_sha256": "f9cea1e0caf38c500dd3ce2ea1d738dc79328fa983cc4bd053246b2b3ee03713",
+  "diagnostic_source_sha256": "10b7bb350a0fb4dda40e21b5fa4c2b1b4e1150bf8978cd3c605a7af3e4630270",
+  "reconstruction_fingerprint": "c28a262540824e9db90f34c421f10c70",
+  "nominal_files_scanned": 104,
+  "nominal_rows_scanned": 10306813,
+  "bias_rows": 100000,
+  "bias_unique_events": 62793,
+  "nominal_rows_in_common_events": 178895,
+  "exact_key_duplicates": {
+    "bias": 0,
+    "nominal_candidates": 0
+  },
+  "classification_counts": {
+    "exact_event_label_eta_phi_bit_match": 83223,
+    "event_number_absent_from_test_nominal": 12095,
+    "common_event_but_no_exact_key": 4682,
+    "common_event_same_label_but_shifted_axis": 3043,
+    "common_event_without_same_label_candidate": 1639
+  },
+  "percent_of_bias_rows": {
+    "exact_match": 83.223,
+    "event_absent": 12.095,
+    "common_event_no_exact_key": 4.682
+  },
+  "float32_bit_patterns_among_common_unmatched_same_label": {
+    "rows": 3043,
+    "any_candidate_eta_bits_equal": 0,
+    "any_candidate_phi_bits_equal": 0,
+    "nearest_delta_r": {
+      "min": 0.04764177665440196,
+      "median": 1.3835973858875734,
+      "p95": 2.9055143681939657,
+      "max": 4.356542939923613
+    },
+    "nearest_absolute_delta_eta": {
+      "min": 0.0009317472577095032,
+      "median": 0.6719343066215515,
+      "p95": 1.980584192276001,
+      "max": 3.3358449935913086
+    },
+    "nearest_absolute_delta_phi": {
+      "min": 1.3113021850585938e-05,
+      "median": 0.935115858912468,
+      "p95": 2.6822977721691132,
+      "max": 3.134623408317566
+    }
+  },
+  "examples": [
+    {
+      "bias_row": 33,
+      "event": 14104760,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbf33a1f4",
+      "bias_phi_bits_hex": "0x3f266b03",
+      "nearest_nominal_file": "test_nominal_044.npz",
+      "nearest_nominal_row": 57630,
+      "nominal_eta_bits_hex": "0xbebe10fa",
+      "nominal_phi_bits_hex": "0x3ffc63af",
+      "delta_r": 1.3624083712809039
+    },
+    {
+      "bias_row": 40,
+      "event": 16449110,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbf0bd5e7",
+      "bias_phi_bits_hex": "0xc002f94a",
+      "nearest_nominal_file": "test_nominal_002.npz",
+      "nearest_nominal_row": 26864,
+      "nominal_eta_bits_hex": "0xbe5e6d08",
+      "nominal_phi_bits_hex": "0xc033bd43",
+      "delta_r": 0.8299632289822996
+    },
+    {
+      "bias_row": 51,
+      "event": 16544440,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3e34972f",
+      "bias_phi_bits_hex": "0x3f7d55d2",
+      "nearest_nominal_file": "test_nominal_034.npz",
+      "nearest_nominal_row": 92523,
+      "nominal_eta_bits_hex": "0xbf4851c2",
+      "nominal_phi_bits_hex": "0x3f932655",
+      "delta_r": 0.9721158120505264
+    },
+    {
+      "bias_row": 67,
+      "event": 14552190,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3ea54b85",
+      "bias_phi_bits_hex": "0xbea9a2bb",
+      "nearest_nominal_file": "test_nominal_081.npz",
+      "nearest_nominal_row": 610,
+      "nominal_eta_bits_hex": "0x3d75727a",
+      "nominal_phi_bits_hex": "0xbe1ae2f3",
+      "delta_r": 0.31866714877161156
+    },
+    {
+      "bias_row": 98,
+      "event": 14818330,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbeb49ad5",
+      "bias_phi_bits_hex": "0xc0236f48",
+      "nearest_nominal_file": "test_nominal_050.npz",
+      "nearest_nominal_row": 86617,
+      "nominal_eta_bits_hex": "0x3e03fd14",
+      "nominal_phi_bits_hex": "0xbf69363b",
+      "delta_r": 1.7118365934918993
+    },
+    {
+      "bias_row": 112,
+      "event": 16690780,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3ebc9043",
+      "bias_phi_bits_hex": "0xbf172ce6",
+      "nearest_nominal_file": "test_nominal_075.npz",
+      "nearest_nominal_row": 32653,
+      "nominal_eta_bits_hex": "0x3f92b1a3",
+      "nominal_phi_bits_hex": "0xc01c77ce",
+      "delta_r": 2.0107895194489105
+    },
+    {
+      "bias_row": 128,
+      "event": 74501350,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3f16fa71",
+      "bias_phi_bits_hex": "0xc002463c",
+      "nearest_nominal_file": "test_nominal_007.npz",
+      "nearest_nominal_row": 10551,
+      "nominal_eta_bits_hex": "0x3ff2bd3a",
+      "nominal_phi_bits_hex": "0xbf8b73df",
+      "delta_r": 1.6131787546941676
+    },
+    {
+      "bias_row": 141,
+      "event": 14290090,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbfebadad",
+      "bias_phi_bits_hex": "0xc03527fd",
+      "nearest_nominal_file": "test_nominal_086.npz",
+      "nearest_nominal_row": 95527,
+      "nominal_eta_bits_hex": "0x3e81af5f",
+      "nominal_phi_bits_hex": "0x4045abd9",
+      "delta_r": 2.125923567989499
+    },
+    {
+      "bias_row": 165,
+      "event": 14227610,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3f9c26af",
+      "bias_phi_bits_hex": "0x402b8fe6",
+      "nearest_nominal_file": "test_nominal_063.npz",
+      "nearest_nominal_row": 29688,
+      "nominal_eta_bits_hex": "0x3ea737c1",
+      "nominal_phi_bits_hex": "0xbf95a771",
+      "delta_r": 2.592153756595897
+    },
+    {
+      "bias_row": 241,
+      "event": 14815150,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbe9f290b",
+      "bias_phi_bits_hex": "0x3ed32c72",
+      "nearest_nominal_file": "test_nominal_002.npz",
+      "nearest_nominal_row": 5604,
+      "nominal_eta_bits_hex": "0x3dd155e5",
+      "nominal_phi_bits_hex": "0xbfa5110e",
+      "delta_r": 1.751439876971694
+    },
+    {
+      "bias_row": 266,
+      "event": 14821360,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbf87ff87",
+      "bias_phi_bits_hex": "0xbf25efb4",
+      "nearest_nominal_file": "test_nominal_056.npz",
+      "nearest_nominal_row": 65981,
+      "nominal_eta_bits_hex": "0xbfa8f12b",
+      "nominal_phi_bits_hex": "0xc032249a",
+      "delta_r": 2.1507503138255237
+    },
+    {
+      "bias_row": 322,
+      "event": 14252500,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3f27a511",
+      "bias_phi_bits_hex": "0x3f1e4db5",
+      "nearest_nominal_file": "test_nominal_081.npz",
+      "nearest_nominal_row": 40465,
+      "nominal_eta_bits_hex": "0x3f21ac69",
+      "nominal_phi_bits_hex": "0x4039077d",
+      "delta_r": 2.272828527823654
+    },
+    {
+      "bias_row": 324,
+      "event": 16184650,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3f8167ac",
+      "bias_phi_bits_hex": "0x3fa3a18c",
+      "nearest_nominal_file": "test_nominal_031.npz",
+      "nearest_nominal_row": 65746,
+      "nominal_eta_bits_hex": "0x3e2be552",
+      "nominal_phi_bits_hex": "0x3fa3e57a",
+      "delta_r": 0.843111888094014
+    },
+    {
+      "bias_row": 395,
+      "event": 14552100,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3e668a1a",
+      "bias_phi_bits_hex": "0xc01b6408",
+      "nearest_nominal_file": "test_nominal_100.npz",
+      "nearest_nominal_row": 70567,
+      "nominal_eta_bits_hex": "0x3f09d4bb",
+      "nominal_phi_bits_hex": "0xc009a2d9",
+      "delta_r": 0.41844385736291273
+    },
+    {
+      "bias_row": 420,
+      "event": 15563340,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbf93eb24",
+      "bias_phi_bits_hex": "0xc01789a8",
+      "nearest_nominal_file": "test_nominal_024.npz",
+      "nearest_nominal_row": 32550,
+      "nominal_eta_bits_hex": "0x3ee3064b",
+      "nominal_phi_bits_hex": "0xbfd58ba9",
+      "delta_r": 1.74530829391294
+    },
+    {
+      "bias_row": 449,
+      "event": 16303090,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3a27018c",
+      "bias_phi_bits_hex": "0xc043d525",
+      "nearest_nominal_file": "test_nominal_048.npz",
+      "nearest_nominal_row": 83103,
+      "nominal_eta_bits_hex": "0x3e07711a",
+      "nominal_phi_bits_hex": "0xbfe55dfc",
+      "delta_r": 1.2747678050070632
+    },
+    {
+      "bias_row": 473,
+      "event": 18678270,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3e961085",
+      "bias_phi_bits_hex": "0x4023e617",
+      "nearest_nominal_file": "test_nominal_080.npz",
+      "nearest_nominal_row": 24795,
+      "nominal_eta_bits_hex": "0x3e5c095f",
+      "nominal_phi_bits_hex": "0xc00d597d",
+      "delta_r": 1.5156992403661207
+    },
+    {
+      "bias_row": 477,
+      "event": 16077070,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3fa21775",
+      "bias_phi_bits_hex": "0x400642a1",
+      "nearest_nominal_file": "test_nominal_046.npz",
+      "nearest_nominal_row": 51973,
+      "nominal_eta_bits_hex": "0x3ed25633",
+      "nominal_phi_bits_hex": "0xc0345250",
+      "delta_r": 1.613358404772424
+    },
+    {
+      "bias_row": 499,
+      "event": 15685490,
+      "label": 0,
+      "bias_eta_bits_hex": "0x3f1027c9",
+      "bias_phi_bits_hex": "0x3ff5e48f",
+      "nearest_nominal_file": "test_nominal_095.npz",
+      "nearest_nominal_row": 95002,
+      "nominal_eta_bits_hex": "0xbe880645",
+      "nominal_phi_bits_hex": "0x40232dc1",
+      "delta_r": 1.0402172188764793
+    },
+    {
+      "bias_row": 576,
+      "event": 18482440,
+      "label": 0,
+      "bias_eta_bits_hex": "0xbf39d9f3",
+      "bias_phi_bits_hex": "0x3e316083",
+      "nearest_nominal_file": "test_nominal_011.npz",
+      "nearest_nominal_row": 80502,
+      "nominal_eta_bits_hex": "0xbe775c0d",
+      "nominal_phi_bits_hex": "0xbfa273cd",
+      "delta_r": 1.5215514518978164
+    }
+  ],
+  "conclusion": "Unmatched bias jets are separated into absent event numbers and common-event rows whose float32 jet axes do not match. Bias remains excluded from paired SHAP."
+}

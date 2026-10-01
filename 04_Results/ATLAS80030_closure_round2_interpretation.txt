@@ -1,0 +1,63 @@
+ATLAS 80030 — Closure Round 2 — Current Status
+
+The second closure test substantially improved the reconstruction.
+
+SOLVED / STRONGLY VALIDATED:
+- Tau1_wta: EXACT
+- Tau2_wta: EXACT
+- Tau3_wta: CLOSE (r=0.9999, rho=0.9999)
+- Tau4_wta: CLOSE (r=0.9998, rho=0.9999)
+- Split12: SCALED, ratio=1e-6
+- Split23: SCALED, ratio=1e-6
+- ECF1: SCALED, ratio=1e-6
+- ECF2: SCALED, ratio≈1e-12
+- ECF3: SCALED, ratio≈1e-18
+- C2: EXACT
+- D2: EXACT
+- Qw: SCALED, ratio=1e-6
+
+The ECF scaling pattern is consistent with MeV constituent pT versus GeV-stored ECFs.
+
+THRUSTMAJ:
+The stored fjet_ThrustMaj branch matches the reconstructed 3D rest-frame THRUST:
+r=0.9999, rho=0.9999, ratio=1.0000, EXACT.
+
+The actual 3D rest-frame MAJOR is strongly anti-correlated.
+Therefore this is evidence of a naming/definition discrepancy, NOT yet a final
+ATLAS definition. Verify the original ATLAS implementation/source before
+making any scientific claim.
+
+L2:
+Best current exploratory monomial:
+1e2_b1^-1 * 1e3_b1^2 * 2e3_b1^-2 * 3e3_b1
+rho≈0.891
+NOT closure.
+
+L3:
+Best current exploratory candidate:
+1e2_b1^-1 * 2e3_b1^2 * 3e3_b1^-1
+rho≈0.974
+NOT closure.
+
+NEXT TASK — DO NOT START FULL PRODUCTION YET:
+1. Find authoritative ATLAS/Open Data/source implementation of fjet_L2.
+2. Find authoritative implementation of fjet_L3.
+3. Verify the exact implementation/meaning of fjet_ThrustMaj.
+4. Check whether Tau3/Tau4 need final exact-definition refinement.
+5. Do not use correlation-based fitted formulas as final definitions.
+6. Implement verified definitions and test closure on multiple nominal files.
+7. Only after the definitions are frozen, start full systematic constituent
+   reconstruction.
+
+SCIENTIFIC RULES:
+- Never present a guessed ATLAS definition as verified.
+- Never silently substitute WEAK/MONOTONE candidates.
+- Never delete project files.
+- Never overwrite historical result files.
+- Preserve all analysis outputs and provenance.
+
+PROJECT CONTEXT:
+The systematic high-level fjet_* branches were found to be stale nominal copies.
+The actual systematic variations are at constituent level. Therefore the final
+analysis must recompute the 15 HL features from constituents using identical
+code for nominal and systematic samples.

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Numba JIT caches
+*.nbc
+*.nbi
+numba_cache*/
+
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Large data, never committed (~200 GB raw + caches)
+ATLAS_80030_Data/data/
+ATLAS_80030_Data/_downloads/
+ATLAS_80030_Data/hl_recomputed/
+ATLAS_80030_Data/paired/
+ATLAS_80030_Data/predictions/public_*.npz
+*.h5
+*.h5.gz
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

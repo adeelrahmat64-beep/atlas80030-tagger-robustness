@@ -1,0 +1,6 @@
+PAIRED SHAP-DELTA ROUND 3: M-1 SCORE-SUMMARY REMEDIATION
+model SHA-256: 63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c
+source round: D:\SSD\HEP\Research Papers\ATLAS 80030\Code files\analysis_results\shap_delta_final_production_round2
+TreeSHAP/pairing/samples/identities/seed changed: no
+Per-class score summaries recomputed from saved per-jet Delta_score rows.
+Cross-check: PASS

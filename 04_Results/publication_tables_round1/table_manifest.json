@@ -1,0 +1,115 @@
+{
+  "analysis_rerun": false,
+  "conformal_round": 1,
+  "conformal_run": false,
+  "frozen_model_sha256": "63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c",
+  "frozen_only": true,
+  "manifest_filename": "table_manifest.json",
+  "manifest_schema_version": 1,
+  "metrics_run": false,
+  "output_filenames": [
+    "table1_nominal_performance.csv",
+    "table1_nominal_performance.tex",
+    "table2_inclusive_systematics_wp50.csv",
+    "table2_inclusive_systematics_wp50.tex",
+    "table3_shap_delta_100k_summary.csv",
+    "table3_shap_delta_100k_summary.tex",
+    "supplementary_systematics_14bin.csv",
+    "supplementary_systematics_14bin.tex",
+    "supplementary_shap_delta_round3_all_features.csv",
+    "supplementary_shap_delta_round3_all_features.tex",
+    "supplementary_conformal_round1.csv",
+    "supplementary_conformal_round1.tex"
+  ],
+  "outputs": {
+    "supplementary_conformal_round1": {
+      "csv_filename": "supplementary_conformal_round1.csv",
+      "csv_sha256": "04529f6342debd1045a28d52ef56b3b02ed0202661ba92443d09a0cf7a24af01",
+      "row_count": 10,
+      "tex_filename": "supplementary_conformal_round1.tex",
+      "tex_sha256": "6c0d3ba150deee96b8adfcfd695efc5478ef0110d0352cf3371de883dec4cbc0"
+    },
+    "supplementary_shap_delta_round3_all_features": {
+      "csv_filename": "supplementary_shap_delta_round3_all_features.csv",
+      "csv_sha256": "2a5d1326919b41589c6b92f3d969ca44f0bc019262f80be8730055846080c538",
+      "row_count": 540,
+      "tex_filename": "supplementary_shap_delta_round3_all_features.tex",
+      "tex_sha256": "76d5f78042fc17c1eec943544e0755796b521331e82a55bdd4ede5226b4f460a"
+    },
+    "supplementary_systematics_14bin": {
+      "csv_filename": "supplementary_systematics_14bin.csv",
+      "csv_sha256": "75b0fca309fff6997c4c478c1ab0c2e1d821716550a67022aed21d8af942e1c5",
+      "row_count": 14,
+      "tex_filename": "supplementary_systematics_14bin.tex",
+      "tex_sha256": "93f71301c10f92e21c12d46a7c43a04e418144865e6b69a52a3491a6a994d8ed"
+    },
+    "table1_nominal_performance": {
+      "csv_filename": "table1_nominal_performance.csv",
+      "csv_sha256": "670184e78995f66b8b2a63849444932289f4d221f291be9ce427782d2dfcfc65",
+      "row_count": 2,
+      "tex_filename": "table1_nominal_performance.tex",
+      "tex_sha256": "47a2d34a5857c861a5929f385339422dd4b7b839ce48bbe3f65b497f52aebf45"
+    },
+    "table2_inclusive_systematics_wp50": {
+      "csv_filename": "table2_inclusive_systematics_wp50.csv",
+      "csv_sha256": "6058e9d53618bfad6c9318ef67f5a10e8cc192870fa8ba781ff81bfa27342871",
+      "row_count": 17,
+      "tex_filename": "table2_inclusive_systematics_wp50.tex",
+      "tex_sha256": "e13d26cc3e4d880ae374ffc79e06bfd92014877ff15dab338f27e9e36704252f"
+    },
+    "table3_shap_delta_100k_summary": {
+      "csv_filename": "table3_shap_delta_100k_summary.csv",
+      "csv_sha256": "121b9eb204ecfe2ed56dd067945f07039e04ce3454186a9483b095b36ddefcc5",
+      "row_count": 4,
+      "tex_filename": "table3_shap_delta_100k_summary.tex",
+      "tex_sha256": "97f8e8ed09ba3272ee0228b1c231068251033475c6f503e8437492152e11c790"
+    }
+  },
+  "reconstruction_run": false,
+  "regeneration_command": "python \"Code files/publication/make_publication_tables.py\"",
+  "script": {
+    "path": "Code files/publication/make_publication_tables.py",
+    "sha256": "a3f17f69ac032f034c688943e0effef7dafad4f08c3ce7f0aba73d50a175c1fd"
+  },
+  "shap_round": 3,
+  "shap_run": false,
+  "sources": {
+    "frozen_conformal_round1_calibration": {
+      "path": "Code files/analysis_results/conformal_coverage_round1/calibration_thresholds.json",
+      "sha256": "d05e83bac9b7d2df562e926cfb3dc808fc619e3b0f1774c829444569531d809c"
+    },
+    "frozen_conformal_round1_provenance": {
+      "path": "Code files/analysis_results/conformal_coverage_round1/provenance.json",
+      "sha256": "a3f5fece7fe30d9090ab685ee5825333315680726972b7f1537e44f41e9b0b9d"
+    },
+    "frozen_conformal_round1_results": {
+      "path": "Code files/analysis_results/conformal_coverage_round1/conformal_coverage_results.json",
+      "sha256": "42250c219c318dec921adf72f142bdd1440310276394d210c89df60320570147"
+    },
+    "frozen_conformal_round1_results_csv": {
+      "path": "Code files/analysis_results/conformal_coverage_round1/conformal_coverage_results.csv",
+      "sha256": "7228d471ddfcba6b46fbd59062000addcde27e56769376699b6e4687dbec1b49"
+    },
+    "frozen_final_metrics": {
+      "path": "ATLAS_80030_Data/predictions/final_metrics_atlas_tagger_xgb_final_production_round1_round1.json",
+      "sha256": "52bce28b48500f41970daf99c8d897c8d94ab039b74f6b1216ff597bb7c99935"
+    },
+    "frozen_final_tagger_source_snapshot_for_published_hldnn_reference": {
+      "path": "Code files/analysis_results/ATLAS80030_tagger_xgb_final_production_round1_code.py",
+      "sha256": "7ce74841a213b37e8e5d1298b2fc16739be4c4895aa85d0de715acff112b8046"
+    },
+    "frozen_shap_round3_per_feature": {
+      "path": "Code files/analysis_results/shap_delta_final_production_round3/shap_delta_per_feature.csv",
+      "sha256": "06b03412380aecaca8c6d5370ea2b74d66714c78b991c680e94072d38d7ffac2"
+    },
+    "frozen_shap_round3_results": {
+      "path": "Code files/analysis_results/shap_delta_final_production_round3/shap_delta_results.json",
+      "sha256": "1161bd9831e58a4d25a0679b3af617f6a15ecf0197faeb49f488a63c6818084a"
+    },
+    "frozen_shap_round3_status": {
+      "path": "Code files/analysis_results/shap_delta_final_production_round3/campaign_status.json",
+      "sha256": "1fe2a2c697bffb9685d1dd160162ad3f39e5e473b7e3c2bc14a4c87b7e7482ce"
+    }
+  },
+  "training_or_inference_run": false
+}

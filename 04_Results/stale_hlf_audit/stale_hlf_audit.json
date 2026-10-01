@@ -1,0 +1,978 @@
+{
+  "provenance": {
+    "created_utc": "2026-09-14T09:00:13.162881+00:00",
+    "script_sha256": "1b19e21706e0a953fadb1428e8aef85a1336671353036282799cd0c3b01ac4dc",
+    "reconstruction_fingerprint": "c28a262540824e9db90f34c421f10c70",
+    "data_root": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\ATLAS_80030_Data",
+    "nominal_dataset": "test_nominal",
+    "nominal_pool_jets": 10306813,
+    "nominal_files": 104,
+    "python": "3.11.16 (main, Sep  1 2026, 14:15:24) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "h5py": "3.16.0",
+    "complete_all_shards": true,
+    "complete_table_s1": true,
+    "full_scan_script_sha256": "1b19e21706e0a953fadb1428e8aef85a1336671353036282799cd0c3b01ac4dc"
+  },
+  "results": [
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 5000000,
+      "match_rate_percent": 100.0,
+      "pairable": true,
+      "pairing_basis": "exact key",
+      "pairing_reason": "unique exact keys; coverage 100.000000% meets 99.95% floor",
+      "dataset": "esup",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau2_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau3_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau4_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Split12": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Split23": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF1": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF3": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_C2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_D2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_L2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_L3": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Qw": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ThrustMaj": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        }
+      },
+      "all_fifteen_identical": true,
+      "constituent_evidence": {
+        "kind": "relative constituent-pT response",
+        "metric": "(sum pT_sys / sum pT_nom) - 1",
+        "statistics": {
+          "n": 5000000,
+          "median": 0.07406763969314734,
+          "mean": 0.06780752831641004,
+          "rms": 0.07217811263009068,
+          "median_absolute": 0.07406763969314734,
+          "p05": 0.020192095200065575,
+          "p95": 0.09640886076619884
+        }
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 5000000,
+      "match_rate_percent": 100.0,
+      "pairable": true,
+      "pairing_basis": "exact key",
+      "pairing_reason": "unique exact keys; coverage 100.000000% meets 99.95% floor",
+      "dataset": "esdown",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau2_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau3_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau4_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Split12": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Split23": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF1": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF3": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_C2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_D2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_L2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_L3": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Qw": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ThrustMaj": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        }
+      },
+      "all_fifteen_identical": true,
+      "constituent_evidence": {
+        "kind": "relative constituent-pT response",
+        "metric": "(sum pT_sys / sum pT_nom) - 1",
+        "statistics": {
+          "n": 5000000,
+          "median": -0.0740682185926475,
+          "mean": -0.06780748663564062,
+          "rms": 0.07217813615979277,
+          "median_absolute": 0.0740682185926475,
+          "p05": -0.09640886819531982,
+          "p95": -0.020191653048153298
+        }
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 4995059,
+      "match_rate_percent": 99.90118,
+      "pairable": true,
+      "pairing_basis": "exact key",
+      "pairing_reason": "unique exact keys; coverage 99.901180% meets 99.80% floor",
+      "dataset": "cer",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_Tau2_wta": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_Tau3_wta": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_Tau4_wta": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_Split12": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_Split23": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_ECF1": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_ECF2": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_ECF3": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_C2": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_D2": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_L2": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_L3": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_Qw": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        },
+        "fjet_ThrustMaj": {
+          "identical": 4995059,
+          "compared": 4995059,
+          "fraction": 1.0
+        }
+      },
+      "all_fifteen_identical": true,
+      "constituent_evidence": {
+        "kind": "constituent energy-response width",
+        "metric": "(sum E_sys / sum E_nom) - 1; RMS and median absolute response are primary",
+        "statistics": {
+          "n": 4995059,
+          "median": -3.085762653953772e-06,
+          "mean": -8.520580291677228e-06,
+          "rms": 0.037701231360764705,
+          "median_absolute": 0.021428503076922234,
+          "p05": -0.060257793361747324,
+          "p95": 0.06027128334870321
+        }
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 5000000,
+      "match_rate_percent": 100.0,
+      "pairable": true,
+      "pairing_basis": "exact key",
+      "pairing_reason": "unique exact keys; coverage 100.000000% meets 99.95% floor",
+      "dataset": "cpos",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau2_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau3_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Tau4_wta": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Split12": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Split23": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF1": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ECF3": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_C2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_D2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_L2": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_L3": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_Qw": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        },
+        "fjet_ThrustMaj": {
+          "identical": 5000000,
+          "compared": 5000000,
+          "fraction": 1.0
+        }
+      },
+      "all_fifteen_identical": true,
+      "constituent_evidence": {
+        "kind": "constituent angular displacement",
+        "metric": "DeltaR of the pT-weighted constituent eta/phi centroid",
+        "statistics": {
+          "n": 5000000,
+          "median": 4.9386986435694614e-05,
+          "mean": 0.00018941071815245912,
+          "rms": 0.0005939859298195125,
+          "median_absolute": 4.9386986435694614e-05,
+          "p05": 0.0,
+          "p95": 0.0007119460347735369
+        },
+        "nonzero_fraction": 0.794122
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "duplicate",
+      "duplicate_key_count": 183802,
+      "duplicate_jet_count": 183802,
+      "matched": 2250423,
+      "match_rate_percent": 45.00846,
+      "pairable": false,
+      "pairing_basis": "N/A / not pairable",
+      "pairing_reason": "183,802 duplicate systematic keys (183,802 extra rows); exact join is ambiguous",
+      "dataset": "teg",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau2_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau3_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau4_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split12": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split23": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF1": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_C2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_D2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Qw": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ThrustMaj": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        }
+      },
+      "all_fifteen_identical": null,
+      "constituent_evidence": {
+        "kind": "unpaired constituent multiplicity/content",
+        "metric": "descriptive distributions only; no pairwise identity fraction is valid",
+        "systematic_distribution": {
+          "n": 5000000,
+          "median": 49.0,
+          "mean": 54.0322384,
+          "p05": 20.0,
+          "p95": 107.0
+        },
+        "nominal_distribution": {
+          "n": 10306813,
+          "median": 50.0,
+          "mean": 55.81870011612707,
+          "p05": 22.0,
+          "p95": 109.0
+        }
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 1906619,
+      "match_rate_percent": 38.13238,
+      "pairable": false,
+      "pairing_basis": "N/A / not pairable",
+      "pairing_reason": "exact-key coverage 38.132380% is below the validated 99.95% floor",
+      "dataset": "tej",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau2_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau3_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau4_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split12": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split23": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF1": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_C2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_D2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Qw": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ThrustMaj": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        }
+      },
+      "all_fifteen_identical": null,
+      "constituent_evidence": {
+        "kind": "unpaired constituent multiplicity/content",
+        "metric": "descriptive distributions only; no pairwise identity fraction is valid",
+        "systematic_distribution": {
+          "n": 5000000,
+          "median": 49.0,
+          "mean": 54.4682718,
+          "p05": 21.0,
+          "p95": 107.0
+        },
+        "nominal_distribution": {
+          "n": 10306813,
+          "median": 50.0,
+          "mean": 55.81870011612707,
+          "p05": 22.0,
+          "p95": 109.0
+        }
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 2749571,
+      "match_rate_percent": 54.99142,
+      "pairable": false,
+      "pairing_basis": "N/A / not pairable",
+      "pairing_reason": "exact-key coverage 54.991420% is below the validated 99.95% floor",
+      "dataset": "tfl",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau2_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau3_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau4_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split12": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split23": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF1": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_C2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_D2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Qw": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ThrustMaj": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        }
+      },
+      "all_fifteen_identical": null,
+      "constituent_evidence": {
+        "kind": "unpaired constituent multiplicity/content",
+        "metric": "descriptive distributions only; no pairwise identity fraction is valid",
+        "systematic_distribution": {
+          "n": 5000000,
+          "median": 48.0,
+          "mean": 53.3101882,
+          "p05": 19.0,
+          "p95": 105.0
+        },
+        "nominal_distribution": {
+          "n": 10306813,
+          "median": 50.0,
+          "mean": 55.81870011612707,
+          "p05": 22.0,
+          "p95": 109.0
+        }
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 2006933,
+      "match_rate_percent": 40.13866,
+      "pairable": false,
+      "pairing_basis": "N/A / not pairable",
+      "pairing_reason": "exact-key coverage 40.138660% is below the validated 99.95% floor",
+      "dataset": "tfj",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau2_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau3_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau4_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split12": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split23": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF1": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_C2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_D2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Qw": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ThrustMaj": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        }
+      },
+      "all_fifteen_identical": null,
+      "constituent_evidence": {
+        "kind": "unpaired constituent multiplicity/content",
+        "metric": "descriptive distributions only; no pairwise identity fraction is valid",
+        "systematic_distribution": {
+          "n": 5000000,
+          "median": 49.0,
+          "mean": 54.1785884,
+          "p05": 20.0,
+          "p95": 107.0
+        },
+        "nominal_distribution": {
+          "n": 10306813,
+          "median": 50.0,
+          "mean": 55.81870011612707,
+          "p05": 22.0,
+          "p95": 109.0
+        }
+      }
+    },
+    {
+      "jets": 5000000,
+      "key_status": "unique",
+      "duplicate_key_count": 0,
+      "duplicate_jet_count": 0,
+      "matched": 4167067,
+      "match_rate_percent": 83.34134,
+      "pairable": false,
+      "pairing_basis": "N/A / not pairable",
+      "pairing_reason": "exact-key coverage 83.341340% is below the validated 99.95% floor",
+      "dataset": "bias",
+      "shards_audited": 50,
+      "stored_branch_identical": {
+        "fjet_Tau1_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau2_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau3_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Tau4_wta": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split12": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Split23": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF1": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ECF3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_C2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_D2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L2": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_L3": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_Qw": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        },
+        "fjet_ThrustMaj": {
+          "identical": null,
+          "compared": null,
+          "fraction": null
+        }
+      },
+      "all_fifteen_identical": null,
+      "constituent_evidence": {
+        "kind": "N/A",
+        "metric": "N/A because exact one-to-one pairing is invalid"
+      }
+    }
+  ],
+  "esup_manuscript_discrepancy": {
+    "status": "resolved",
+    "manuscript_claim_percent": 6.8,
+    "full_exact_pair_median_percent": 7.406763969314733,
+    "full_exact_pair_mean_percent": 6.780752831641005,
+    "mean_rounded_to_one_decimal_percent": 6.8,
+    "difference_percentage_points": 0.6067639693147333,
+    "basis": "median over every valid exact esup/test_nominal pair of (sum pT_sys / sum pT_nom) - 1",
+    "finding": "The full exact-pair arithmetic mean is +6.780753%, which rounds to the manuscript's +6.8%; the full exact-pair median is +7.406764%. Thus mean versus median numerically resolves the discrepancy on the same 5,000,000 pairs. The original source of the manuscript figure is not documented, so this does not establish its historical derivation. No manuscript file was changed."
+  }
+}

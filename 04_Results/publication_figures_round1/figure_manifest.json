@@ -1,0 +1,69 @@
+{
+  "creation_time_utc": "2026-09-09T09:51:22.252062+00:00",
+  "script_path": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\Code files\\publication\\make_publication_figures.py",
+  "script_sha256": "e295cb2799bc613ea58f03e7d9fed04d9c6dac8c6a8fb6301d98e7f2b7b1d6e3",
+  "frozen_model_sha256": "63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c",
+  "render_only": true,
+  "reconstruction_run": false,
+  "training_or_inference_run": false,
+  "metrics_run": false,
+  "shap_run": false,
+  "conformal_run": false,
+  "sources": {
+    "frozen_final_metrics": {
+      "path": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\ATLAS_80030_Data\\predictions\\final_metrics_atlas_tagger_xgb_final_production_round1_round1.json",
+      "sha256": "52bce28b48500f41970daf99c8d897c8d94ab039b74f6b1216ff597bb7c99935"
+    },
+    "frozen_shap_round3_per_feature": {
+      "path": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\Code files\\analysis_results\\shap_delta_final_production_round3\\shap_delta_per_feature.csv",
+      "sha256": "06b03412380aecaca8c6d5370ea2b74d66714c78b991c680e94072d38d7ffac2"
+    },
+    "frozen_shap_round3_status": {
+      "path": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\Code files\\analysis_results\\shap_delta_final_production_round3\\campaign_status.json",
+      "sha256": "1fe2a2c697bffb9685d1dd160162ad3f39e5e473b7e3c2bc14a4c87b7e7482ce"
+    },
+    "frozen_conformal_round1_results": {
+      "path": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\Code files\\analysis_results\\conformal_coverage_round1\\conformal_coverage_results.json",
+      "sha256": "42250c219c318dec921adf72f142bdd1440310276394d210c89df60320570147"
+    }
+  },
+  "outputs": {
+    "figure1": {
+      "filenames": {
+        "pdf": "figure1_performance_systematics.pdf",
+        "png": "figure1_performance_systematics.png",
+        "data_csv": "figure1_performance_systematics_data.csv"
+      },
+      "sha256": {
+        "pdf": "79f7b44a8f617da7ca035a1cfc751a9963ce33c58f4237a38dd85c4dda04cbe8",
+        "png": "ed6a88819695f2fd91000f96f59d65637c21a22d8810e9d9d65b45846fadcb8c",
+        "data_csv": "8930733ca46a338d14ded4d720e65b87ba8a76e37c187393a8847e1fe60bbaa1"
+      }
+    },
+    "figure2": {
+      "filenames": {
+        "pdf": "figure2_shap_delta.pdf",
+        "png": "figure2_shap_delta.png",
+        "data_csv": "figure2_shap_delta_data.csv"
+      },
+      "sha256": {
+        "pdf": "0eb364873c998d590debf9b30bb0f013b612f420c7b32899645b163200b4e0f0",
+        "png": "73ab29266612ca69c66c6790de1f97093121b3a8c7c042fd3abac0e1cd1f68ca",
+        "data_csv": "923d2533e15b1e547cee2dea3033d6d1880d0c32c1db465bf40b9f0434f107de"
+      }
+    },
+    "figure3": {
+      "filenames": {
+        "pdf": "figure3_conformal_coverage.pdf",
+        "png": "figure3_conformal_coverage.png",
+        "data_csv": "figure3_conformal_coverage_data.csv"
+      },
+      "sha256": {
+        "pdf": "71ac8704d2da049f0277dd1b3ba3a47c5b4b20530145ebfc6a38c64cb5399383",
+        "png": "50c63ce59ca2b31b73b72f708c2fcc9c384a0cf078de2306a8759aeedf0dc5a5",
+        "data_csv": "7e7beee7eefb50a78c9564781473955e2365b9582f37fd51545efc4ace4146a9"
+      }
+    }
+  },
+  "manifest_filename": "figure_manifest.json"
+}

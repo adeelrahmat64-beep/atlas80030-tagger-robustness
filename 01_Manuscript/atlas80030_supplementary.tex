@@ -1,0 +1,174 @@
+% =====================================================================
+% SUPPLEMENTARY MATERIAL — companion to atlas80030_main.tex
+%
+% Revision 2. The two twenty-column tables of the previous revision have been
+% split into grouped, readable tables, and the paired SHAP-Delta table has been
+% separated into its per-feature part and its systematic-level score and rank
+% part. Every value is copied verbatim from the frozen artifacts by
+% tables/make_supplementary_tables.py, which asserts that no numeric token is
+% lost, changed or invented in the re-grouping; nothing is retyped here.
+% =====================================================================
+\documentclass[11pt,a4paper,onecolumn]{article}
+
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\newcommand{\pt}{p_{\mathrm{T}}}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thesection}{S\arabic{section}}
+
+% Float placement: allow a full page of tables without forcing blank pages.
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.60}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+
+\title{Supplementary Material\\[4pt]
+\large Systematic robustness of a boosted top-quark tagger on ATLAS open data:\\
+a constituent-level feature reconstruction, paired SHAP-Delta attribution\\
+drift, and conformal coverage}
+\author{Adeel Rahmat \and M. Imran Jamil \and Ahmed Awan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Scope and provenance}
+
+This document contains the complete result tables referred to in the main text.
+Every value is taken from the frozen publication artifacts of a single analysis
+chain, identified by
+
+\begin{itemize}
+  \item reconstruction fingerprint \texttt{c28a262540824e9db90f34c421f10c70}
+        (810 cache files, 80{,}481{,}421 jet entries, seventeen samples);
+  \item final XGBoost model SHA-256\\
+        \texttt{63a23308efbf2ce90418c8e657730f57}\\
+        \texttt{1db4798fc9ca2fb3692cb986de405f4c},
+        developed from a five-million-jet nominal subset of which
+        $4{,}499{,}612$ jets were used for fitting and $500{,}385$ were held out
+        for validation and conformal calibration;
+  \item metrics artifact
+        \texttt{final\_metrics\_atlas\_tagger\_xgb\_final\_production\_round1\_round1.json};
+  \item paired SHAP-Delta campaign \texttt{shap\_delta\_final\_production\_round3};
+  \item conformal campaign \texttt{conformal\_coverage\_round1};
+  \item pairing logs \texttt{ATLAS80030\_pair\_all\_round1} and
+        \texttt{ATLAS80030\_pair\_bias\_round1}.
+\end{itemize}
+
+Tables~\ref{tab:supp-syst-detector}--\ref{tab:supp-shap-scores} are produced
+from those artifacts by \texttt{tables/make\_supplementary\_tables.py}.
+Table~\ref{tab:supp-stale-hlf} comes from the completed full-sample
+\texttt{03\_Code\_files/stale\_hlf\_audit.py} outputs. The re-grouping script for
+Tables~\ref{tab:supp-syst-detector}--\ref{tab:supp-shap-scores} copies every
+number verbatim and asserts that the multiset of numeric tokens in its outputs
+is exactly the multiset in the frozen sources, so a value cannot be dropped,
+altered or introduced by the layout change. The paired SHAP-Delta outputs are
+additionally cross-checked value by value against the frozen twenty-column
+artifact of the previous revision.
+
+\begin{description}
+  \item[Table~\ref{tab:supp-stale-hlf}] the stored high-level branch audit that
+    supports Section~2.3 of the main text.
+  \item[Tables~\ref{tab:supp-syst-detector} and \ref{tab:supp-syst-modelling}]
+    the bin-by-bin systematic breakdown underlying Fig.~2(b) of the main text,
+    split into its detector part and its modelling and scale part.
+  \item[Tables~\ref{tab:supp-conformal-coverage} and \ref{tab:supp-conformal-sets}]
+    the complete conformal result underlying Fig.~4 of the main text, split into
+    coverage and prediction-set structure.
+  \item[Tables~\ref{tab:supp-shap-per-feature} and \ref{tab:supp-shap-scores}]
+    the complete paired SHAP-Delta result underlying Fig.~3 and Table~5 of the
+    main text, split into per-feature attribution results and systematic-level
+    score and rank summaries.
+\end{description}
+
+\clearpage
+\section{Stored high-level branches in the varied samples}
+
+For the four calorimeter-cluster variations with validated exact pairing, the
+fifteen stored \texttt{fjet\_*} high-level branches are float32 bit-identical to
+nominal for every matched jet, although the released constituents change.
+Table~\ref{tab:supp-stale-hlf} reports $5{,}000{,}000$ exact matches for each of
+\texttt{esup}, \texttt{esdown} and \texttt{cpos}, and $4{,}995{,}059$ for
+\texttt{cer}. Across all eligible matched-jet/branch comparisons, the exact
+identity counts are $75{,}000{,}000/75{,}000{,}000$ for each fully matched
+sample and $74{,}925{,}885/74{,}925{,}885$ for \texttt{cer}.
+
+The relative summed-constituent-$\pt$ shift has mean $+6.780753\%$ and median
+$+7.406764\%$ under \texttt{esup}; the corresponding \texttt{esdown} mean and
+median are $-6.780749\%$ and $-7.406822\%$. The \texttt{cer} summed-energy
+response has RMS $3.770123\%$, and the median \texttt{cpos}
+constituent-centroid displacement is $\Delta R=4.9387\times10^{-5}$.
+The track samples and \texttt{bias} are not pairable on the full sample:
+their exact-key-hit counts are diagnostic only. Track constituent
+multiplicity is therefore compared as an unpaired sample distribution;
+no pairwise stored-branch identity or same-jet constituent-change fraction
+is inferred for those five samples.
+
+\input{tables/supp_s1_stale_hlf_audit.tex}
+
+\section{Bin-by-bin systematic uncertainties}
+
+The fourteen physical $\pt$ bins span $350$--$3150$~GeV in $200$~GeV steps. All
+uncertainty columns are relative uncertainties on background rejection at $50\%$
+signal efficiency, in percent. Table~\ref{tab:supp-syst-detector} carries the
+cluster and track categories, Table~\ref{tab:supp-syst-modelling} the generator
+modelling and ISR/FSR scale categories together with the total of all four. No
+statistical uncertainty is attached to any entry.
+
+\input{tables/supp_s2_systematics_detector.tex}
+
+\input{tables/supp_s3_systematics_modelling.tex}
+
+\section{Class-conditional split-conformal coverage}
+
+Thresholds were calibrated once, at target coverage $0.9$, on the frozen held-out
+nominal validation split ($500{,}385$ jets; $252{,}215$ signal, $248{,}170$
+background), giving $q_{\mathrm{sig}} = 0.5700125098228455$ and
+$q_{\mathrm{bkg}} = 0.6447482109069824$ on the nonconformity score
+$s_c = 1 - \hat p_c$. Class $c$ enters a jet's prediction set when
+$1 - \hat p_c \le q_c$, equivalently $\hat p_c \ge 1 - q_c$. The thresholds were
+applied unchanged to every sample below. Coverage is empirical and unweighted; no
+refitting, recalibration or reweighting was performed, and the calibration jets
+took no part in fitting the model or in selecting its hyperparameters.
+
+The two class-conditional coverages are the primary quantities. Overall coverage
+is a mixture of them weighted by each sample's class composition, which ranges
+from $50.5\%$ signal on \texttt{test\_nominal} to $18.5\%$ on \texttt{tfl}, and is
+reported as a descriptive number only. Deviations are quoted both from the $0.9$
+target and from the value measured on the nominal test sample.
+
+\input{tables/supp_s4_conformal_coverage.tex}
+
+\input{tables/supp_s5_conformal_sets.tex}
+
+\section{Complete paired SHAP-Delta results}
+
+SHAP values are exact TreeSHAP attributions of the frozen model in the additive
+margin space of the booster; score values are in probability space.
+``Mean $|\Delta$SHAP$|$'' is the mean over jets of the absolute per-jet change in
+a feature's attribution, and ``relative attribution drift'' is the relative change
+in that feature's global mean $|$SHAP$|$. These are different quantities and are
+reported separately.
+
+Table~\ref{tab:supp-shap-per-feature} gives the per-feature results, which are the
+quantities that differ from feature to feature. Table~\ref{tab:supp-shap-scores},
+which follows it, gives the score-level and rank-level summaries, which are properties of a whole
+systematic, sample-size and class-subset group; in the previous revision these
+were repeated on all fifteen feature rows of each group, and separating them
+removes that repetition.
+
+\input{tables/supp_s6_shap_per_feature.tex}
+
+\clearpage
+\input{tables/supp_s7_shap_scores.tex}
+
+\end{document}

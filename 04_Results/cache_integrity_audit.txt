@@ -1,0 +1,26 @@
+ATLAS 80030 frozen-cache integrity audit
+data root: D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data
+expected fingerprint: c28a262540824e9db90f34c421f10c70
+
+dataset          source cache  source rows  cache rows  nonfinite  L3-sent  low-N  sentinel
+train_nominal       50    50      5000000     5000000          3        3      0         0
+test_nominal       104   104     10306813    10306813          1        1      0         0
+esup                50    50      5000000     5000000          1        1      0         0
+esdown              50    50      5000000     5000000          1        1      0         0
+cer                 50    50      5000000     5000000        244      244     11      4745
+cpos                50    50      5000000     5000000          1        1      0         0
+teg                 50    50      5000000     5000000          2        2      0         0
+tej                 50    50      5000000     5000000          1        1      0         0
+tfl                 50    50      5000000     5000000          4        4      0         0
+tfj                 50    50      5000000     5000000         17       17      0         0
+bias                50    50      5000000     5000000          1        1      0         0
+ttbar_pythia         2     2       193792      193792          0        0      0         0
+ttbar_herwig         2     2       180811      180811          0        0      0         0
+cluster             51    51      5000004     5000004          2        2      0         0
+string              51    51      5000001     5000001          5        5      0         0
+angular             50    50      4900000     4900000          1        1      0         0
+dipole              50    50      4900000     4900000          0        0      0         0
+
+fingerprints: {'c28a262540824e9db90f34c421f10c70': 810}
+
+CACHE CAMPAIGN = PASS

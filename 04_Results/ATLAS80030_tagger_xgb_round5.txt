@@ -1,0 +1,25 @@
+# ATLAS 80030 - atlas_tagger round 5 - 2026-09-08 16:19:35
+# model xgb  seed 42  n_train_jets 4,000,000
+
+==============================================================================
+evaluation-only resume (no training)
+==============================================================================
+  loaded saved model round 1: D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_round1.joblib
+
+==============================================================================
+evaluating -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\predictions
+==============================================================================
+  test_nominal   already complete; preserved (10,306,812 aligned eligible rows)
+  esup           already complete; preserved (4,999,999 aligned eligible rows)
+  esdown         already complete; preserved (4,999,999 aligned eligible rows)
+  cer            already complete; preserved (4,999,756 aligned eligible rows)
+  cpos           already complete; preserved (4,999,999 aligned eligible rows)
+  teg            already complete; preserved (4,999,998 aligned eligible rows)
+  tej            already complete; preserved (4,999,999 aligned eligible rows)
+  tfl            already complete; preserved (4,999,996 aligned eligible rows)
+  tfj            already complete; preserved (4,999,983 aligned eligible rows)
+  bias           already complete; preserved (4,999,999 aligned eligible rows)
+  ttbar_pythia   already complete; preserved (193,792 aligned eligible rows)
+  ttbar_herwig   already complete; preserved (180,811 aligned eligible rows)
+  cluster        already complete; preserved (5,000,002 aligned eligible rows)
+  string         already complete; preserved (4,999,996 aligned eligible rows)

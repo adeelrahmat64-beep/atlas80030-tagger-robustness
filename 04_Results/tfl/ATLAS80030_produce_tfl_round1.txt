@@ -1,0 +1,85 @@
+# ATLAS 80030 - produce_tfl round 1 - 2026-08-27 19:36:18
+# code fingerprint 0d53c1d830a1f88142af02405c4f3d72
+
+==============================================================================
+tfl: 50 files -> E:\ATLAS_80030_Data\hl_recomputed\tfl
+==============================================================================
+  [  1/50] tfl_000.h5  100000 jets    92.3s    1084 jets/s
+  [  2/50] tfl_001.h5  100000 jets    40.5s    2472 jets/s
+  [  3/50] tfl_002.h5  100000 jets    38.8s    2576 jets/s
+  [  4/50] tfl_003.h5  100000 jets    39.8s    2514 jets/s
+  [  5/50] tfl_004.h5  100000 jets    40.8s    2453 jets/s
+  [  6/50] tfl_005.h5  100000 jets    39.2s    2548 jets/s
+  [  7/50] tfl_006.h5  100000 jets    39.5s    2534 jets/s
+  [  8/50] tfl_007.h5  100000 jets    39.5s    2529 jets/s
+  [  9/50] tfl_008.h5  100000 jets    39.4s    2540 jets/s
+  [ 10/50] tfl_009.h5  100000 jets    39.3s    2542 jets/s
+  [ 11/50] tfl_010.h5  100000 jets    39.5s    2532 jets/s
+  [ 12/50] tfl_011.h5  100000 jets    39.5s    2532 jets/s
+  [ 13/50] tfl_012.h5  100000 jets    39.1s    2558 jets/s
+  [ 14/50] tfl_013.h5  100000 jets    39.1s    2555 jets/s
+  [ 15/50] tfl_014.h5  100000 jets    39.5s    2534 jets/s
+  [ 16/50] tfl_015.h5  100000 jets    39.6s    2526 jets/s
+  [ 17/50] tfl_016.h5  100000 jets    39.6s    2528 jets/s
+  [ 18/50] tfl_017.h5  100000 jets    39.3s    2543 jets/s
+  [ 19/50] tfl_018.h5  100000 jets    39.4s    2537 jets/s
+  [ 20/50] tfl_019.h5  100000 jets    39.2s    2548 jets/s
+  [ 21/50] tfl_020.h5  100000 jets    39.6s    2524 jets/s
+  [ 22/50] tfl_021.h5  100000 jets    39.4s    2538 jets/s
+  [ 23/50] tfl_022.h5  100000 jets    38.9s    2570 jets/s
+  [ 24/50] tfl_023.h5  100000 jets    39.2s    2554 jets/s
+  [ 25/50] tfl_024.h5  100000 jets    39.3s    2542 jets/s
+  [ 26/50] tfl_025.h5  100000 jets    39.5s    2533 jets/s
+  [ 27/50] tfl_026.h5  100000 jets    39.7s    2516 jets/s
+  [ 28/50] tfl_027.h5  100000 jets    39.3s    2546 jets/s
+  [ 29/50] tfl_028.h5  100000 jets    39.3s    2543 jets/s
+  [ 30/50] tfl_029.h5  100000 jets    39.8s    2513 jets/s
+  [ 31/50] tfl_030.h5  100000 jets    39.2s    2553 jets/s
+  [ 32/50] tfl_031.h5  100000 jets    39.5s    2534 jets/s
+  [ 33/50] tfl_032.h5  100000 jets    39.4s    2539 jets/s
+  [ 34/50] tfl_033.h5  100000 jets    39.3s    2543 jets/s
+  [ 35/50] tfl_034.h5  100000 jets    39.3s    2545 jets/s
+  [ 36/50] tfl_035.h5  100000 jets    39.6s    2523 jets/s
+  [ 37/50] tfl_036.h5  100000 jets    39.2s    2549 jets/s
+  [ 38/50] tfl_037.h5  100000 jets    39.3s    2542 jets/s
+  [ 39/50] tfl_038.h5  100000 jets    39.0s    2561 jets/s
+  [ 40/50] tfl_039.h5  100000 jets    39.2s    2551 jets/s
+  [ 41/50] tfl_040.h5  100000 jets    39.9s    2508 jets/s
+  [ 42/50] tfl_041.h5  100000 jets    40.2s    2485 jets/s
+  [ 43/50] tfl_042.h5  100000 jets    39.6s    2527 jets/s
+  [ 44/50] tfl_043.h5  100000 jets    40.7s    2458 jets/s
+  [ 45/50] tfl_044.h5  100000 jets    39.2s    2550 jets/s
+  [ 46/50] tfl_045.h5  100000 jets    38.7s    2583 jets/s
+  [ 47/50] tfl_046.h5  100000 jets    38.9s    2568 jets/s
+  [ 48/50] tfl_047.h5  100000 jets    43.6s    2295 jets/s
+  [ 49/50] tfl_048.h5  100000 jets    41.1s    2434 jets/s
+  [ 50/50] tfl_049.h5  100000 jets    44.4s    2252 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - tfl: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.078806                 2.28%
+Tau2_wta              0.033256                 1.95%
+Tau3_wta              0.021532                 1.81%
+Tau4_wta              0.016684                 1.70%
+Split12                  54136                 2.08%
+Split23                  14045                 2.11%
+ECF1                1.2584e+06                 1.40%
+ECF2                6.4185e+10                 2.65%
+ECF3                3.7224e+14                 5.56%
+C2                     0.10178                 1.93%
+D2                      1.7076                 0.69%
+L2                     0.20942                 0.82%
+L3                    0.070046                 0.85%
+Qw                       42840                 1.44%
+ThrustMaj               0.8754                 0.21%
+
+median constituents  48
+signal fraction      18.46%
+non-finite values    0
+code fingerprints    1  ['0d53c1d830a1f88142af02405c4f3d72']
+
+==============================================================================
+done. cache in E:\ATLAS_80030_Data\hl_recomputed
+==============================================================================

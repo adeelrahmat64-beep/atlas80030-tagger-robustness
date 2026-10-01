@@ -1,0 +1,14 @@
+% Requires \usepackage{booktabs}.
+\begin{table}[tbp]
+\centering
+\caption{Nominal XGBoost performance. The ATLAS hlDNN row is a published external reference in the same 15-variable high-level feature space; it is not a reproduction.}
+\label{tab:nominal-performance}
+\begin{tabular}{llrrrr}
+\toprule
+Model & Role & AUC & Accuracy & BR@50\% & BR@80\% \\
+\midrule
+XGBoost (this work) & Frozen final result & 0.931995 & 0.855854 & 41.9064 & 9.28847 \\
+ATLAS hlDNN & Published external reference; not reproduced & $0.9374 \pm 0.0001$ & 0.8628 & $47.2 \pm 0.4$ & $10.36 \pm 0.03$ \\
+\bottomrule
+\end{tabular}
+\end{table}

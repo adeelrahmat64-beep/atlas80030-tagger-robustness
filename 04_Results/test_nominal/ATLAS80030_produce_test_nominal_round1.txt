@@ -1,0 +1,139 @@
+# ATLAS 80030 - produce_test_nominal round 1 - 2026-08-27 12:00:44
+# code fingerprint 0d53c1d830a1f88142af02405c4f3d72
+
+==============================================================================
+test_nominal: 104 files -> E:\ATLAS_80030_Data\hl_recomputed\test_nominal
+==============================================================================
+  [  1/104] test_nominal_000.h5  100000 jets   104.3s     959 jets/s
+  [  2/104] test_nominal_001.h5  100000 jets    59.9s    1671 jets/s
+  [  3/104] test_nominal_002.h5  100000 jets    59.2s    1690 jets/s
+  [  4/104] test_nominal_003.h5  100000 jets    60.4s    1654 jets/s
+  [  5/104] test_nominal_004.h5  100000 jets    59.2s    1690 jets/s
+  [  6/104] test_nominal_005.h5  100000 jets    62.8s    1593 jets/s
+  [  7/104] test_nominal_006.h5  100000 jets    58.3s    1716 jets/s
+  [  8/104] test_nominal_007.h5  100000 jets    44.1s    2267 jets/s
+  [  9/104] test_nominal_008.h5  100000 jets    44.4s    2253 jets/s
+  [ 10/104] test_nominal_009.h5  100000 jets    47.2s    2116 jets/s
+  [ 11/104] test_nominal_010.h5  100000 jets    61.8s    1619 jets/s
+  [ 12/104] test_nominal_011.h5  100000 jets    66.5s    1504 jets/s
+  [ 13/104] test_nominal_012.h5  100000 jets    59.4s    1683 jets/s
+  [ 14/104] test_nominal_013.h5  100000 jets    42.6s    2349 jets/s
+  [ 15/104] test_nominal_014.h5  100000 jets    48.7s    2052 jets/s
+  [ 16/104] test_nominal_015.h5  100000 jets    44.5s    2246 jets/s
+  [ 17/104] test_nominal_016.h5  100000 jets    45.7s    2190 jets/s
+  [ 18/104] test_nominal_017.h5  100000 jets    43.1s    2323 jets/s
+  [ 19/104] test_nominal_018.h5  100000 jets    42.0s    2381 jets/s
+  [ 20/104] test_nominal_019.h5  100000 jets    42.1s    2376 jets/s
+  [ 21/104] test_nominal_020.h5  100000 jets    42.6s    2346 jets/s
+  [ 22/104] test_nominal_021.h5  100000 jets    44.0s    2271 jets/s
+  [ 23/104] test_nominal_022.h5  100000 jets    42.7s    2341 jets/s
+  [ 24/104] test_nominal_023.h5  100000 jets    42.2s    2372 jets/s
+  [ 25/104] test_nominal_024.h5  100000 jets    41.7s    2397 jets/s
+  [ 26/104] test_nominal_025.h5  100000 jets    42.4s    2359 jets/s
+  [ 27/104] test_nominal_026.h5  100000 jets    42.6s    2348 jets/s
+  [ 28/104] test_nominal_027.h5  100000 jets    42.8s    2336 jets/s
+  [ 29/104] test_nominal_028.h5  100000 jets    42.3s    2362 jets/s
+  [ 30/104] test_nominal_029.h5  100000 jets    42.8s    2334 jets/s
+  [ 31/104] test_nominal_030.h5  100000 jets    42.7s    2341 jets/s
+  [ 32/104] test_nominal_031.h5  100000 jets    43.0s    2327 jets/s
+  [ 33/104] test_nominal_032.h5  100000 jets    43.4s    2303 jets/s
+  [ 34/104] test_nominal_033.h5  100000 jets    42.8s    2334 jets/s
+  [ 35/104] test_nominal_034.h5  100000 jets    43.9s    2278 jets/s
+  [ 36/104] test_nominal_035.h5  100000 jets    43.0s    2324 jets/s
+  [ 37/104] test_nominal_036.h5  100000 jets    42.2s    2367 jets/s
+  [ 38/104] test_nominal_037.h5  100000 jets    41.8s    2390 jets/s
+  [ 39/104] test_nominal_038.h5  100000 jets    43.0s    2327 jets/s
+  [ 40/104] test_nominal_039.h5  100000 jets    42.2s    2370 jets/s
+  [ 41/104] test_nominal_040.h5  100000 jets    42.2s    2369 jets/s
+  [ 42/104] test_nominal_041.h5  100000 jets    43.2s    2315 jets/s
+  [ 43/104] test_nominal_042.h5  100000 jets    41.9s    2384 jets/s
+  [ 44/104] test_nominal_043.h5  100000 jets    41.9s    2386 jets/s
+  [ 45/104] test_nominal_044.h5  100000 jets    42.2s    2369 jets/s
+  [ 46/104] test_nominal_045.h5  100000 jets    41.4s    2413 jets/s
+  [ 47/104] test_nominal_046.h5  100000 jets    41.9s    2385 jets/s
+  [ 48/104] test_nominal_047.h5  100000 jets    41.4s    2416 jets/s
+  [ 49/104] test_nominal_048.h5  100000 jets    41.9s    2385 jets/s
+  [ 50/104] test_nominal_049.h5  100000 jets    42.3s    2363 jets/s
+  [ 51/104] test_nominal_050.h5  100000 jets    46.6s    2146 jets/s
+  [ 52/104] test_nominal_051.h5  100000 jets    42.9s    2329 jets/s
+  [ 53/104] test_nominal_052.h5  100000 jets    41.9s    2389 jets/s
+  [ 54/104] test_nominal_053.h5  100000 jets    41.6s    2403 jets/s
+  [ 55/104] test_nominal_054.h5  100000 jets    41.8s    2394 jets/s
+  [ 56/104] test_nominal_055.h5  100000 jets    41.5s    2409 jets/s
+  [ 57/104] test_nominal_056.h5  100000 jets    42.2s    2367 jets/s
+  [ 58/104] test_nominal_057.h5  100000 jets    42.1s    2374 jets/s
+  [ 59/104] test_nominal_058.h5  100000 jets    41.9s    2386 jets/s
+  [ 60/104] test_nominal_059.h5  100000 jets    41.9s    2387 jets/s
+  [ 61/104] test_nominal_060.h5  100000 jets    41.8s    2392 jets/s
+  [ 62/104] test_nominal_061.h5  100000 jets    41.6s    2406 jets/s
+  [ 63/104] test_nominal_062.h5  100000 jets    41.4s    2416 jets/s
+  [ 64/104] test_nominal_063.h5  100000 jets    42.2s    2371 jets/s
+  [ 65/104] test_nominal_064.h5  100000 jets    41.6s    2402 jets/s
+  [ 66/104] test_nominal_065.h5  100000 jets    41.9s    2388 jets/s
+  [ 67/104] test_nominal_066.h5  100000 jets    42.7s    2341 jets/s
+  [ 68/104] test_nominal_067.h5  100000 jets    50.2s    1991 jets/s
+  [ 69/104] test_nominal_068.h5  100000 jets    53.7s    1864 jets/s
+  [ 70/104] test_nominal_069.h5  100000 jets    46.4s    2154 jets/s
+  [ 71/104] test_nominal_070.h5  100000 jets    49.3s    2027 jets/s
+  [ 72/104] test_nominal_071.h5  100000 jets    47.2s    2119 jets/s
+  [ 73/104] test_nominal_072.h5  100000 jets    44.6s    2242 jets/s
+  [ 74/104] test_nominal_073.h5  100000 jets    44.2s    2264 jets/s
+  [ 75/104] test_nominal_074.h5  100000 jets    42.8s    2336 jets/s
+  [ 76/104] test_nominal_075.h5  100000 jets    44.2s    2264 jets/s
+  [ 77/104] test_nominal_076.h5  100000 jets    44.7s    2235 jets/s
+  [ 78/104] test_nominal_077.h5  100000 jets    48.8s    2051 jets/s
+  [ 79/104] test_nominal_078.h5  100000 jets    44.8s    2234 jets/s
+  [ 80/104] test_nominal_079.h5  100000 jets    50.8s    1968 jets/s
+  [ 81/104] test_nominal_080.h5  100000 jets    44.6s    2243 jets/s
+  [ 82/104] test_nominal_081.h5  100000 jets    43.7s    2288 jets/s
+  [ 83/104] test_nominal_082.h5  100000 jets    43.4s    2306 jets/s
+  [ 84/104] test_nominal_083.h5  100000 jets    44.8s    2232 jets/s
+  [ 85/104] test_nominal_084.h5  100000 jets    44.3s    2258 jets/s
+  [ 86/104] test_nominal_085.h5  100000 jets    42.7s    2343 jets/s
+  [ 87/104] test_nominal_086.h5  100000 jets    43.6s    2291 jets/s
+  [ 88/104] test_nominal_087.h5  100000 jets    46.1s    2171 jets/s
+  [ 89/104] test_nominal_088.h5  100000 jets    42.2s    2371 jets/s
+  [ 90/104] test_nominal_089.h5  100000 jets    42.1s    2374 jets/s
+  [ 91/104] test_nominal_090.h5  100000 jets    41.9s    2385 jets/s
+  [ 92/104] test_nominal_091.h5  100000 jets    43.9s    2278 jets/s
+  [ 93/104] test_nominal_092.h5  100000 jets    48.1s    2081 jets/s
+  [ 94/104] test_nominal_093.h5  100000 jets    46.6s    2148 jets/s
+  [ 95/104] test_nominal_094.h5  100000 jets    42.7s    2343 jets/s
+  [ 96/104] test_nominal_095.h5  100000 jets    41.8s    2390 jets/s
+  [ 97/104] test_nominal_096.h5  100000 jets    41.7s    2396 jets/s
+  [ 98/104] test_nominal_097.h5  100000 jets    41.6s    2405 jets/s
+  [ 99/104] test_nominal_098.h5  100000 jets    42.1s    2378 jets/s
+  [100/104] test_nominal_099.h5  100000 jets    41.5s    2409 jets/s
+  [101/104] test_nominal_100.h5  100000 jets    41.7s    2399 jets/s
+  [102/104] test_nominal_101.h5  100000 jets    41.1s    2435 jets/s
+  [103/104] test_nominal_102.h5  100000 jets    41.7s    2398 jets/s
+  [104/104] test_nominal_103.h5  6813 jets     3.1s    2195 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - test_nominal: 104 files, 10,306,813 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080883                 3.95%
+Tau2_wta              0.036117                 4.42%
+Tau3_wta              0.021263                 4.21%
+Tau4_wta              0.015926                 5.78%
+Split12                  70204                 1.76%
+Split23                  23359                 3.29%
+ECF1                1.4735e+06                 1.99%
+ECF2                1.0289e+11                 2.57%
+ECF3                6.9503e+14                 2.47%
+C2                    0.098716                 1.88%
+D2                      1.6204                 1.94%
+L2                     0.22433                 0.66%
+L3                    0.077105                 0.95%
+Qw                       61318                 1.79%
+ThrustMaj              0.84681                 0.37%
+
+median constituents  50
+signal fraction      50.52%
+non-finite values    0
+code fingerprints    1  ['0d53c1d830a1f88142af02405c4f3d72']
+
+==============================================================================
+done. cache in E:\ATLAS_80030_Data\hl_recomputed
+==============================================================================

@@ -1,0 +1,57 @@
+# ATLAS 80030 - atlas_tagger round 2 - 2026-09-08 16:14:16
+# model xgb  seed 42  n_train_jets 4,000,000
+
+==============================================================================
+evaluation-only resume (no training)
+==============================================================================
+  loaded saved model round 1: D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_round1.joblib
+
+==============================================================================
+evaluating -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\predictions
+==============================================================================
+  test_nominal   already complete; preserved (10,306,812 aligned eligible rows)
+  esup           already complete; preserved (4,999,999 aligned eligible rows)
+  esdown         already complete; preserved (4,999,999 aligned eligible rows)
+  cer            already complete; preserved (4,999,756 aligned eligible rows)
+  cpos           already complete; preserved (4,999,999 aligned eligible rows)
+  teg            already complete; preserved (4,999,998 aligned eligible rows)
+  tej            already complete; preserved (4,999,999 aligned eligible rows)
+  tfl            already complete; preserved (4,999,996 aligned eligible rows)
+  tfj            already complete; preserved (4,999,983 aligned eligible rows)
+  bias           already complete; preserved (4,999,999 aligned eligible rows)
+  ttbar_pythia   incomplete (missing output); regenerating
+  ttbar_pythia      193,792 jets  dropped     0  signal 100.00%  mean score 0.7715  1s
+  ttbar_herwig   incomplete (missing output); regenerating
+  ttbar_herwig      180,811 jets  dropped     0  signal 100.00%  mean score 0.7469  1s
+  cluster        incomplete (missing output); regenerating
+  cluster         5,000,002 jets  dropped     2  signal  0.00%  mean score 0.2326  23s
+  string         incomplete (missing output); regenerating
+  string          4,999,996 jets  dropped     5  signal  0.00%  mean score 0.2265  24s
+  angular        incomplete (missing output); regenerating
+  angular         4,899,999 jets  dropped     1  signal  0.00%  mean score 0.2085  20s
+  dipole         incomplete (missing output); regenerating
+  dipole          4,900,000 jets  dropped     0  signal  0.00%  mean score 0.2291  20s
+
+------------------------------------------------------------------------------
+evaluation output alignment audit
+------------------------------------------------------------------------------
+  test_nominal   PASS  10,306,812 aligned eligible rows
+  esup           PASS  4,999,999 aligned eligible rows
+  esdown         PASS  4,999,999 aligned eligible rows
+  cer            PASS  4,999,756 aligned eligible rows
+  cpos           PASS  4,999,999 aligned eligible rows
+  teg            PASS  4,999,998 aligned eligible rows
+  tej            PASS  4,999,999 aligned eligible rows
+  tfl            PASS  4,999,996 aligned eligible rows
+  tfj            PASS  4,999,983 aligned eligible rows
+  bias           PASS  4,999,999 aligned eligible rows
+  ttbar_pythia   PASS  193,792 aligned eligible rows
+  ttbar_herwig   PASS  180,811 aligned eligible rows
+  cluster        PASS  5,000,002 aligned eligible rows
+  string         PASS  4,999,996 aligned eligible rows
+  angular        PASS  4,899,999 aligned eligible rows
+  dipole         PASS  4,900,000 aligned eligible rows
+
+==============================================================================
+done. predictions in D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\predictions
+==============================================================================

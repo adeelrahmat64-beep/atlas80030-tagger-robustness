@@ -1,0 +1,135 @@
+# ATLAS 80030 - produce_bias round 2 - 2026-08-27 13:21:00
+# code fingerprint 0d53c1d830a1f88142af02405c4f3d72
+
+==============================================================================
+bias: 50 files -> E:\ATLAS_80030_Data\hl_recomputed\bias
+==============================================================================
+  [  1/50] bias_000.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  1/50] bias_000.h5  100000 jets    93.8s    1066 jets/s
+  [  2/50] bias_001.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  2/50] bias_001.h5  100000 jets    41.6s    2406 jets/s
+  [  3/50] bias_002.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  3/50] bias_002.h5  100000 jets    42.0s    2381 jets/s
+  [  4/50] bias_003.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  4/50] bias_003.h5  100000 jets    42.5s    2355 jets/s
+  [  5/50] bias_004.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  5/50] bias_004.h5  100000 jets    41.9s    2388 jets/s
+  [  6/50] bias_005.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  6/50] bias_005.h5  100000 jets    42.3s    2364 jets/s
+  [  7/50] bias_006.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  7/50] bias_006.h5  100000 jets    41.8s    2395 jets/s
+  [  8/50] bias_007.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  8/50] bias_007.h5  100000 jets    42.5s    2351 jets/s
+  [  9/50] bias_008.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [  9/50] bias_008.h5  100000 jets    43.1s    2322 jets/s
+  [ 10/50] bias_009.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 10/50] bias_009.h5  100000 jets    42.0s    2378 jets/s
+  [ 11/50] bias_010.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 11/50] bias_010.h5  100000 jets    41.7s    2398 jets/s
+  [ 12/50] bias_011.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 12/50] bias_011.h5  100000 jets    41.9s    2389 jets/s
+  [ 13/50] bias_012.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 13/50] bias_012.h5  100000 jets    42.1s    2378 jets/s
+  [ 14/50] bias_013.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 14/50] bias_013.h5  100000 jets    42.0s    2381 jets/s
+  [ 15/50] bias_014.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 15/50] bias_014.h5  100000 jets    41.7s    2399 jets/s
+  [ 16/50] bias_015.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 16/50] bias_015.h5  100000 jets    41.9s    2387 jets/s
+  [ 17/50] bias_016.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 17/50] bias_016.h5  100000 jets    41.8s    2392 jets/s
+  [ 18/50] bias_017.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 18/50] bias_017.h5  100000 jets    41.9s    2388 jets/s
+  [ 19/50] bias_018.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 19/50] bias_018.h5  100000 jets    42.0s    2383 jets/s
+  [ 20/50] bias_019.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 20/50] bias_019.h5  100000 jets    42.6s    2350 jets/s
+  [ 21/50] bias_020.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 21/50] bias_020.h5  100000 jets    42.4s    2361 jets/s
+  [ 22/50] bias_021.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 22/50] bias_021.h5  100000 jets    41.7s    2399 jets/s
+  [ 23/50] bias_022.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 23/50] bias_022.h5  100000 jets    42.0s    2380 jets/s
+  [ 24/50] bias_023.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 24/50] bias_023.h5  100000 jets    41.7s    2395 jets/s
+  [ 25/50] bias_024.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 25/50] bias_024.h5  100000 jets    41.9s    2389 jets/s
+  [ 26/50] bias_025.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 26/50] bias_025.h5  100000 jets    42.7s    2341 jets/s
+  [ 27/50] bias_026.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 27/50] bias_026.h5  100000 jets    42.4s    2357 jets/s
+  [ 28/50] bias_027.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 28/50] bias_027.h5  100000 jets    42.4s    2361 jets/s
+  [ 29/50] bias_028.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 29/50] bias_028.h5  100000 jets    42.9s    2331 jets/s
+  [ 30/50] bias_029.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 30/50] bias_029.h5  100000 jets    42.4s    2360 jets/s
+  [ 31/50] bias_030.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 31/50] bias_030.h5  100000 jets    42.7s    2339 jets/s
+  [ 32/50] bias_031.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 32/50] bias_031.h5  100000 jets    41.7s    2395 jets/s
+  [ 33/50] bias_032.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 33/50] bias_032.h5  100000 jets    42.6s    2348 jets/s
+  [ 34/50] bias_033.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 34/50] bias_033.h5  100000 jets    42.7s    2342 jets/s
+  [ 35/50] bias_034.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 35/50] bias_034.h5  100000 jets    42.0s    2383 jets/s
+  [ 36/50] bias_035.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 36/50] bias_035.h5  100000 jets    42.2s    2369 jets/s
+  [ 37/50] bias_036.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 37/50] bias_036.h5  100000 jets    42.1s    2372 jets/s
+  [ 38/50] bias_037.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 38/50] bias_037.h5  100000 jets    41.8s    2393 jets/s
+  [ 39/50] bias_038.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 39/50] bias_038.h5  100000 jets    41.8s    2394 jets/s
+  [ 40/50] bias_039.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 40/50] bias_039.h5  100000 jets    42.6s    2347 jets/s
+  [ 41/50] bias_040.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 41/50] bias_040.h5  100000 jets    42.2s    2368 jets/s
+  [ 42/50] bias_041.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 42/50] bias_041.h5  100000 jets    41.8s    2391 jets/s
+  [ 43/50] bias_042.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 43/50] bias_042.h5  100000 jets    42.2s    2371 jets/s
+  [ 44/50] bias_043.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 44/50] bias_043.h5  100000 jets    42.2s    2372 jets/s
+  [ 45/50] bias_044.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 45/50] bias_044.h5  100000 jets    41.8s    2390 jets/s
+  [ 46/50] bias_045.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 46/50] bias_045.h5  100000 jets    42.0s    2380 jets/s
+  [ 47/50] bias_046.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 47/50] bias_046.h5  100000 jets    42.8s    2335 jets/s
+  [ 48/50] bias_047.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 48/50] bias_047.h5  100000 jets    42.3s    2365 jets/s
+  [ 49/50] bias_048.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 49/50] bias_048.h5  100000 jets    42.2s    2371 jets/s
+  [ 50/50] bias_049.h5  written by code 7e10a7f2, this is 0d53c1d8 - recomputing
+  [ 50/50] bias_049.h5  100000 jets    42.4s    2358 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - bias: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.080463                 1.60%
+Tau2_wta                 0.036                 1.68%
+Tau3_wta              0.021085                 1.53%
+Tau4_wta              0.015757                 1.69%
+Split12                  70888                 1.08%
+Split23                  23900                 2.19%
+ECF1                1.5039e+06                 1.05%
+ECF2                1.0562e+11                 2.38%
+ECF3                7.0819e+14                 1.99%
+C2                    0.097932                 1.70%
+D2                      1.6187                 0.71%
+L2                      0.2247                 0.49%
+L3                    0.077311                 1.02%
+Qw                       62277                 1.07%
+ThrustMaj              0.84562                 0.20%
+
+median constituents  50
+signal fraction      51.96%
+non-finite values    0
+code fingerprints    1  ['0d53c1d830a1f88142af02405c4f3d72']
+
+==============================================================================
+done. cache in E:\ATLAS_80030_Data\hl_recomputed
+==============================================================================

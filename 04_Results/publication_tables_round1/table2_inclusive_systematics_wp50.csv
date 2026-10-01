@@ -1,0 +1,18 @@
+category,component,combination,relative_uncertainty_fraction,relative_uncertainty_percent
+Cluster,Cluster energy scale,Envelope of esup/esdown,0.09576840464765368,9.576840464765368
+Cluster,CER,Cluster energy resolution,0.028853922123649456,2.8853922123649456
+Cluster,CPOS,Cluster position resolution,0.011338423479838822,1.1338423479838822
+Cluster,Cluster total,Quadrature,0.10066129344332171,10.066129344332172
+Track,Track efficiency,Envelope of teg/tej,0.024682707604143483,2.4682707604143483
+Track,Fake rate,Envelope of tfl/tfj,0.03776767485226162,3.7767674852261623
+Track,Bias,Single variation,0.0015533179415717635,0.15533179415717635
+Track,Track total,Quadrature,0.04514472411085715,4.514472411085714
+Modelling,Signal modelling,Herwig/Pythia; frozen extrapolation above 1.5 TeV,0.18589184428095462,18.58918442809546
+Modelling,Background modelling,Quadrature of parton shower and hadronisation,0.07400582343127197,7.400582343127198
+Modelling,Modelling total,Quadrature,0.20008158254051092,20.008158254051093
+ISR/FSR,Signal ISR,Envelope of x2/x0.5,0.0018865757829289453,0.18865757829289453
+ISR/FSR,Signal FSR,Envelope of x2/x0.5,0.1134005595709956,11.34005595709956
+ISR/FSR,Background ISR,Envelope of x2/x0.5,0.018731154597611988,1.8731154597611988
+ISR/FSR,Background FSR,Envelope of x2/x0.5,0.03597145793992729,3.5971457939927287
+ISR/FSR,ISR/FSR total,Quadrature,0.12044935872840193,12.044935872840194
+Total,Total uncertainty,Quadrature of category totals,0.2582855586414511,25.82855586414511

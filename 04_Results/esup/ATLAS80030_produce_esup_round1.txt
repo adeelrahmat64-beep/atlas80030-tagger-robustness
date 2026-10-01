@@ -1,0 +1,85 @@
+# ATLAS 80030 - produce_esup round 1 - 2026-08-27 16:21:45
+# code fingerprint 0d53c1d830a1f88142af02405c4f3d72
+
+==============================================================================
+esup: 50 files -> E:\ATLAS_80030_Data\hl_recomputed\esup
+==============================================================================
+  [  1/50] esup_000.h5  100000 jets   187.0s     535 jets/s
+  [  2/50] esup_001.h5  100000 jets    69.0s    1450 jets/s
+  [  3/50] esup_002.h5  100000 jets    68.8s    1454 jets/s
+  [  4/50] esup_003.h5  100000 jets    60.1s    1664 jets/s
+  [  5/50] esup_004.h5  100000 jets    47.6s    2100 jets/s
+  [  6/50] esup_005.h5  100000 jets    52.1s    1920 jets/s
+  [  7/50] esup_006.h5  100000 jets    47.9s    2088 jets/s
+  [  8/50] esup_007.h5  100000 jets    59.5s    1682 jets/s
+  [  9/50] esup_008.h5  100000 jets    61.7s    1621 jets/s
+  [ 10/50] esup_009.h5  100000 jets    62.5s    1600 jets/s
+  [ 11/50] esup_010.h5  100000 jets    76.6s    1305 jets/s
+  [ 12/50] esup_011.h5  100000 jets    79.8s    1253 jets/s
+  [ 13/50] esup_012.h5  100000 jets   104.8s     954 jets/s
+  [ 14/50] esup_013.h5  100000 jets    80.8s    1237 jets/s
+  [ 15/50] esup_014.h5  100000 jets    90.7s    1102 jets/s
+  [ 16/50] esup_015.h5  100000 jets    80.1s    1249 jets/s
+  [ 17/50] esup_016.h5  100000 jets    87.9s    1138 jets/s
+  [ 18/50] esup_017.h5  100000 jets    94.2s    1062 jets/s
+  [ 19/50] esup_018.h5  100000 jets    80.3s    1245 jets/s
+  [ 20/50] esup_019.h5  100000 jets    82.9s    1207 jets/s
+  [ 21/50] esup_020.h5  100000 jets    71.8s    1393 jets/s
+  [ 22/50] esup_021.h5  100000 jets    72.4s    1381 jets/s
+  [ 23/50] esup_022.h5  100000 jets    86.4s    1157 jets/s
+  [ 24/50] esup_023.h5  100000 jets    73.6s    1358 jets/s
+  [ 25/50] esup_024.h5  100000 jets    79.3s    1260 jets/s
+  [ 26/50] esup_025.h5  100000 jets    77.3s    1293 jets/s
+  [ 27/50] esup_026.h5  100000 jets    60.2s    1660 jets/s
+  [ 28/50] esup_027.h5  100000 jets    61.0s    1640 jets/s
+  [ 29/50] esup_028.h5  100000 jets    48.7s    2052 jets/s
+  [ 30/50] esup_029.h5  100000 jets    48.3s    2069 jets/s
+  [ 31/50] esup_030.h5  100000 jets    60.5s    1654 jets/s
+  [ 32/50] esup_031.h5  100000 jets    54.6s    1832 jets/s
+  [ 33/50] esup_032.h5  100000 jets    52.9s    1891 jets/s
+  [ 34/50] esup_033.h5  100000 jets    75.2s    1330 jets/s
+  [ 35/50] esup_034.h5  100000 jets    72.0s    1389 jets/s
+  [ 36/50] esup_035.h5  100000 jets    70.1s    1427 jets/s
+  [ 37/50] esup_036.h5  100000 jets    55.6s    1799 jets/s
+  [ 38/50] esup_037.h5  100000 jets    68.5s    1459 jets/s
+  [ 39/50] esup_038.h5  100000 jets    79.5s    1258 jets/s
+  [ 40/50] esup_039.h5  100000 jets    70.2s    1424 jets/s
+  [ 41/50] esup_040.h5  100000 jets    63.4s    1577 jets/s
+  [ 42/50] esup_041.h5  100000 jets    70.2s    1425 jets/s
+  [ 43/50] esup_042.h5  100000 jets    69.6s    1437 jets/s
+  [ 44/50] esup_043.h5  100000 jets    83.9s    1191 jets/s
+  [ 45/50] esup_044.h5  100000 jets   140.0s     714 jets/s
+  [ 46/50] esup_045.h5  100000 jets    77.5s    1291 jets/s
+  [ 47/50] esup_046.h5  100000 jets    77.9s    1284 jets/s
+  [ 48/50] esup_047.h5  100000 jets    69.8s    1433 jets/s
+  [ 49/50] esup_048.h5  100000 jets    63.0s    1588 jets/s
+  [ 50/50] esup_049.h5  100000 jets    71.3s    1403 jets/s
+
+------------------------------------------------------------------------------
+SUMMARY - esup: 50 files, 5,000,000 jets
+------------------------------------------------------------------------------
+feature                 median   file-to-file spread
+Tau1_wta              0.079432                 1.22%
+Tau2_wta              0.035386                 1.84%
+Tau3_wta              0.020685                 1.59%
+Tau4_wta               0.01545                 1.52%
+Split12                  75146                 1.08%
+Split23                  25027                 1.78%
+ECF1                1.6121e+06                 1.13%
+ECF2                1.2015e+11                 1.96%
+ECF3                8.4944e+14                 1.84%
+C2                    0.097509                 1.51%
+D2                      1.6281                 0.67%
+L2                     0.22354                 0.52%
+L3                    0.076339                 0.74%
+Qw                       65828                 1.11%
+ThrustMaj              0.84679                 0.22%
+
+median constituents  50
+signal fraction      51.85%
+non-finite values    0
+code fingerprints    1  ['0d53c1d830a1f88142af02405c4f3d72']
+
+==============================================================================
+done. cache in E:\ATLAS_80030_Data\hl_recomputed
+==============================================================================

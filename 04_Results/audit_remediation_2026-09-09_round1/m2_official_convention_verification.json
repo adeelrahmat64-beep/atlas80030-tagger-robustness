@@ -1,0 +1,29 @@
+{
+  "classification": "WORDING/CLAIM ISSUE",
+  "issue": "M-2 1.35-1.55 TeV modelling interval",
+  "official_repository": "https://gitlab.cern.ch/atlas/ATLAS-top-tagging-open-data",
+  "official_commit": "5bc3c8d70cf8736d24b969972a3dd365017a9e24",
+  "official_calc_sha256": "7d932109151ddec1868c39b8d7fb57b4aaa0153abddbb7f5471b8e9524208d14",
+  "official_plot_everything_sha256": "8cafdc01ab3ef2560c1064c402c4263c306889b4763f2c82b34ec919d35f1999",
+  "verdict": "project implementation matches the explicit official ATLAS plotting convention; no metrics code or frozen metrics artifact changed",
+  "measured_signal_modelling_bins": [
+    [350000.0, 550000.0],
+    [550000.0, 750000.0],
+    [750000.0, 950000.0],
+    [950000.0, 1150000.0],
+    [1150000.0, 1350000.0]
+  ],
+  "plot_padding_mapped_to_interval_MeV": [1350000.0, 1550000.0],
+  "maximum_extrapolation_starts_at_MeV": 1550000.0,
+  "signal_modelling_percent_1350_1550": 10.797788710250034,
+  "total_modelling_percent_1350_1550": 12.983124731703303,
+  "total_uncertainty_percent_1350_1550": 26.987625616368145,
+  "inclusive_total_uncertainty_percent": 25.82855586414511,
+  "reproducibility": {
+    "official_calc_behavior": "pt_bins = full_bins[:high_bin_edge]; binned_br[-1] repeats the preceding measured value",
+    "official_plot_behavior": "extrapolated_sig_model[:max_bin] = sig_model; maximum assigned only from max_bin onward",
+    "project_behavior": "identical array shapes and assignments in atlas_metrics.py",
+    "only_one_bin_would_change_under_the_auditor_proposal": true,
+    "auditor_proposal_applied": false
+  }
+}

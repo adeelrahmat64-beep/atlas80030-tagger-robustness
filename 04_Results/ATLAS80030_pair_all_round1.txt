@@ -1,0 +1,67 @@
+# ATLAS 80030 - pair_features round 1 - 2026-09-08 22:49:19
+# pair fingerprint c91534fdb15d1102140f4e1ae5582264
+
+==============================================================================
+building nominal key index
+==============================================================================
+  test_nominal   104 files
+  train_nominal   50 files
+  nominal pool: 15,306,813 jets
+
+==============================================================================
+esup: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\esup_paired.npz
+==============================================================================
+  jets in esup            5,000,000
+  matched to nominal    5,000,000   = 100.000%
+  unmatched                     0   =   0.000%
+  from test_nominal    5,000,000
+  dropped non-finite            1
+  written               4,999,999 paired jets
+  signal fraction      51.85%
+  expected floor            99.95%   -> OK
+  95s -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\esup_paired.npz
+
+==============================================================================
+esdown: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\esdown_paired.npz
+==============================================================================
+  jets in esdown          5,000,000
+  matched to nominal    5,000,000   = 100.000%
+  unmatched                     0   =   0.000%
+  from test_nominal    5,000,000
+  dropped non-finite            1
+  written               4,999,999 paired jets
+  signal fraction      51.85%
+  expected floor            99.95%   -> OK
+  92s -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\esdown_paired.npz
+
+==============================================================================
+cpos: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\cpos_paired.npz
+==============================================================================
+  jets in cpos            5,000,000
+  matched to nominal    5,000,000   = 100.000%
+  unmatched                     0   =   0.000%
+  from test_nominal    5,000,000
+  dropped non-finite            1
+  written               4,999,999 paired jets
+  signal fraction      51.85%
+  expected floor            99.95%   -> OK
+  91s -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\cpos_paired.npz
+
+==============================================================================
+cer: 50 files -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\cer_paired.npz
+==============================================================================
+  jets in cer             5,000,000
+  matched to nominal    4,995,059   =  99.901%
+  unmatched                 4,941   =   0.099%
+    their n_constit    min=2 median=8 max=32
+    carrying ATLAS -999 sentinel: 4745/4941 = 96.0%
+  from test_nominal    4,995,059
+  dropped non-finite            1
+  written               4,995,058 paired jets
+  signal fraction      51.86%
+  expected floor            99.80%   -> OK
+  89s -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired\cer_paired.npz
+
+==============================================================================
+done. paired frames in D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\paired
+==============================================================================

@@ -1,0 +1,34 @@
+# ATLAS 80030 - atlas_tagger round 1 - 2026-09-08 15:52:02
+# model xgb  seed 42  n_train_jets 4,000,000
+
+==============================================================================
+training on train_nominal
+==============================================================================
+  loaded           4,000,000 jets, 15 features
+  dropped by selection (n_constit < 3 or non-finite): 3
+  training on      3,999,997 jets  signal 50.49%
+  training weight  signal mean 1.0000  background mean 0.9990
+  event-level split 3,599,363 train / 400,634 validation; seed 42
+    class 0 validation fraction 10.0339%
+    class 1 validation fraction 9.9981%
+  fitting xgb on 3,599,363 / validating on 400,634
+  trained in 72s
+  validation AUC (unweighted) 0.93208
+  saved model     D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_round1.joblib
+  saved split     D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_round1_split.npz
+  saved metadata  D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\models\atlas_tagger_xgb_round1_metadata.json
+
+==============================================================================
+evaluating -> D:\SSD\HEP\Research Papers\ATLAS 80030\ATLAS_80030_Data\predictions
+==============================================================================
+  test_nominal   shower_weights (10306812, 27)
+  test_nominal   10,306,812 jets  dropped     1  signal 50.52%  mean score 0.4995  87s
+  esup            4,999,999 jets  dropped     1  signal 51.85%  mean score 0.5086  16s
+  esdown          4,999,999 jets  dropped     1  signal 51.85%  mean score 0.4992  16s
+  cer             4,999,756 jets  dropped   244  signal 51.81%  mean score 0.5062  15s
+  cpos            4,999,999 jets  dropped     1  signal 51.85%  mean score 0.5074  13s
+  teg             4,999,998 jets  dropped     2  signal 30.01%  mean score 0.3820  12s
+  tej             4,999,999 jets  dropped     1  signal 31.80%  mean score 0.3912  12s
+  tfl             4,999,996 jets  dropped     4  signal 18.46%  mean score 0.3137  13s
+  tfj             4,999,983 jets  dropped    17  signal 31.98%  mean score 0.3905  15s
+  bias            4,999,999 jets  dropped     1  signal 51.96%  mean score 0.5079  14s

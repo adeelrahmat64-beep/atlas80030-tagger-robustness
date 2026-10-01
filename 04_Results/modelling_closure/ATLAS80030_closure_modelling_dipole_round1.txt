@@ -1,0 +1,125 @@
+# ATLAS 80030 - closure_modelling_dipole round 1 - 2026-09-04 07:10:03
+# code fingerprint 0d53c1d830a1f88142af02405c4f3d72
+# NOTE: modelling dataset, single class. Closure only asks how
+#       closely the stored fjet_* branches agree with our
+#       reconstruction. It does NOT validate them for use.
+==============================================================================
+CLOSURE TEST - recomputed high-level features vs stored nominal
+==============================================================================
+dataset  : modelling/dipole  files ['dipole_000.h5']
+jets     : 20000
+------------------------------------------------------------------------------
+PREMISE CHECK - what the stored branches actually contain
+------------------------------------------------------------------------------
+branch                     min          5%      median         95%         max    <=0
+Tau1_wta              0.001262     0.01917     0.09678      0.3516      0.7683      0
+Tau2_wta             0.0002783    0.008327     0.03886      0.1332      0.3977      0
+Tau3_wta              3.71e-07    0.005536     0.02696      0.0845      0.2213      0
+Tau4_wta             6.044e-08    0.004062     0.02139     0.06562       0.162      0
+Split12               0.001595     0.01098     0.04782      0.2637       1.313      0
+Split23              0.0003108    0.003325     0.01192     0.06168      0.4246      0
+ECF1                    0.2298      0.3694      0.7969       2.281       3.617      0
+ECF2                  0.002803    0.009004     0.03954      0.3303       3.388      0
+ECF3                 3.574e-08   1.118e-05   0.0002315       0.013       1.118      0
+C2                    0.002189     0.03112      0.1204      0.3057      0.4978      0
+D2                     0.08058      0.7836       1.599       4.085        14.8      0
+L2                    0.007567      0.0847      0.1959      0.3037      0.3614      0
+L3                    0.001495     0.02406     0.07012      0.1225      0.1628      0
+Qw                    0.001695     0.01135     0.03479      0.1277      0.5429      0
+ThrustMaj               0.5509      0.7166      0.8957      0.9737      0.9992      0
+
+constituent count: min 5  median 50  max 200
+------------------------------------------------------------------------------
+numba compile                0.0 s  (excluded below)
+kt clustering                4.0 s   (constituent E: stored)
+n-subjettiness               0.2 s
+energy correlators           6.2 s
+thrust (rest frame)          2.1 s      9605 jets/s
+------------------------------------------------------------------------------
+A. the twelve features that follow from kt clustering and the ECFs
+------------------------------------------------------------------------------
+Tau1_wta raw               r=+0.7279  rho=+0.8313  ratio=  1.255e-06 +- 180.7%  n=20000   FAIL
+Tau1_wta /sumpt            r=+1.0000  rho=+1.0000  ratio=          1 +-   0.0%  n=20000   EXACT
+Tau2_wta raw               r=+0.7141  rho=+0.7844  ratio=  1.255e-06 +- 180.7%  n=20000   FAIL
+Tau2_wta /sumpt            r=+1.0000  rho=+1.0000  ratio=          1 +-   0.0%  n=20000   EXACT
+Tau3_wta raw               r=+0.6824  rho=+0.7668  ratio=  1.255e-06 +- 180.7%  n=20000   FAIL
+Tau3_wta /sumpt            r=+0.9999  rho=+1.0000  ratio=          1 +-   0.0%  n=20000   EXACT
+Tau4_wta raw               r=+0.6753  rho=+0.7729  ratio=  1.255e-06 +- 180.7%  n=20000   FAIL
+Tau4_wta /sumpt            r=+0.9999  rho=+1.0000  ratio=          1 +-   0.0%  n=20000   EXACT
+Split12                    r=+0.9984  rho=+1.0000  ratio=      1e-06 +-   0.0%  n=20000   SCALED
+Split23                    r=+0.9999  rho=+1.0000  ratio=      1e-06 +-   0.0%  n=20000   SCALED
+ECF1                       r=+0.9998  rho=+1.0000  ratio=      1e-06 +-   0.0%  n=20000   SCALED
+ECF2                       r=+0.9977  rho=+1.0000  ratio=      1e-12 +-   0.0%  n=20000   SCALED
+ECF3                       r=+0.9878  rho=+1.0000  ratio=      1e-18 +-   0.0%  n=20000   SCALED
+C2                         r=+1.0000  rho=+1.0000  ratio=          1 +-   0.0%  n=20000   EXACT
+D2                         r=+1.0000  rho=+1.0000  ratio=          1 +-   0.0%  n=20000   EXACT
+Qw                         r=+0.9997  rho=+1.0000  ratio=      1e-06 +-   0.0%  n=20000   SCALED
+------------------------------------------------------------------------------
+A3. Tau3 / Tau4 residual - where does the last 0.5% live?
+    Everything else has been eliminated in a container against
+    fastjet 3.5.1 as the referee:
+      - our WTA axes vs fastjet WTA_KT_Axes      : 5e-15
+      - our measure vs fastjet delta_R           : 1e-5, flat in N
+      - float32 storage of the constituents      : 0.00000, no effect
+      - minimised (OnePass) axes                 : 0.961 0.985 0.992
+        0.993 - improves with N, the data worsens with N
+    What is left is a difference between the constituents ATLAS fed
+    its tool and the constituents this file stores. The two rows
+    below test that: a residual that grows with the constituent
+    count, or a pile-up at exactly 200, would mean truncation.
+------------------------------------------------------------------------------
+    n constit        jets      tau1      tau2      tau3      tau4
+       0-29          2844   1.00000   1.00000   1.00000   1.00000
+      30-49          7111   1.00000   1.00000   1.00000   1.00000
+      50-79          6936   1.00000   1.00000   1.00000   1.00000
+      80-119         2706   1.00000   1.00000   1.00000   1.00000
+     120-198          401   1.00000   1.00000   1.00000   1.00000
+    jets at exactly 200 constituents: 2 of 20000  (0.01%)
+------------------------------------------------------------------------------
+A2. ThrustMaj - definition taken from ATLAS's own Thrust.cxx:
+    thrust_major = max_n sum|p.n| / sum|p| in the jet rest frame,
+    i.e. ordinary thrust. The perpendicular-axis 'major' that round
+    1 computed is kept below only as a control and must NOT match.
+------------------------------------------------------------------------------
+ATLAS thrust_major         r=+1.0000  rho=+1.0000  ratio=          1 +-   0.0%  n=20000   EXACT
+  control: thrust_minor    r=-0.9626  rho=-0.9682  ratio=      2.866 +- 230.7%  n=20000   WEAK
+  control: perp-axis maj   r=-0.9456  rho=-0.9528  ratio=      3.604 +- 244.6%  n=20000   WEAK
+  control: 1 - thrust_major r=-1.0000  rho=-1.0000  ratio=      8.583 +- 402.1%  n=20000   MONOTONE
+------------------------------------------------------------------------------
+B. L2 and L3 - definitions from ATL-PHYS-PUB-2021-028 section 5:
+     L2 = 3e3^(b=1) / (1e2^(b=2))^(3/2)
+     L3 = 1e3^(b=1) / (3e3^(b=1))^(1/3)
+   with ve_N built from z_i = pt_i / sum pt, so both are
+   dimensionless. The left subscript on L2's numerator does not
+   survive PDF text extraction cleanly, so 1e3 and 2e3 run beside
+   3e3 as controls - only one of the three can land at 1.0000.
+------------------------------------------------------------------------------
+generalised 3-pt (beta=1)    0.9 s  on 4000 jets      4291 jets/s
+generalised 2-pt (beta=2)    1.2 s  on 20000 jets     17061 jets/s
+L2 = 3e3/(1e2_b2)^1.5      r=+1.0000  rho=+1.0000  ratio=          1 +-   0.0%  n=4000    EXACT
+  control: 1e3 numerator   r=+0.1415  rho=+0.4725  ratio=     0.1124 +- 664.6%  n=4000    FAIL
+  control: 2e3 numerator   r=+0.4126  rho=+0.6169  ratio=     0.4108 +- 222.9%  n=4000    FAIL
+L3 = 1e3/(3e3)^(1/3)       r=+1.0000  rho=+1.0000  ratio=          1 +-   0.0%  n=4000    EXACT
+  control: 2e3 denominator r=+0.8423  rho=+0.8538  ratio=      1.345 +-  81.6%  n=4000    WEAK
+
+  Both sourced formulas reproduce a constant ratio. The monomial
+  search is not run - there is nothing left to search for.
+------------------------------------------------------------------------------
+C. what production would cost at the rates measured above
+------------------------------------------------------------------------------
+  thrust (rest frame)         9605 jets/s   ->    1.7 h for 60.3M jets
+  generalised 3-pt            4291 jets/s   ->    3.9 h for 60.3M jets
+  generalised 2-pt           17061 jets/s   ->    1.0 h for 60.3M jets
+  The 3-pt correlator is the binding cost and it is now needed in
+  production, because L3 depends on 1e3. L2 does not: 3e3 comes
+  free from the ECF trace trick and 1e2 is O(n^2).
+==============================================================================
+HOW TO READ THIS
+  EXACT     reproduced outright - use it.
+  SCALED    right observable, constant normalisation offset. Fine:
+            the paper compares nominal against systematic with the
+            same code on both sides, so a constant factor cancels.
+  MONOTONE  same ordering, non-constant offset. Usable for SHAP and
+            for a tagger, but say so in the text.
+  WEAK/FAIL do not use this feature until the definition is fixed.
+==============================================================================

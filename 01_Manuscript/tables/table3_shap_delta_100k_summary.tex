@@ -1,0 +1,16 @@
+% Requires \usepackage{booktabs}.
+\begin{table*}[tbp]
+\centering
+\caption{Final 100k paired SHAP-Delta summary from round 3. Score changes are in probability space; SHAP changes are in XGBoost margin space.}
+\label{tab:shap-delta-100k}
+\begin{tabular}{lrrrrlr}
+\toprule
+Systematic & Mean $\Delta$s, all & Mean $\Delta$s, signal & Mean $\Delta$s, background & Mean $|\Delta s|$, all & Leading feature & Leading mean $|\Delta\mathrm{SHAP}|$ \\
+\midrule
+esup & 0.001164521 & -0.002881727 & 0.00552187 & 0.02799123 & fjet\_ECF3 & 0.1272049 \\
+esdown & -0.00805153 & -0.01131766 & -0.004534003 & 0.02917145 & fjet\_ECF3 & 0.1323322 \\
+cpos & 3.680653e-05 & -4.375854e-05 & 0.0001235694 & 0.004166955 & fjet\_Tau4\_wta & 0.01281977 \\
+cer & -0.0004647173 & -0.001544582 & 0.0006985468 & 0.02119591 & fjet\_ECF3 & 0.06174069 \\
+\bottomrule
+\end{tabular}
+\end{table*}

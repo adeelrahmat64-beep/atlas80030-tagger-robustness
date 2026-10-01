@@ -1,0 +1,60 @@
+# ATLAS 80030 - produce_bias round 1 - 2026-08-27 01:20:37
+# code fingerprint 7e10a7f28fef6dcaea07dc5b0c3bc300
+
+==============================================================================
+bias: 50 files -> E:\ATLAS_80030_Data\hl_recomputed\bias
+==============================================================================
+  [  1/50] bias_000.h5  100000 jets   146.7s     682 jets/s
+  [  2/50] bias_001.h5  100000 jets    62.2s    1607 jets/s
+  [  3/50] bias_002.h5  100000 jets    65.5s    1527 jets/s
+  [  4/50] bias_003.h5  100000 jets    68.3s    1465 jets/s
+  [  5/50] bias_004.h5  100000 jets    69.2s    1445 jets/s
+  [  6/50] bias_005.h5  100000 jets    51.6s    1937 jets/s
+  [  7/50] bias_006.h5  100000 jets    49.5s    2022 jets/s
+  [  8/50] bias_007.h5  100000 jets    48.3s    2071 jets/s
+  [  9/50] bias_008.h5  100000 jets    46.8s    2139 jets/s
+  [ 10/50] bias_009.h5  100000 jets    48.1s    2081 jets/s
+  [ 11/50] bias_010.h5  100000 jets    61.6s    1624 jets/s
+  [ 12/50] bias_011.h5  100000 jets    68.6s    1459 jets/s
+  [ 13/50] bias_012.h5  100000 jets    59.7s    1675 jets/s
+  [ 14/50] bias_013.h5  100000 jets    59.8s    1673 jets/s
+  [ 15/50] bias_014.h5  100000 jets    47.5s    2104 jets/s
+  [ 16/50] bias_015.h5  100000 jets    43.4s    2303 jets/s
+  [ 17/50] bias_016.h5  100000 jets    42.4s    2361 jets/s
+  [ 18/50] bias_017.h5  100000 jets    44.8s    2234 jets/s
+  [ 19/50] bias_018.h5  100000 jets    45.3s    2210 jets/s
+  [ 20/50] bias_019.h5  100000 jets    42.2s    2368 jets/s
+  [ 21/50] bias_020.h5  100000 jets    44.1s    2269 jets/s
+  [ 22/50] bias_021.h5  100000 jets    43.4s    2304 jets/s
+  [ 23/50] bias_022.h5  100000 jets    42.5s    2355 jets/s
+  [ 24/50] bias_023.h5  100000 jets    43.7s    2289 jets/s
+  [ 25/50] bias_024.h5  100000 jets    43.7s    2290 jets/s
+  [ 26/50] bias_025.h5  100000 jets    43.6s    2294 jets/s
+  [ 27/50] bias_026.h5  100000 jets    42.5s    2354 jets/s
+  [ 28/50] bias_027.h5  100000 jets    43.8s    2285 jets/s
+  [ 29/50] bias_028.h5  100000 jets    44.1s    2265 jets/s
+  [ 30/50] bias_029.h5  100000 jets    43.8s    2281 jets/s
+  [ 31/50] bias_030.h5  100000 jets    42.4s    2356 jets/s
+  [ 32/50] bias_031.h5  100000 jets    43.5s    2297 jets/s
+  [ 33/50] bias_032.h5  100000 jets    43.4s    2305 jets/s
+  [ 34/50] bias_033.h5  100000 jets    42.9s    2332 jets/s
+  [ 35/50] bias_034.h5  100000 jets    43.2s    2314 jets/s
+  [ 36/50] bias_035.h5  100000 jets    43.2s    2314 jets/s
+  [ 37/50] bias_036.h5  100000 jets    44.0s    2275 jets/s
+  [ 38/50] bias_037.h5  100000 jets    43.1s    2319 jets/s
+  [ 39/50] bias_038.h5  100000 jets    43.5s    2297 jets/s
+  [ 40/50] bias_039.h5  100000 jets    43.8s    2285 jets/s
+  [ 41/50] bias_040.h5  100000 jets    42.3s    2364 jets/s
+  [ 42/50] bias_041.h5  100000 jets    42.5s    2354 jets/s
+  [ 43/50] bias_042.h5  100000 jets    43.5s    2296 jets/s
+  [ 44/50] bias_043.h5  100000 jets    43.8s    2281 jets/s
+  [ 45/50] bias_044.h5  100000 jets    42.4s    2358 jets/s
+  [ 46/50] bias_045.h5  100000 jets    43.3s    2309 jets/s
+  [ 47/50] bias_046.h5  100000 jets    43.6s    2291 jets/s
+  [ 48/50] bias_047.h5  100000 jets    42.9s    2331 jets/s
+  [ 49/50] bias_048.h5  100000 jets    42.0s    2380 jets/s
+  [ 50/50] bias_049.h5  100000 jets    43.3s    2309 jets/s
+
+==============================================================================
+done. cache in E:\ATLAS_80030_Data\hl_recomputed
+==============================================================================

@@ -1,0 +1,900 @@
+{
+  "cache_directory": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\ATLAS_80030_Data\\hl_recomputed\\cer",
+  "cache_nonfinite_occurrence_count": 11,
+  "unique_affected_jet_count": 11,
+  "full_cer_stored_l3_sentinel_count": 4745,
+  "all_nonfinite_rows_are_known_l3_sentinels": true,
+  "occurrences": [
+    {
+      "cache_file": "cer_002.npz",
+      "source_file": "cer_002.h5",
+      "jet_index": 85498,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 7093150,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.0025676507502794266,
+        "Tau2": 8.871410794682133e-26,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.005580415483564138,
+        "Split23": 1.9280721947829767e-25,
+        "ECF1": 2.1733548641204834,
+        "ECF2": 0.008730701170861721,
+        "ECF3": 1.5369904986041102e-29,
+        "C2": 4.382315106386434e-25,
+        "D2": 2.3709134989238264e-22,
+        "L2": 2.1470458811836487e-23,
+        "L3": -999.0,
+        "Qw": 0.020359978079795837,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.0030076141561187803,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.006878363573458212,
+        "Split23": 0.0,
+        "ECF1": 2.2869833749999997,
+        "ECF2": 0.010568918596161134,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 2286983.375,
+        "min_positive_pt": 750437.875,
+        "max_pt": 1536545.5,
+        "max_abs_eta": 0.4074314832687378
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          1536545.5,
+          750437.875
+        ],
+        "eta": [
+          -0.4074314832687378,
+          -0.40582209825515747
+        ],
+        "phi": [
+          1.9687864780426025,
+          1.977810025215149
+        ],
+        "E": [
+          1666645.5,
+          813473.1875
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 1.8521447315971875e-05
+      }
+    },
+    {
+      "cache_file": "cer_003.npz",
+      "source_file": "cer_003.h5",
+      "jet_index": 789,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 8790780,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.000517742068041116,
+        "Tau2": 6.851001198347873e-26,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.0011580248828977346,
+        "Split23": 1.5323520778519508e-25,
+        "ECF1": 2.2366833686828613,
+        "ECF2": 0.002427223604172468,
+        "ECF3": 3.0634246065480056e-30,
+        "C2": 1.1630332125702158e-24,
+        "D2": 2.3971284196551517e-21,
+        "L2": 3.4301720041919547e-23,
+        "L3": -999.0,
+        "Qw": 0.004473673179745674,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.0004946420957373255,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.0011991143517965644,
+        "Split23": 0.0,
+        "ECF1": 2.42420603125,
+        "ECF2": 0.002732222820456433,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 2424206.03125,
+        "min_positive_pt": 145672.03125,
+        "max_pt": 2278534.0,
+        "max_abs_eta": 0.49409884214401245
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          2278534.0,
+          145672.03125
+        ],
+        "eta": [
+          -0.4940412640571594,
+          -0.49409884214401245
+        ],
+        "phi": [
+          -2.229128122329712,
+          -2.2373595237731934
+        ],
+        "E": [
+          2563329.0,
+          163883.9375
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 3.82702663218975e-06
+      }
+    },
+    {
+      "cache_file": "cer_007.npz",
+      "source_file": "cer_007.h5",
+      "jet_index": 10509,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 8632780,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.0007021094206720591,
+        "Tau2": 8.153438902556545e-26,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.0016099113272503018,
+        "Split23": 1.8695537532765834e-25,
+        "ECF1": 2.2929635047912598,
+        "ECF2": 0.003185498993843794,
+        "ECF3": 3.0632826068304263e-30,
+        "C2": 6.921963057817513e-25,
+        "D2": 1.1424734479195245e-21,
+        "L2": 4.647306757034902e-23,
+        "L3": -999.0,
+        "Qw": 0.0092032290995121,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.0006408090528995029,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.0015504652585322228,
+        "Split23": 0.0,
+        "ECF1": 2.4195433125,
+        "ECF2": 0.003282124089037555,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 2419543.3125,
+        "min_positive_pt": 302679.3125,
+        "max_pt": 2116864.0,
+        "max_abs_eta": 0.49997690320014954
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          2116864.0,
+          302679.3125
+        ],
+        "eta": [
+          0.4995250105857849,
+          0.49997690320014954
+        ],
+        "phi": [
+          0.8148980736732483,
+          0.8200005888938904
+        ],
+        "E": [
+          2387312.0,
+          341420.5
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 2.871887976728609e-06
+      }
+    },
+    {
+      "cache_file": "cer_011.npz",
+      "source_file": "cer_011.h5",
+      "jet_index": 76836,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 7552680,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.001657423679716885,
+        "Tau2": 9.972508392867862e-27,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.004396526142954826,
+        "Split23": 2.6453341120938664e-26,
+        "ECF1": 2.6526267528533936,
+        "ECF2": 0.011359801515936852,
+        "ECF3": 1.9203805578084163e-29,
+        "C2": 3.9474984266950726e-25,
+        "D2": 2.445138873000137e-22,
+        "L2": 9.821523373836954e-25,
+        "L3": -999.0,
+        "Qw": 0.0016711371717974544,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.0015080454276674457,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.004055713756941799,
+        "Split23": 0.0,
+        "ECF1": 2.68938433984375,
+        "ECF2": 0.010649919032922254,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 2689384.33984375,
+        "min_positive_pt": 63479.33984375,
+        "max_pt": 2625905.0,
+        "max_abs_eta": 0.14901812374591827
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          2625905.0,
+          63479.33984375
+        ],
+        "eta": [
+          0.12703566253185272,
+          0.14901812374591827
+        ],
+        "phi": [
+          2.07558536529541,
+          2.1355772018432617
+        ],
+        "E": [
+          2647890.0,
+          64203.9765625
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 9.407526642330163e-05
+      }
+    },
+    {
+      "cache_file": "cer_020.npz",
+      "source_file": "cer_020.h5",
+      "jet_index": 60010,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 4725480,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.0008038706728257239,
+        "Tau2": 5.7629393725465265e-27,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.002609917428344488,
+        "Split23": 1.8710467957992306e-26,
+        "ECF1": 3.2466886043548584,
+        "ECF2": 0.007973729632794857,
+        "ECF3": 2.032738182289391e-30,
+        "C2": 1.0380041332076023e-25,
+        "D2": 1.37220448575248e-22,
+        "L2": 1.7946556011494073e-24,
+        "L3": -999.0,
+        "Qw": 0.007538181263953447,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.0007700639331431236,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.002504314930208119,
+        "Split23": 0.0,
+        "ECF1": 3.25208703125,
+        "ECF2": 0.007684022682530396,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 3252087.03125,
+        "min_positive_pt": 183773.78125,
+        "max_pt": 3068313.25,
+        "max_abs_eta": 0.0357847735285759
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          3068313.25,
+          183773.78125
+        ],
+        "eta": [
+          -0.0357847735285759,
+          -0.03467007353901863
+        ],
+        "phi": [
+          2.1248533725738525,
+          2.1112735271453857
+        ],
+        "E": [
+          3070870.5,
+          184026.4375
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 9.900786843108032e-06
+      }
+    },
+    {
+      "cache_file": "cer_020.npz",
+      "source_file": "cer_020.h5",
+      "jet_index": 92806,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 11069030,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 2.243832750536967e-05,
+        "Tau2": 4.611159454270819e-08,
+        "Tau3": 4.001919684526456e-09,
+        "Tau4": 0.0,
+        "Split12": 4.9129939725389704e-05,
+        "Split23": 9.237460574240686e-08,
+        "ECF1": 2.193666934967041,
+        "ECF2": 0.00010769844811875373,
+        "ECF3": 1.18550134986517e-13,
+        "C2": 2.242094160465058e-05,
+        "D2": 1.0018110275268555,
+        "L2": 0.0001318631402682513,
+        "L3": -999.0,
+        "Qw": 2.671321271918714e-05,
+        "ThrustMaj": 0.9990074038505554
+      },
+      "reconstructed_features": {
+        "Tau1": 2.0529362593091995e-05,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 4.889215571095325e-05,
+        "Split23": 0.0,
+        "ECF1": 2.3815720283203126,
+        "ECF2": 0.00011616419284185802,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 2381572.0283203125,
+        "min_positive_pt": 5645.0283203125,
+        "max_pt": 2375927.0,
+        "max_abs_eta": 0.6332942247390747
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          2375927.0,
+          5645.0283203125
+        ],
+        "eta": [
+          -0.6288114786148071,
+          -0.6332942247390747
+        ],
+        "phi": [
+          -1.8607048988342285,
+          -1.853492021560669
+        ],
+        "E": [
+          2862449.5,
+          6815.39453125
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 1.7738541099376598e-07
+      }
+    },
+    {
+      "cache_file": "cer_028.npz",
+      "source_file": "cer_028.h5",
+      "jet_index": 6860,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 16404110,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.0011211666278541088,
+        "Tau2": 6.608512135356338e-25,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.0013332823291420937,
+        "Split23": 7.858789616954698e-25,
+        "ECF1": 1.1891918182373047,
+        "ECF2": 0.001444341498427093,
+        "ECF3": 1.3105625261611487e-29,
+        "C2": 7.4708480383277e-24,
+        "D2": 7.314823588085346e-21,
+        "L2": 1.6899681344483248e-22,
+        "L3": -999.0,
+        "Qw": 0.005405288189649582,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.001222348995433101,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.0013931573033192843,
+        "Split23": 0.0,
+        "ECF1": 1.1397377578124999,
+        "ECF2": 0.0014336805051625898,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 1139737.7578125,
+        "min_positive_pt": 110650.4453125,
+        "max_pt": 1029087.3125,
+        "max_abs_eta": 1.225805401802063
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          1029087.3125,
+          110650.4453125
+        ],
+        "eta": [
+          -1.225805401802063,
+          -1.2136703729629517
+        ],
+        "phi": [
+          -2.8585524559020996,
+          -2.8551790714263916
+        ],
+        "E": [
+          1904757.375,
+          202730.59375
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 1.389599015231162e-05
+      }
+    },
+    {
+      "cache_file": "cer_035.npz",
+      "source_file": "cer_035.h5",
+      "jet_index": 61963,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 4199060,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.0006636567413806915,
+        "Tau2": 1.7432745943871549e-26,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.00199047545902431,
+        "Split23": 5.228524473783783e-26,
+        "ECF1": 2.9992544651031494,
+        "ECF2": 0.005346027202904224,
+        "ECF3": 1.7549923770771008e-30,
+        "C2": 1.8417312454470205e-25,
+        "D2": 3.0990013173130804e-22,
+        "L2": 8.872519760551551e-24,
+        "L3": -999.0,
+        "Qw": 0.008722381666302681,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.0007819222824439351,
+        "Tau2": 6.83526741552099e-18,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.002281933473356135,
+        "Split23": 0.0,
+        "ECF1": 2.91836353125,
+        "ECF2": 0.005839504269253942,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 2918363.53125,
+        "min_positive_pt": 359347.53125,
+        "max_pt": 2559016.0,
+        "max_abs_eta": 0.20885814726352692
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          2559016.0,
+          359347.53125
+        ],
+        "eta": [
+          0.20885814726352692,
+          0.20295168459415436
+        ],
+        "phi": [
+          0.31007838249206543,
+          0.31241604685783386
+        ],
+        "E": [
+          2616003.0,
+          366909.9375
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 4.353970824131778e-06
+      }
+    },
+    {
+      "cache_file": "cer_037.npz",
+      "source_file": "cer_037.h5",
+      "jet_index": 32116,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 34490230,
+      "label": 1,
+      "stored_features": {
+        "Tau1": 7.4562603913364e-06,
+        "Tau2": 6.327525170490844e-08,
+        "Tau3": 3.488349609170882e-09,
+        "Tau4": 0.0,
+        "Split12": 1.9100312783848494e-05,
+        "Split23": 1.5325235835916828e-07,
+        "ECF1": 2.5643932819366455,
+        "ECF2": 4.888468902208842e-05,
+        "ECF3": 3.391888210731685e-14,
+        "C2": 3.639824717538431e-05,
+        "D2": 4.896399974822998,
+        "L2": 0.0008160279248841107,
+        "L3": -999.0,
+        "Qw": 5.5330154282273725e-05,
+        "ThrustMaj": 0.9989804625511169
+      },
+      "reconstructed_features": {
+        "Tau1": 6.235833409117961e-06,
+        "Tau2": 1.3842083891026605e-17,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 1.8710272733968583e-05,
+        "Split23": 0.0,
+        "ECF1": 3.0004446088867187,
+        "ECF2": 5.599470564533463e-05,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 3000444.6088867188,
+        "min_positive_pt": 7719.35888671875,
+        "max_pt": 2992725.25,
+        "max_abs_eta": 0.31274789571762085
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          2992725.25,
+          7719.35888671875
+        ],
+        "eta": [
+          -0.31274789571762085,
+          -0.31183063983917236
+        ],
+        "phi": [
+          0.10382657498121262,
+          0.10150495171546936
+        ],
+        "E": [
+          3142407.25,
+          8097.82958984375
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 1.5075600638687416e-08
+      }
+    },
+    {
+      "cache_file": "cer_040.npz",
+      "source_file": "cer_040.h5",
+      "jet_index": 69755,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 10276010,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 1.8277196431881748e-05,
+        "Tau2": 9.229280625823556e-26,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 3.230190122849308e-05,
+        "Split23": 1.6311219005282134e-25,
+        "ECF1": 1.767333745956421,
+        "ECF2": 5.686609074473381e-05,
+        "ECF3": 4.5578670856029163e-32,
+        "C2": 2.4909985444186915e-23,
+        "D2": 1.3682240449850543e-18,
+        "L2": 3.3019430427015137e-22,
+        "L3": -999.0,
+        "Qw": 0.00022891518892720342,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 1.882986548386212e-05,
+        "Tau2": 0.0,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 3.6431184549547374e-05,
+        "Split23": 0.0,
+        "ECF1": 1.9347554331054686,
+        "ECF2": 7.020285164189518e-05,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 0,
+        "sum_pt": 1934755.4331054688,
+        "min_positive_pt": 7756.55810546875,
+        "max_pt": 1926998.875,
+        "max_abs_eta": 0.4990859925746918
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          1926998.875,
+          7756.55810546875
+        ],
+        "eta": [
+          0.4951108992099762,
+          0.4990859925746918
+        ],
+        "phi": [
+          2.285240888595581,
+          2.282736301422119
+        ],
+        "E": [
+          2168999.0,
+          8746.6171875
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 8.80859912623365e-08
+      }
+    },
+    {
+      "cache_file": "cer_048.npz",
+      "source_file": "cer_048.h5",
+      "jet_index": 3584,
+      "cache_feature": "fjet_L3",
+      "cache_value": null,
+      "event_identifier": 9319390,
+      "label": 0,
+      "stored_features": {
+        "Tau1": 0.01998949609696865,
+        "Tau2": 1.1044835223112145e-23,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.031890030950307846,
+        "Split23": 1.7620262236280674e-23,
+        "ECF1": 1.5953395366668701,
+        "ECF2": 0.037124138325452805,
+        "ECF3": 3.501937523104359e-26,
+        "C2": 4.0536737797267105e-23,
+        "D2": 2.779064729165699e-21,
+        "L2": 2.4342997979446554e-22,
+        "L3": -999.0,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "reconstructed_features": {
+        "Tau1": 0.016538673452166492,
+        "Tau2": 8.619415137003627e-17,
+        "Tau3": 0.0,
+        "Tau4": 0.0,
+        "Split12": 0.02790951846423897,
+        "Split23": 0.0,
+        "ECF1": 1.6875306562499999,
+        "ECF2": 0.03656550560226094,
+        "ECF3": 0.0,
+        "C2": 0.0,
+        "D2": 0.0,
+        "L2": 0.0,
+        "L3": null,
+        "Qw": 0.0,
+        "ThrustMaj": -999000.0
+      },
+      "source_diagnostics": {
+        "n_constit": 2,
+        "at_200_constituent_cap": false,
+        "active_constituents_all_finite": true,
+        "active_nonpositive_pt_count": 0,
+        "positive_pt_after_active_prefix": 0,
+        "padding_is_contiguous": true,
+        "energy_clamp_count": 2,
+        "sum_pt": 1687530.65625,
+        "min_positive_pt": 377386.03125,
+        "max_pt": 1310144.625,
+        "max_abs_eta": 0.27078133821487427
+      },
+      "is_known_l3_sentinel": true,
+      "active_constituents": {
+        "pt": [
+          1310144.625,
+          377386.03125
+        ],
+        "eta": [
+          0.2614075541496277,
+          0.27078133821487427
+        ],
+        "phi": [
+          -0.4714558720588684,
+          -0.5448142290115356
+        ],
+        "E": [
+          1355163.625,
+          391306.21875
+        ]
+      },
+      "generalised_correlators": {
+        "1e3_b1": -999000.0,
+        "2e3_b1": -999000.0,
+        "3e3_b1": 0.0,
+        "1e2_b2": 0.0009495870061211511
+      }
+    }
+  ]
+}

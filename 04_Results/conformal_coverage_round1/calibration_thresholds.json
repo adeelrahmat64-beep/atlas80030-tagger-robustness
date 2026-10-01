@@ -1,0 +1,29 @@
+{
+  "method": "class-conditional split conformal prediction",
+  "alpha": 0.1,
+  "target_coverage": 0.9,
+  "nonconformity_score": "1 - p_true",
+  "finite_sample_rule": "ceil((n_class + 1) * (1 - alpha))-th order statistic, capped at n_class",
+  "calibration_dataset": "train_nominal",
+  "calibration_subset": "frozen held-out validation split",
+  "calibrated_once_on_nominal": true,
+  "total_calibration_count": 500385,
+  "background": {
+    "class_id": 0,
+    "class_name": "background",
+    "count": 248170,
+    "finite_sample_rank_one_based": 223354,
+    "order_statistic_fraction": 0.9000040294959101,
+    "nonconformity_threshold": 0.6447482109069824,
+    "calibration_coverage_at_threshold": 0.9000040294959101
+  },
+  "signal": {
+    "class_id": 1,
+    "class_name": "signal",
+    "count": 252215,
+    "finite_sample_rank_one_based": 226995,
+    "order_statistic_fraction": 0.9000059473068612,
+    "nonconformity_threshold": 0.5700125098228455,
+    "calibration_coverage_at_threshold": 0.9000059473068612
+  }
+}

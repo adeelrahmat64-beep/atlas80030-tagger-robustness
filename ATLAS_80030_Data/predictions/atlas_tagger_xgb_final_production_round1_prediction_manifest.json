@@ -1,0 +1,60 @@
+{
+  "run_role": "final_production",
+  "final_model_path": "D:\\SSD\\HEP\\Research Papers\\ATLAS 80030\\ATLAS_80030_Data\\models\\atlas_tagger_xgb_final_production_round1.joblib",
+  "model_sha256": "63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c",
+  "tagger_source_sha256": "7ce74841a213b37e8e5d1298b2fc16739be4c4895aa85d0de715acff112b8046",
+  "reconstruction_fingerprint": "c28a262540824e9db90f34c421f10c70",
+  "training_rows_requested": 5000000,
+  "seed": 42,
+  "generation_timestamp": "2026-09-08T17:09:35.663232+05:00",
+  "datasets": {
+    "test_nominal": {
+      "prediction_rows": 10306812
+    },
+    "esup": {
+      "prediction_rows": 4999999
+    },
+    "esdown": {
+      "prediction_rows": 4999999
+    },
+    "cer": {
+      "prediction_rows": 4999756
+    },
+    "cpos": {
+      "prediction_rows": 4999999
+    },
+    "teg": {
+      "prediction_rows": 4999998
+    },
+    "tej": {
+      "prediction_rows": 4999999
+    },
+    "tfl": {
+      "prediction_rows": 4999996
+    },
+    "tfj": {
+      "prediction_rows": 4999983
+    },
+    "bias": {
+      "prediction_rows": 4999999
+    },
+    "ttbar_pythia": {
+      "prediction_rows": 193792
+    },
+    "ttbar_herwig": {
+      "prediction_rows": 180811
+    },
+    "cluster": {
+      "prediction_rows": 5000002
+    },
+    "string": {
+      "prediction_rows": 4999996
+    },
+    "angular": {
+      "prediction_rows": 4899999
+    },
+    "dipole": {
+      "prediction_rows": 4900000
+    }
+  }
+}

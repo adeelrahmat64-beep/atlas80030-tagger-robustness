@@ -1,0 +1,50 @@
+{
+  "classification": "STALE ARTIFACT",
+  "issue": "M-3 ThrustMaj chronology",
+  "final_verdict": "PASS: the expanded source-like result is final",
+  "chronology": [
+    {
+      "created": "2026-09-07T23:01:35.871208+05:00",
+      "directory": "strict_closure_audit",
+      "recompute_sha256": "ce1ff100a12e4ed3e969270d5bcde3f5fb84284a5221a3ec7316d5c727ef8739",
+      "reconstruction_fingerprint": "0d53c1d830a1f88142af02405c4f3d72",
+      "jets": 3509,
+      "failures_at_relative_tolerance_1e-3": 7,
+      "maximum_protected_relative_deviation": 0.04829261905399837,
+      "status": "superseded old kernel"
+    },
+    {
+      "created": "2026-09-08T00:26:31.491153+05:00",
+      "directory": "strict_closure_audit_after_thrust_fix_3509",
+      "recompute_sha256": "3bb6e45a7e3e7bdd5b4c44c9cb5fbdd86f9cf67cf3a7c0b23553bc5cdd54ff2d",
+      "reconstruction_fingerprint": "c28a262540824e9db90f34c421f10c70",
+      "jets": 3509,
+      "failures_at_relative_tolerance_1e-3": 0,
+      "maximum_protected_relative_deviation": 0.0002305741119118791,
+      "status": "source-like fix validated"
+    },
+    {
+      "created": "2026-09-08T00:27:54.148884+05:00",
+      "directory": "strict_closure_audit_expanded_all_shards",
+      "recompute_sha256": "3bb6e45a7e3e7bdd5b4c44c9cb5fbdd86f9cf67cf3a7c0b23553bc5cdd54ff2d",
+      "reconstruction_fingerprint": "c28a262540824e9db90f34c421f10c70",
+      "jets": 14103,
+      "failures_at_relative_tolerance_1e-3": 0,
+      "maximum_protected_relative_deviation": 0.000462851531310629,
+      "status": "FINAL ThrustMaj closure result"
+    },
+    {
+      "created": "2026-09-08T09:35:57+05:00",
+      "directory": "final_targeted_closure_audit",
+      "status": "not a later ThrustMaj result: the source explicitly excludes ThrustMaj"
+    }
+  ],
+  "source_hash_continuity": {
+    "current_recompute_hl_sha256": "3a57c02734e6ab0f82e54d9639eb3a8a484e6e3ba5f7ee70bf34c20702b89136",
+    "production_round1_snapshot_sha256": "57845c16a187c4b09b5a8695deb03dda4b2d005d97b8eea52236bc1d066ac1d9",
+    "production_round2_snapshot_sha256": "3a57c02734e6ab0f82e54d9639eb3a8a484e6e3ba5f7ee70bf34c20702b89136",
+    "thrust_3d_section_sha256_in_all_three": "7537fcf012645cde81669890384d43130928f421ceaf896210d61039d73a6999",
+    "note": "later whole-file source changes did not change the validated thrust_3d section or frozen reconstruction fingerprint"
+  },
+  "older_notice": "strict_closure_audit/THRUSTMAJ_SUPERSEDED_NOTICE.md"
+}
