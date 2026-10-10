@@ -242,8 +242,13 @@ for s_ in ["$0.19\\%$", "$1.87\\%$", "$3.60\\%$"]:
 # point 14: the unsupported finite-statistics reading is gone
 check("no finite-statistics interpretation of the bin-to-bin fluctuation",
       "finite statistics of the nominal and varied" not in " ".join(MAIN.split()))
-check("manuscript says no uncertainty band is attached",
-      "no uncertainty band is attached" in " ".join(MAIN.split()))
+# Revision 3: the bands now exist, so the text must say what they are instead.
+check("Figure 2 caption describes the bootstrap bands",
+      "shaded bands in (b) are $\\pm1$ standard deviation of 100 Poisson bootstrap replicas"
+      in " ".join(MAIN.split()))
+check("no leftover 'no uncertainty band' / 'not estimated its statistical error' text",
+      "no uncertainty band is attached" not in " ".join(MAIN.split())
+      and "we have not estimated its statistical error" not in " ".join(MAIN.split()))
 
 # ---------------------------------------------------------------- closure --
 med = [float(CL[f]["rel_median"]) for f in CL]
@@ -566,14 +571,21 @@ for n, name in enumerate(["figure1_roc", "figure2_performance_systematics",
                           "figure3_shap_delta", "figure4_conformal_coverage"], 1):
     check(f"Figure {n} graphic is {name}.pdf", f"figures/{name}.pdf" in MAIN)
 tablabels = re.findall(r"\\label\{(tab:[a-z0-9-]+)\}", MAIN)
-inputs = re.findall(r"\\input\{tables/(?:layout/)?([a-z0-9_]+)\.tex\}", MAIN)
-check("main text inputs exactly 3 frozen tables", len(inputs) == 3, str(inputs))
+inputs = re.findall(r"\\input\{tables/(?:layout/|ext/)?([a-z0-9_]+)\.tex\}", MAIN)
+check("main text inputs the 3 frozen-derived tables and the 2 new ones, in order",
+      inputs == ["table1_nominal_performance_precision",
+                 "table2_inclusive_systematics_precision",
+                 "table3_shap_delta_100k_summary",
+                 "table6_feature_response_degree", "table7_scale_free_variants"],
+      str(inputs))
 for lab in ["tab:datasets", "tab:pairing", "tab:nominal-performance",
-            "tab:inclusive-systematics-wp50", "tab:shap-delta-100k"]:
+            "tab:inclusive-systematics-wp50", "tab:shap-delta-100k",
+            "tab:feature-response", "tab:scale-free"]:
     check(f"Table label {lab} resolves", lab in labels)
     check(f"Table {lab} cited", f"\\ref{{{lab}}}" in MAIN)
 for n, lab in enumerate(["tab:datasets", "tab:pairing", "tab:nominal-performance",
-                         "tab:inclusive-systematics-wp50", "tab:shap-delta-100k"], 1):
+                         "tab:inclusive-systematics-wp50", "tab:shap-delta-100k",
+                         "tab:feature-response", "tab:scale-free"], 1):
     num = re.search(rf"\\newlabel\{{{re.escape(lab)}\}}\{{\{{(\d+)\}}", aux)
     check(f"{lab} numbered {n}", num is not None and num.group(1) == str(n),
           num.group(1) if num else "?")
@@ -587,11 +599,12 @@ saux = (HERE / "atlas80030_supplementary.aux").read_text(encoding="utf-8")
 for n, lab in enumerate(["tab:supp-stale-hlf", "tab:supp-syst-detector",
                          "tab:supp-syst-modelling", "tab:supp-conformal-coverage",
                          "tab:supp-conformal-sets", "tab:supp-shap-per-feature",
-                         "tab:supp-shap-scores"], 1):
+                         "tab:supp-shap-scores", "tab:supp-bootstrap-binned",
+                         "tab:supp-seed-runs", "tab:supp-feature-response"], 1):
     num = re.search(rf"\\newlabel\{{{re.escape(lab)}\}}\{{\{{(S\d+)\}}", saux)
     check(f"supplementary {lab} numbered S{n}",
           num is not None and num.group(1) == f"S{n}", num.group(1) if num else "?")
-for n in range(1, 8):
+for n in range(1, 11):
     check(f"main text refers to Supplementary Table~S{n}", f"Table~S{n}" in MAIN
           or f"Tables~S{n}" in MAIN or f"and~S{n}" in MAIN)
 supp_refs = {"Fig.~2(b)": "S2/S3 accompany Figure 2(b)",
@@ -655,13 +668,26 @@ for text, where in ((MAIN, "manuscript"), (SUPP, "supplement")):
 check("data availability statement cites Record 80030 by DOI",
       "This manuscript has associated data in a data repository" in joined_scope
       and "10.7483/OPENDATA.ATLAS.SOAY.LABE" in joined_scope)
-check("code availability statement uses the EPJ C wording",
-      "Code/software will be made available on reasonable request" in joined_scope)
+check("code availability statement points to the public code deposit",
+      "This manuscript has associated code/software in a data repository" in joined_scope
+      and "10.5281/zenodo.23083866" in joined_scope
+      and "github.com/adeelrahmat64-beep/atlas80030-tagger-robustness" in joined_scope
+      and "on reasonable request" not in joined_scope)
+# 10 Oct 2026: the four extension scripts are released in v1.1.0; the statement
+# must name that release and the Zenodo concept DOI, and promise nothing for later.
+check("code availability cites release v1.1.0 and the code concept DOI, no 'next release'",
+      "Release v1.1.0" in joined_scope
+      and "10.5281/zenodo.23083865" in joined_scope
+      and "next release" not in joined_scope
+      and "will be added" not in joined_scope)
 
-# point 17: statistical extras are named as future work, not claimed
-check("bootstrap / multi-seed / training-block extras flagged as next steps",
-      "Bootstrap confidence intervals" in joined_scope
-      and "natural next step" in joined_scope)
+# point 17 (revised in revision 3): the bootstrap and the multi-seed study are now
+# done; only the disjoint-training-block comparison remains future work.
+check("remaining extra (disjoint training blocks) flagged as future work",
+      "a comparison across disjoint training blocks remains to be done" in joined_scope)
+check("old 'no statistical uncertainty is attached' limitation removed",
+      "No statistical uncertainty is attached to any of the ratios" not in joined_scope
+      and "natural next step" not in joined_scope)
 
 
 
@@ -810,6 +836,349 @@ check("C-3: pilot claim scoped to the frozen campaign",
 check("C-4: the unsourced 85% constituent-mass figure is gone",
       "roughly $85\\%$" not in joined_fix)
 
+
+# ------------------------------------------- robustness extension (rev. 3) --
+# Everything below is re-read from the three extension result folders and from
+# the README provenance note; nothing is typed in except the rounded value the
+# text quotes, which is compared with the artifact.
+import hashlib
+J = " ".join(MAIN.split())
+JS = " ".join(SUPP.split())
+EXT_RES = {n: RES / n for n in ("stat_bootstrap_round1", "tagger_variants_round1",
+                                 "feature_response_round1")}
+if all(p.is_dir() for p in EXT_RES.values()):
+    boot = json.loads((EXT_RES["stat_bootstrap_round1"] / "stat_bootstrap_summary.json")
+                      .read_text(encoding="utf-8"))
+    var = json.loads((EXT_RES["tagger_variants_round1"] / "tagger_variants_summary.json")
+                     .read_text(encoding="utf-8"))
+    resp = json.loads((EXT_RES["feature_response_round1"] / "feature_response_summary.json")
+                      .read_text(encoding="utf-8"))
+    BC, BB = boot["central"], boot["bootstrap"]
+    FROZEN_SHA = "63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c"
+
+    def r1(x, nd):        # the rounding the text uses
+        return f"{x:.{nd}f}"
+
+    def says(needle, what=None):
+        check(f"manuscript states {what or needle[:60]}", needle in J, needle)
+
+    # --- bootstrap provenance
+    check("bootstrap: 100 replicas, base seed 20261009",
+          boot["replicas"] == 100 and boot["base_seed"] == 20261009)
+    check("bootstrap: run on the frozen model", boot["frozen_model_sha256"] == FROZEN_SHA)
+    fm = PRED / "final_metrics_atlas_tagger_xgb_final_production_round1_round1.json"
+    # The bootstrap hashed the Windows working copy (CRLF line endings); git stores the
+    # file with LF, so a Linux/macOS checkout differs only in line endings. Compare the
+    # raw bytes and the CRLF-normalised bytes, which is still an exact content match.
+    _fm = fm.read_bytes()
+    _fm_crlf = _fm.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")
+    check("bootstrap: frozen metrics file is the one the verifier reads",
+          boot["frozen_metrics_json_sha256"] in (hashlib.sha256(_fm).hexdigest(),
+                                                 hashlib.sha256(_fm_crlf).hexdigest()))
+    check("bootstrap: central inclusive values equal the frozen uncertainty summary exactly",
+          all(BC[k] == S[k] for k in S if k.startswith("inc_"))
+          and sum(1 for k in S if k.startswith("inc_")) == 5)
+    check("bootstrap: central binned values equal the frozen summary's 14 physical bins",
+          all(np.array_equal(np.array(S[k], dtype=float)[:14], np.array(BC[k], dtype=float))
+              for k in ("nominal_binned_br", "cluster", "track", "scale", "model", "total")))
+    check("bootstrap: central BR@50 equals the frozen metrics for all 16 datasets",
+          all(BC[f"br50_{ds}"] == M[(ds, 0.5)]["br"] for ds in
+              ("test_nominal", "esup", "esdown", "cer", "cpos", "teg", "tej", "tfl", "tfj",
+               "bias", "ttbar_pythia", "ttbar_herwig", "cluster", "string", "angular",
+               "dipole")))
+    check("bootstrap: central binned total equals the frozen figure CSV",
+          np.allclose(100 * np.array(BC["total"]), tot, rtol=0, atol=1e-9))
+    reps_ = [json.loads(l) for l in (EXT_RES["stat_bootstrap_round1"] / "replicas.jsonl")
+             .read_text(encoding="utf-8").splitlines() if l.strip()]
+    check("bootstrap: 100 replica records, indices 0..99",
+          sorted(r["replica"] for r in reps_) == list(range(100)))
+    check("bootstrap: summary s.d. recomputes from the replicas",
+          all(abs(float(np.std([r[k] for r in reps_], ddof=1)) - BB[k]["std"]) < 1e-12
+              for k in ("inc_total", "nominal_br_50", "nominal_auc", "inc_bias")))
+    check("bootstrap: paired-weight sharing used for the four calorimeter samples",
+          boot["paired_jets"] == {"esup": 4_999_999, "esdown": 4_999_999,
+                                  "cer": 4_995_058, "cpos": 4_999_999})
+    check("supplement states the bootstrap base seed", "$20261009$" in JS)
+
+    sd = {k: 100 * BB[k]["std"] for k in BB if k.startswith("inc_")}
+    for key, txt in (("inc_es", "$9.58 \\pm 0.33\\%$"), ("inc_sig_model", "$18.59 \\pm 0.50\\%$"),
+                     ("inc_sig_FSR", "$11.34 \\pm 0.64\\%$"), ("inc_total", "$25.83 \\pm 0.58\\%$"),
+                     ("inc_cpos", "$1.13 \\pm 0.33\\%$"), ("inc_bias", "$0.16 \\pm 0.32\\%$")):
+        cen, err = txt.strip("$").replace("\\%", "").split(" \\pm ")
+        check(f"{key} = {cen} +- {err} (stat)",
+              r1(100 * BC[key], 2) == cen and r1(sd[key], 2) == err,
+              f"{100 * BC[key]:.4f} +- {sd[key]:.4f}")
+        says(txt)
+    check("abstract BR@50 stat 0.12", r1(BB["nominal_br_50"]["std"], 2) == "0.12")
+    says("$41.91 \\pm 0.12$ (stat.)")
+    check("AUC stat 0.00008, BR@80 stat 0.015",
+          abs(BB["nominal_auc"]["std"] - 0.00008) < 5e-6
+          and r1(BB["nominal_br_80"]["std"], 3) == "0.015")
+    says("$\\pm 0.00008$ on the AUC")
+    says("$\\pm 0.015$ at $80\\%$")
+    check("total stat 0.6 and seed 0.5 (abstract)",
+          r1(sd["inc_total"], 1) == "0.6"
+          and r1(100 * var["summary"]["full15"]["inc_total"]["std"], 1) == "0.5")
+    says("(25.8 \\pm 0.6_{\\mathrm{stat}} \\pm 0.5_{\\mathrm{seed}})\\%")
+    check("modelling stat 0.49%", r1(sd["inc_model"], 2) == "0.49")
+    says("the statistical uncertainty of the modelling term is $0.49\\%$")
+    check("track bias replica mean 0.45%", r1(100 * BB["inc_bias"]["mean"], 2) == "0.45")
+    says("replica mean of $0.45\\%$")
+    zs = {k: BC[k] / BB[k]["std"] for k in ("inc_es", "inc_cer", "inc_cpos", "inc_cluster",
+          "inc_eff", "inc_fake", "inc_bias", "inc_track", "inc_sig_model", "inc_bkg_model",
+          "inc_model", "inc_sig_ISR", "inc_sig_FSR", "inc_bkg_ISR", "inc_bkg_FSR",
+          "inc_scale", "inc_total")}
+    check("every Table 4 component >= 5 sd from zero except cpos and bias",
+          sorted(k for k, z in zs.items() if z < 5) == ["inc_bias", "inc_cpos"],
+          str({k: round(z, 2) for k, z in zs.items() if z < 6}))
+    says("every entry of the table except two lies at least five standard deviations from zero")
+    check("background parton-shower comparison 1.29 +- 0.40 (3.2 sd, not in Table 4)",
+          r1(100 * BC["inc_bkg_ps"], 2) == "1.29" and r1(sd["inc_bkg_ps"], 2) == "0.40")
+    says("the parton-shower one is $1.29 \\pm 0.40\\%$")
+    check("no 'every component except two' over-statement", "every component except two" not in J)
+
+    tsd = 100 * np.array(BB["total"]["std"])
+    check("binned total stat s.d. 1.3 .. 2.6",
+          r1(tsd.min(), 1) == "1.3" and r1(tsd.max(), 1) == "2.6",
+          f"{tsd.min():.3f} .. {tsd.max():.3f}")
+    says("statistical standard deviation of the total is $1.3$ to $2.6$ percentage points")
+    bias_up = 100 * (np.array(BB["total"]["mean"]) - np.array(BC["total"]))
+    check("binned total replica mean above measured by 0.8 .. 1.6",
+          bool((bias_up > 0).all()) and r1(bias_up.min(), 1) == "0.8"
+          and r1(bias_up.max(), 1) == "1.6", f"{bias_up.min():.3f} .. {bias_up.max():.3f}")
+    says("lies $0.8$ to $1.6$ percentage points above the measured value")
+
+    def chi2_const(key):
+        x = 100 * np.array(BC[key]); e = 100 * np.array(BB[key]["std"])
+        w = 1 / e ** 2
+        return float((w * (x - (w * x).sum() / w.sum()) ** 2).sum())
+    for key, q in (("es", "55.7"), ("cluster", "45.7"), ("track", "5.4"), ("cer", "15.9"),
+                   ("cpos", "3.4"), ("bias", "4.7")):
+        c2 = chi2_const(key)
+        check(f"chi2 vs constant for {key} = {q}", r1(c2, 1) == q, f"{c2:.3f}")
+    says("$\\chi^2 = 55.7$ for 13 degrees of freedom for the energy-scale envelope and $45.7$ for the cluster category")
+    says("For the track category it gives $\\chi^2 = 5.4$, and for \\texttt{cer}, \\texttt{cpos} and track bias $15.9$, $3.4$ and $4.7$")
+    for key in ("cpos", "bias"):
+        n_small = int(np.sum(np.array(BC[key]) < np.array(BB[key]["std"])))
+        check(f"{key}: below its own s.d. in 8 of 14 bins", n_small == 8, str(n_small))
+    says("in eight of the fourteen bins the \\texttt{cpos} and the track-bias values are each smaller than their own statistical standard deviation")
+
+    # --- training seeds
+    VR = {(r["feature_set"], r["seed"]): r for r in var["runs"]}
+    seeds_ = var["summary"]["full15"]["seeds"]
+    check("six seeds 42, 1..5 for every input set", seeds_ == [42, 1, 2, 3, 4, 5]
+          and len(var["runs"]) == 18
+          and all((fs, s_) in VR for fs in ("full15", "ratios9", "pt_normalised14")
+                  for s_ in seeds_))
+    ctl = VR[("full15", 42)]
+    check("seed-42 refit is the frozen model, bit-identical",
+          ctl["model_sha256"] == FROZEN_SHA
+          and ctl["control_predictions_bit_identical_to_frozen"] is True
+          and ctl["control_reproduces_frozen_metrics"] is True)
+    check("seed-42 refit metrics equal the frozen summary",
+          all(ctl["results"][k] == S[k] for k in S if k.startswith("inc_")
+              and k in ctl["results"]))
+    check("all runs use the frozen split and hyper-parameters",
+          var["split_seed"] == 42 and var["xgb_params"]["n_estimators"] == 500
+          and var["xgb_params"]["max_depth"] == 6
+          and var["xgb_params"]["learning_rate"] == 0.1
+          and var["xgb_params"]["subsample"] == 0.8
+          and var["xgb_params"]["colsample_bytree"] == 0.8)
+
+    def seedv(fs, key):
+        return np.array([VR[(fs, s_)]["results"][key] for s_ in seeds_], dtype=float)
+    br = seedv("full15", "nominal_br_50")
+    check("seed BR@50 range 41.74 .. 41.91, s.d. 0.07",
+          r1(br.min(), 2) == "41.74" and r1(br.max(), 2) == "41.91"
+          and r1(br.std(ddof=1), 2) == "0.07")
+    says("ranges from $41.74$ to $41.91$, with a standard deviation of $0.07$")
+    check("seed s.d. of BR@50 smaller than its stat s.d.",
+          br.std(ddof=1) < BB["nominal_br_50"]["std"])
+    tt = 100 * seedv("full15", "inc_total")
+    check("seed total 26.32 +- 0.47, range 25.83 .. 27.01, frozen seed lowest",
+          r1(tt.mean(), 2) == "26.32" and r1(tt.std(ddof=1), 2) == "0.47"
+          and r1(tt.min(), 2) == "25.83" and r1(tt.max(), 2) == "27.01"
+          and tt.argmin() == 0)
+    says("the total is $26.32 \\pm 0.47\\%$, ranging from $25.83\\%$ to $27.01\\%$")
+    says("the frozen seed gives the lowest total and the lowest modelling term of the six")
+    check("frozen seed has the lowest modelling term too",
+          int(np.argmin(seedv("full15", "inc_model"))) == 0)
+    mm = 100 * seedv("full15", "inc_model")
+    check("seed modelling 20.65 +- 0.43",
+          r1(mm.mean(), 2) == "20.65" and r1(mm.std(ddof=1), 2) == "0.43")
+    says("modelling term $20.65 \\pm 0.43\\%$")
+    says("its spread over training seeds $0.43\\%$")
+    t3x = (HERE / "tables/ext/table1_nominal_performance_precision.tex").read_text(encoding="utf-8")
+    check("extended Table 3 keeps the frozen row verbatim",
+          "XGBoost (this work) & Frozen final result & 0.931995 & 0.855854 & 41.9064 & 9.28847 \\\\" in t3x
+          and "$0.9374 \\pm 0.0001$ & 0.8628 & $47.2 \\pm 0.4$ & $10.36 \\pm 0.03$" in t3x)
+    t4x = (HERE / "tables/ext/table2_inclusive_systematics_precision.tex").read_text(encoding="utf-8")
+    check("extended Table 4 total row", "Total & Total uncertainty & 25.83 & 0.58 & $26.32 \\pm 0.47$ \\\\" in t4x)
+    for label, quoted in [("Cluster energy scale", "9.58"), ("Cluster total", "10.07"),
+                          ("Track total", "4.51"), ("Signal modelling", "18.59"),
+                          ("Background modelling", "7.40"), ("Modelling total", "20.01"),
+                          ("Signal FSR", "11.34"), ("ISR/FSR total", "12.04")]:
+        check(f"extended Table 4 keeps frozen '{label}' = {quoted}",
+              re.search(rf"& {re.escape(label)} & {re.escape(quoted)} & ", t4x) is not None)
+
+    # --- scale-free input sets
+    check("ratios9 is exactly the nine degree-0 inputs",
+          sorted(var["feature_sets"]["ratios9"])
+          == sorted(f for f, d in var["scale_degree"].items() if d == 0)
+          and len(var["feature_sets"]["ratios9"]) == 9)
+    check("pt_normalised14 = nine ratios + five X/ECF1^d",
+          len(var["feature_sets"]["pt_normalised14"]) == 14
+          and sum("/ECF1^" in f for f in var["feature_sets"]["pt_normalised14"]) == 5)
+    def mean_(fs, key, sc=100):
+        return sc * seedv(fs, key).mean()
+    for fs, key, sc, nd, q in (
+            ("ratios9", "inc_es", 100, 2, "2.03"), ("full15", "inc_es", 100, 2, "9.45"),
+            ("ratios9", "inc_cluster", 100, 2, "2.75"), ("full15", "inc_cluster", 100, 2, "9.91"),
+            ("ratios9", "inc_model", 100, 2, "6.60"), ("ratios9", "inc_total", 100, 2, "15.80"),
+            ("full15", "nominal_auc", 1, 4, "0.9320"), ("ratios9", "nominal_auc", 1, 4, "0.8761"),
+            ("full15", "nominal_br_50", 1, 2, "41.82"), ("ratios9", "nominal_br_50", 1, 2, "18.88"),
+            ("full15", "inc_scale", 100, 2, "12.22"), ("ratios9", "inc_scale", 100, 2, "13.81"),
+            ("full15", "inc_sig_FSR", 100, 2, "11.43"), ("ratios9", "inc_sig_FSR", 100, 2, "13.48"),
+            ("pt_normalised14", "nominal_br_50", 1, 2, "19.48"),
+            ("pt_normalised14", "inc_total", 100, 2, "16.13"),
+            ("full15", "inc_total", 100, 1, "26.3"), ("ratios9", "inc_total", 100, 1, "15.8"),
+            ("full15", "nominal_br_50", 1, 1, "41.8"), ("ratios9", "nominal_br_50", 1, 1, "18.9")):
+        v = mean_(fs, key, sc)
+        check(f"six-seed mean {fs}/{key} = {q}", r1(v, nd) == q, f"{v:.5f}")
+    check("ratios9 ES s.d. 0.14, full15 ES s.d. 0.11",
+          r1(100 * seedv("ratios9", "inc_es").std(ddof=1), 2) == "0.14"
+          and r1(100 * seedv("full15", "inc_es").std(ddof=1), 2) == "0.11")
+    says("energy-scale uncertainty of $2.03 \\pm 0.14\\%$, against $9.45 \\pm 0.11\\%$")
+    says("the total falls from $26.32\\%$ to $15.80\\%$")
+    says("the AUC falls from $0.9320$ to $0.8761$ and the background rejection at $50\\%$ signal efficiency from $41.82$ to $18.88$")
+    says("from $12.22\\%$ to $13.81\\%$")
+    says("which goes from $11.43\\%$ to $13.48\\%$")
+    says("background rejection $19.48$ and total uncertainty $16.13\\%$")
+    says("$15.8\\%$ but background rejection from $41.8$ to $18.9$")
+    cats = ("inc_cluster", "inc_track", "inc_model", "inc_scale")
+    check("of the four categories only ISR/FSR rises without absolute scale",
+          [k for k in cats if mean_("ratios9", k) > mean_("full15", k)] == ["inc_scale"])
+    check("'more than half of the background rejection' is removed",
+          mean_("ratios9", "nominal_br_50", 1) < 0.5 * mean_("full15", "nominal_br_50", 1))
+    check("AUC seed s.d. below 5e-5 for every input set (Table 7 caption)",
+          all(seedv(fs, "nominal_auc").std(ddof=1) < 5e-5
+              for fs in ("full15", "ratios9", "pt_normalised14")))
+
+    # --- degrees and per-jet input response
+    DEG = var["scale_degree"]
+    check("degrees: response and variant studies agree", resp["scale_degree"] == DEG)
+    check("degrees: 0 for tau, C2, D2, L2, L3, thrust; 1 for d12, d23, ECF1, Qw; ECF2 2; ECF3 3",
+          DEG == {**{f: 0 for f in ("fjet_Tau1_wta", "fjet_Tau2_wta", "fjet_Tau3_wta",
+                                     "fjet_Tau4_wta", "fjet_C2", "fjet_D2", "fjet_L2",
+                                     "fjet_L3", "fjet_ThrustMaj")},
+                  "fjet_Split12": 1, "fjet_Split23": 1, "fjet_ECF1": 1, "fjet_Qw": 1,
+                  "fjet_ECF2": 2, "fjet_ECF3": 3})
+    RS = resp["samples"]
+    up = {f: 100 * v["median"] for f, v in RS["esup"].items()}
+    dn = {f: 100 * v["median"] for f, v in RS["esdown"].items()}
+    check("ECF1 esup median 7.41 equals the stale-HLF audit +7.406764%",
+          abs(up["fjet_ECF1"] - 7.406764) < 5e-5, f"{up['fjet_ECF1']:.6f}")
+    for f, q in (("fjet_ECF1", "7.41"), ("fjet_ECF2", "12.57"), ("fjet_ECF3", "17.63")):
+        check(f"esup median {f} = +{q}%", r1(up[f], 2) == q, f"{up[f]:.4f}")
+    d1 = [up[f] for f in ("fjet_Split12", "fjet_Split23", "fjet_Qw")]
+    check("other d=1 esup medians 4.29 .. 5.48", r1(min(d1), 2) == "4.29" and r1(max(d1), 2) == "5.48")
+    d0 = [up[f] for f, d in DEG.items() if d == 0]
+    check("dimensionless esup medians -1.87 .. +0.28", r1(min(d0), 2) == "-1.87" and r1(max(d0), 2) == "0.28")
+    check("dimensionless esup |medians| below 2% (conclusion)", max(abs(x) for x in d0) < 2.0)
+    check("esup response ordered by degree: d0 < d1 < ECF2 < ECF3",
+          max(abs(x) for x in d0) < min(d1 + [up["fjet_ECF1"]])
+          and max(d1 + [up["fjet_ECF1"]]) < up["fjet_ECF2"] < up["fjet_ECF3"])
+    check("esdown mirrors esup with opposite sign for every input",
+          all(np.sign(up[f]) == -np.sign(dn[f]) for f in DEG))
+    for f, q in (("fjet_ECF2", "15.36"), ("fjet_ECF3", "23.91")):
+        ue = 100 * RS["esup"][f]["uniform_scaling_expectation"]
+        check(f"uniform expectation {f} = {q}%", r1(ue, 2) == q
+              and abs(ue / 100 - ((1 + up["fjet_ECF1"] / 100) ** DEG[f] - 1)) < 1e-12)
+    for f, q in (("+4.29\\%$ to $+5.48\\%$", None), ("$+12.57\\%$ for ECF$_2$, $+17.63\\%$ for ECF$_3$", None),
+                 ("between $-1.87\\%$ and $+0.28\\%$", None), ("($15.36\\%$ for ECF$_2$ and $23.91\\%$ for ECF$_3$)", None)):
+        says(f)
+    ca = {f: 100 * v["median_abs"] for f, v in RS["cer"].items()}
+    check("cer: ECF3 largest median |r| 4.88, ECF2 3.59, dimensionless max 2.46",
+          max(ca, key=ca.get) == "fjet_ECF3" and r1(ca["fjet_ECF3"], 2) == "4.88"
+          and r1(ca["fjet_ECF2"], 2) == "3.59"
+          and r1(max(ca[f] for f, d in DEG.items() if d == 0), 2) == "2.46")
+    says("$4.88\\%$, against $3.59\\%$ for ECF$_2$ and at most $2.46\\%$ for any dimensionless input")
+    pa = {f: 100 * v["median_abs"] for f, v in RS["cpos"].items()}
+    check("cpos: every median |r| below 0.12%, ECF3 0.117, tau4 0.115",
+          max(pa.values()) < 0.12 and r1(pa["fjet_ECF3"], 3) == "0.117"
+          and r1(pa["fjet_Tau4_wta"], 3) == "0.115")
+    says("($0.117\\%$ and $0.115\\%$)")
+    check("conclusion quotes 17.6% and 7.4%", r1(up["fjet_ECF3"], 1) == "17.6"
+          and r1(up["fjet_ECF1"], 1) == "7.4" and "median $17.6\\%$ per jet" in J
+          and "$7.4\\%$ for the summed constituent momentum" in J)
+    # SHAP claims tied to the response
+    def shap_abs(sy, f):
+        return float(SH[(sy, "100000", "all", f)]["mean_abs_delta_shap"])
+    check("esup: ECF2 carries less attribution drift than ECF1",
+          shap_abs("esup", "fjet_ECF2") < shap_abs("esup", "fjet_ECF1")
+          and up["fjet_ECF2"] > up["fjet_ECF1"])
+    rank_up = sorted(DEG, key=lambda f: -shap_abs("esup", f))
+    check("esup drift ranks: ECF3 1st, ECF1 2nd, L2 3rd, thrust 4th, ECF2 14th of 15",
+          rank_up[:4] == ["fjet_ECF3", "fjet_ECF1", "fjet_L2", "fjet_ThrustMaj"]
+          and rank_up.index("fjet_ECF2") == 13, str(rank_up))
+    ua = {f: 100 * v["median_abs"] for f, v in RS["esup"].items()}
+    check("esup: ECF2 has the second-largest response; L2 and thrust move < 1%",
+          sorted(ua, key=lambda f: -ua[f])[1] == "fjet_ECF2"
+          and ua["fjet_L2"] < 1 and ua["fjet_ThrustMaj"] < 1)
+    says("ECF$_2$ has the second-largest response but almost the smallest attribution drift")
+    check("cpos drift led by tau4", rank_up and lead["cpos"][0] == "fjet_Tau4_wta")
+    check("generator-modelling term reduced by a factor of three without absolute scale",
+          r1(mean_("full15", "inc_model") / mean_("ratios9", "inc_model"), 0) == "3")
+    check("no claim that the attribution drift as a whole follows the degree",
+          "the attribution drift follows them" not in J
+          and "The attribution pattern follows the degree" not in J)
+    check("ECF3 leads attribution drift under esup, esdown and cer",
+          all(lead[sy][0] == "fjet_ECF3" for sy in ("esup", "esdown", "cer")))
+
+    # --- README statements, quoted against the provenance note
+    rq = (HERE / "sources/atlas_readme_5bc3c8d7_quotes.md").read_text(encoding="utf-8")
+    check("README note pins the frozen commit and blob",
+          "5bc3c8d70cf8736d24b969972a3dd365017a9e24" in rq
+          and "423c543491b0821ec26b2896fa62467da360917a" in rq
+          and "4fe790030633f35a7b922eee619cb797813cddc0b77cbcd53f71e2e617873251" in rq)
+    for frag in ("is not re-calculated from the systematic varied jet constituents",
+                 "This is because the jet four-vector is calibrated",
+                 "the statistical uncertainty on the performance metrics must be smaller than this difference",
+                 "it is recommended to use at least 5 million jets in evaluation when calculating the experimental uncertainties",
+                 "only using 6 million of the jets in the training set",
+                 "obtaining state-of-the-art performance will require training on the entire set",
+                 "Vary the energy scale of jet constituents reconstructed with the calorimeter"):
+        check(f"README note contains: {frag[:45]}", frag in rq)
+    says("``is not re-calculated from the systematic varied jet constituents''")
+    says("It makes no corresponding statement about the fifteen high-level quantities")
+    says("the size the dataset documentation recommends as a minimum in evaluation")
+    check("at most 244 jets per detector sample fail eligibility",
+          "cer             4,999,756 jets  dropped   244" in tagger_log)
+    says("of which at most 244 fail the eligibility rule")
+    says("lowers the six-seed mean total uncertainty from $26.3\\%$ to $15.8\\%$")
+    check("every detector sample really is evaluated on 5,000,000 jets",
+          all(per[d][1] == 5_000_000 for d in ("esup", "esdown", "cer", "cpos", "teg",
+                                               "tej", "tfl", "tfj", "bias")))
+    says("example training script uses six million of the training jets")
+    says("state-of-the-art performance will require training on the entire partition")
+    check("old 'decision about production scale' wording is gone",
+          "decision about production scale" not in J)
+    check("ATLASGitLab cited for the README statements",
+          len(re.findall(r"\\cite\{ATLASGitLab\}", MAIN)) >= 7)
+
+    # --- bootstrap references and code availability
+    check("bootstrap references cited", "Efron1979" in MAIN and "Hanley2006" in MAIN
+          and "10.1214/aos/1176344552" in MAIN and "10.1016/j.cmpb.2006.04.006" in MAIN)
+    check("code availability names the four extension scripts",
+          all(f"\\texttt{{{n}}}" in MAIN for n in ("uncertainty\\_chain.py",
+              "stat\\_bootstrap.py", "tagger\\_variants.py", "feature\\_response.py")))
+    check("extension fits declared as made after freezing, not replacing the model",
+          "were made after the analysis was frozen" in J
+          and "none of them replaces the frozen model" in J)
+    check("supplement S2/S3 text no longer says no statistical uncertainty",
+          "No statistical uncertainty is attached to any entry" not in JS)
+else:
+    check("robustness extension result folders present", False, str(EXT_RES))
 
 # ------------------------------------------------------------ forbidden ----
 for phrase in ["EventInfo_mcEventWeights columns", "proxy AUC", "Reweighted AUC",

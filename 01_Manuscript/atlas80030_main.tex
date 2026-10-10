@@ -2,6 +2,10 @@
 % AUTHORITATIVE MANUSCRIPT — ATLAS Open Data Record 80030
 % Revision 2, built 2026-09-09 from the frozen analysis artifacts only,
 % incorporating the seventeen points of the external revision checklist.
+% Revision 3, 2026-10-10: adds the robustness extension (paired Poisson
+% bootstrap, six-seed study, per-jet input response, scale-free input sets)
+% read from 04_Results/{stat_bootstrap,tagger_variants,feature_response}_round1,
+% and the dataset-README statements in sources/. No frozen number is changed.
 % Reconstruction fingerprint : c28a262540824e9db90f34c421f10c70
 % Final model SHA-256        : 63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c
 % Metrics source             : final_metrics_atlas_tagger_xgb_final_production_round1_round1.json
@@ -66,24 +70,24 @@ Technology}, \orgaddress{\street{C-II Johar Town}, \city{Lahore}, \postcode{5477
 generator-modelling variations as dedicated simulated samples rather than as
 per-event weights. For the four exactly pairable calorimeter variations, the
 fifteen stored high-level substructure quantities remain nominal, so we
-recompute all fifteen from released constituents with one implementation
-applied to every sample. Against the stored
+recompute them from the released constituents with a single implementation. Against the stored
 nominal branches the median relative agreement is $2.5\times10^{-8}$ to
-$4.8\times10^{-7}$ per quantity on 14{,}103 jets, and 153 of 211{,}545
-quantity--jet comparisons ($0.072\%$) exceed a $10^{-3}$ relative tolerance.
-These fall on 44 jets: 43 lack, in the released constituents, information the
-stored branch used, and one is a reproducible floating-point degeneracy; none is
-a formula or implementation mismatch and none is unresolved. The frozen
-reconstruction was applied to 80{,}481{,}421 jet entries. An XGBoost tagger developed from a five-million-jet nominal subset
+$4.8\times10^{-7}$ per quantity on 14{,}103 jets; the $0.072\%$ of comparisons
+beyond a $10^{-3}$ tolerance fall on 44 jets, none of them a formula or
+implementation mismatch. The frozen reconstruction was applied
+to 80{,}481{,}421 jet entries. An XGBoost tagger developed from a five-million-jet nominal subset
 reaches an unweighted area under the receiver-operating-characteristic curve of
-$0.9320$ and background rejection $41.91$ at $50\%$ signal efficiency on
-10{,}306{,}812 test jets, with a $25.8\%$ total relative systematic uncertainty
-dominated by generator modelling ($20.0\%$). Paired TreeSHAP attribution
-drift, measured on the four calorimeter-cluster variations that pair jet-by-jet,
-is led by ECF$_3$, while global importance orderings change minimally (Spearman
-$\rho \ge 0.986$). Class-conditional split-conformal coverage, calibrated once on
-nominal simulation and applied unchanged to all nine detector-systematic samples,
-stays within one percentage point of the $90\%$ target.}
+$0.9320$ and background rejection $41.91 \pm 0.12$ (stat.) at $50\%$ signal
+efficiency on 10{,}306{,}812 test jets. Its total relative systematic uncertainty
+is $(25.8 \pm 0.6_{\mathrm{stat}} \pm 0.5_{\mathrm{seed}})\%$, dominated by
+generator modelling ($20.0\%$). Under the calorimeter energy-scale and
+energy-resolution variations, paired TreeSHAP attribution drift is led by ECF$_3$,
+the input of highest degree in the constituent momenta, while global importance
+orderings change minimally (Spearman $\rho \ge 0.986$). Restricting the tagger to
+dimensionless inputs lowers the six-seed mean total uncertainty from $26.3\%$ to
+$15.8\%$ but background rejection from $41.8$ to $18.9$. Class-conditional split-conformal
+coverage, calibrated once on nominal simulation, stays within one percentage point
+of the $90\%$ target on all nine detector-systematic samples.}
 
 \keywords{jet substructure, boosted top tagging, machine learning, SHAP, conformal
 prediction, systematic uncertainties, ATLAS open data}
@@ -121,21 +125,35 @@ variations that pair exactly, all fifteen stored high-level quantities remain
 nominal despite changed constituents (Section~\ref{sec:stale}). A study of how
 a classifier responds to these variations must first rebuild the feature space
 from the released constituents.
-Doing that, once, with one implementation applied identically on both sides of every
-comparison, is the enabling step for everything that follows and is the first
-contribution of this work.
 
-On that basis we make two further contributions. We train an XGBoost
-tagger~\cite{Chen2016,Friedman2001} on the reconstructed feature space and evaluate it
-exactly as ATLAS prescribes for this dataset, so that the resulting performance and
-systematic uncertainty are directly comparable to the published benchmark. We then add
-two diagnostics that a single performance number cannot provide. The first is a
-\emph{paired} analysis of Shapley additive explanations
-(SHAP)~\cite{Lundberg2017,Lundberg2020trees}, which measures how the attribution
-assigned to each feature moves for the \emph{same physical jet} under a systematic
-variation. The second is a class-conditional split-conformal coverage
-check~\cite{Vovk2005,Angelopoulos2023}, which asks whether prediction sets calibrated
-once on nominal simulation retain their nominal coverage on varied simulation.
+The contributions of this work are the following.
+\begin{enumerate}
+\item \emph{A reconstructed feature space.} All fifteen high-level quantities are
+  rebuilt from the released constituents with one implementation applied identically
+  on both sides of every comparison, validated against the stored nominal branches,
+  and applied to 80.5 million jet entries (Section~\ref{sec:data}). This is the
+  enabling step for everything that follows.
+\item \emph{A benchmarked tagger with measured precision.} An XGBoost
+  tagger~\cite{Chen2016,Friedman2001} is trained on that feature space and evaluated
+  exactly as ATLAS prescribes for this dataset, so that its performance and systematic
+  uncertainty are directly comparable to the published benchmark. The statistical
+  uncertainty of the nominal performance and of every systematic uncertainty is
+  measured with a bootstrap that preserves the jet-by-jet pairing of the calorimeter variations, and its
+  dependence on the training seed with six independent fits
+  (Section~\ref{sec:precision}).
+\item \emph{Paired attribution drift.} A \emph{paired} analysis of Shapley additive
+  explanations (SHAP)~\cite{Lundberg2017,Lundberg2020trees} measures how the
+  attribution assigned to each feature moves for the \emph{same physical jet} under a
+  systematic variation.
+\item \emph{An explanation in terms of the inputs.} The leading attribution drift
+  and the dominant detector and modelling uncertainties are traced to the degree of
+  each input in the constituent momenta, by measuring the per-jet response of every input and by retraining on
+  dimensionless inputs (Section~\ref{sec:degreemethod}).
+\item \emph{Coverage under systematic variation.} A class-conditional split-conformal
+  coverage check~\cite{Vovk2005,Angelopoulos2023} asks whether prediction sets
+  calibrated once on nominal simulation retain their nominal coverage on varied
+  simulation.
+\end{enumerate}
 
 The two diagnostics operate at different levels, and it is worth being explicit about
 that from the start. The SHAP analysis is genuinely paired: it is restricted to the
@@ -151,8 +169,11 @@ classifiers~\cite{Bhattacherjee2024,Sahu2024}, and conformal prediction in high-
 physics~\cite{Araz2025} have all been reported before. What is new here is that the
 attribution comparison is made on physically matched jet pairs drawn from dedicated
 systematic samples, on a feature space rebuilt so that the two sides of each comparison
-are genuinely comparable, and that the coverage comparison is carried across every
-detector variation the release provides.
+are genuinely comparable; that the uncertainty budget of the prescribed procedure is
+given with its own statistical precision; that the leading attribution drift and the
+dominant uncertainties are explained, and tested by an intervention on the inputs,
+through a property of the input definitions; and that the coverage comparison is carried across every detector
+variation the release provides.
 
 Throughout, the published ATLAS high-level network (hlDNN) is used only as an external
 reference point in the same fifteen-variable feature space. We do not attempt to
@@ -197,7 +218,11 @@ row counts recorded by the read-only cache integrity audit. In total
 \textbf{80{,}481{,}421 jet entries} were read and reconstructed. The released
 \texttt{train\_nominal} partition is far larger than the subset used here; we use
 $5{,}000{,}000$ of its jets, a choice discussed in
-Section~\ref{sec:limitations}.
+Sections~\ref{sec:training} and~\ref{sec:limitations}. Each detector-systematic sample
+enters the evaluation with $5{,}000{,}000$ jets, of which at most 244 fail the
+eligibility rule of Section~\ref{sec:training}; this is the size the dataset
+documentation recommends as a minimum in evaluation when the experimental
+uncertainties are calculated~\cite{ATLASGitLab}.
 
 \begin{table}[t]
 \centering\small
@@ -268,6 +293,17 @@ The \texttt{cer} summed-energy response has an RMS of $3.770123\%$, while the
 \texttt{cpos} constituent-centroid displacement has median
 $\Delta R=4.9387\times10^{-5}$. Thus the stored high-level branches of these
 four samples would conceal a real constituent-level detector variation.
+
+The dataset documentation anticipates part of this. It states that in the samples
+meant for assessing experimental systematic uncertainties the jet four-vector ``is not
+re-calculated from the systematic varied jet constituents'', because the jet
+four-vector is calibrated~\cite{ATLASGitLab}. It makes no corresponding statement about
+the fifteen high-level quantities, which it describes only as summaries of the
+constituent information. The audit shows that, in the four pairable calorimeter
+samples, they behave like the jet four-vector: they are identical to their nominal
+values and do not follow the varied constituents. We document this as a property of
+the release rather than as an error in it, but it means that the stored branches
+cannot be used to measure a tagger's response to these variations.
 
 Because this observation is what makes the rest of the paper necessary, it is
 documented sample by sample in Supplementary Table~S1. Exact-key hits in the
@@ -399,13 +435,23 @@ Three properties of this procedure are worth stating explicitly, because they bo
 what the held-out numbers mean. First, the hyperparameters above were fixed before
 fitting and no search over them was performed: the only other tagger trained in the
 frozen campaign is a $4{,}000{,}000$-jet pilot with an identical configuration, retained
-unchanged, and the move to five million jets was a decision about production scale, not
-a selection against a validation score. Second, the fit is called without an evaluation
+unchanged, and the move to five million jets was a choice of training-set size, not a
+selection against a validation score. Second, the fit is called without an evaluation
 set, so no early stopping, no boosting-round selection and no threshold tuning takes
 place; the number of trees is the fixed 500 above. Third, in consequence, the
 $500{,}385$ validation jets influenced neither hyperparameter selection nor the choice
 of final model, and they are therefore independent of the fitted classifier in the
 sense the conformal calibration of Section~\ref{sec:conformalmethod} requires.
+
+The training-set size is guided by the reference workflow of the dataset rather than
+by a performance optimisation. The documentation's example training script uses six
+million of the training jets and advises taking as many as fit in memory, while
+stating that state-of-the-art performance will require training on the entire
+partition~\cite{ATLASGitLab}; its five-million-jet recommendation refers to
+evaluation, which Section~\ref{sec:record} follows. Our five-million-jet training
+subset is therefore close to the six million the reference script uses and well short
+of the full partition, and Section~\ref{sec:limitations} discusses what that implies for the
+comparison with the published reference.
 
 The unweighted validation area under the receiver-operating-characteristic curve (AUC)
 is $0.93190$, against $0.93199$ on the independent test sample. These held-out
@@ -498,6 +544,75 @@ The four initial- and final-state-radiation (ISR and FSR) scale variations are t
 only use of the shower-weight array. They are applied as weight ratios to the nominal predictions,
 separately for signal and for background, and combined as up/down envelopes and then in
 quadrature.
+
+\subsection{Statistical precision and training-seed dependence}
+\label{sec:precision}
+
+The dataset documentation states the precision requirement explicitly: a systematic
+difference is meaningful only if the statistical uncertainty on the performance metric
+is smaller than the difference itself~\cite{ATLASGitLab}. We measure that statistical
+uncertainty with a Poisson bootstrap~\cite{Efron1979,Hanley2006}. Every jet of every
+evaluated sample receives a weight drawn from a Poisson distribution of unit mean, and
+the complete chain of Section~\ref{sec:syst} --- working-point thresholds, background
+rejections, envelopes, quadrature sums, the modelling complements and the extrapolation
+of signal modelling --- is recomputed with those weights. The correlations on which the
+uncertainty definition relies are preserved. A jet of \texttt{esup}, \texttt{esdown},
+\texttt{cer} or \texttt{cpos} that matches a \texttt{test\_nominal} jet on the exact key
+of Section~\ref{sec:shapmethod} takes the weight of its nominal partner, so that the statistical fluctuation of the
+jets common to both samples cancels in the comparison. The nominal reference uses all
+$10{,}306{,}812$ test jets, of which only about five million have a partner, so the
+remaining nominal jets fluctuate independently and set a statistical floor below which
+a component cannot be resolved with these sample sizes. The four
+ISR/FSR variations, which are weight ratios on the nominal predictions, and the nominal
+jets appended to the single-class modelling samples reuse the nominal weights. The track
+samples, \texttt{bias}, the modelling samples and the few unmatched \texttt{cer} jets are
+resampled independently. With unit weights the procedure reproduces every frozen number
+exactly, and this is checked before any replica is drawn. We use 100 replicas with a
+fixed seed and quote the standard deviation of each quantity over them as its
+statistical uncertainty.
+
+Each uncertainty component is a modulus, $|r-1|$, and is then combined in envelopes and
+quadrature, so it is positive by construction and statistical noise raises its expected
+value. For a component whose true size is small, the bootstrap distribution is skewed
+and its mean lies above the measured value; the measured value itself carries the same
+upward bias. We therefore keep the frozen values as the
+central values, use the bootstrap only for their spread, and state the replica mean where
+this bias matters.
+
+Training-seed dependence is measured by refitting the frozen configuration with five
+further seeds on exactly the same $4{,}499{,}612$ fitting jets; the seed controls the row
+and column subsampling of the boosting, and the validation split is unchanged. The refit
+with seed 42 is checked to reproduce the frozen model byte for byte, with the same
+SHA-256 and bit-identical predictions on every sample. Each refit is evaluated with the
+frozen chain on the same test and systematic samples. These fits, and the input-set
+variants of Section~\ref{sec:degreemethod}, were made after the analysis was frozen;
+none of them replaces the frozen model, and no frozen number is changed by them.
+
+\subsection{Momentum-scale degree of the inputs}
+\label{sec:degreemethod}
+
+Under a common rescaling $p^{(i)} \to \lambda\,p^{(i)}$ of every constituent
+four-momentum, each of the fifteen quantities scales as $\lambda^{d}$ with a fixed
+integer degree $d$ that follows from its definition. The four $N$-subjettiness
+quantities, which are normalised by the summed constituent $\pt$, and $C_2$, $D_2$,
+$L_2$, $L_3$ and thrust major are dimensionless ($d=0$); $\sqrt{d_{12}}$,
+$\sqrt{d_{23}}$, ECF$_1 = \sum_i \pt^{(i)}$ and $Q_w$ have $d=1$; ECF$_2$ has $d=2$ and
+ECF$_3$ has $d=3$. A variation that shifts the constituent energy scale by a small
+fraction $k$ therefore moves a quantity of degree $d$ by about $dk$, and leaves the
+dimensionless quantities nearly unchanged.
+
+Two measurements test this. First, for every exactly paired calorimeter jet we compute
+the per-jet response $X^{s}/X^{\mathrm{nom}} - 1$ of each reconstructed input, on all
+matched pairs rather than on the SHAP sample. A relative change is the natural measure
+for the degree argument, but it is not a measure of the effect on the classifier: a tree
+model splits on rank, so what matters to it is the shift of an input relative to that
+input's spread and to the split points the model uses. Second, the frozen configuration is
+retrained, with the same six seeds and on the same fitting jets, on two reduced input
+sets: the nine dimensionless quantities alone, and those nine together with the five
+dimensionful quantities other than ECF$_1$, each divided by ECF$_1^{\,d}$, which removes
+their momentum scale but keeps their shape. Both are evaluated with the frozen chain. These
+variants are diagnostics of where the sensitivity of the frozen tagger comes from; they
+are not proposed as alternative taggers.
 
 \subsection{Paired SHAP-Delta}
 \label{sec:shapmethod}
@@ -661,7 +776,12 @@ detector variation without first accounting for the change in mixture.
 Table~\ref{tab:nominal-performance} gives the frozen nominal result on the
 $10{,}306{,}812$ eligible test jets. The tagger reaches an unweighted AUC of $0.9320$,
 accuracy $0.8559$, and background rejection $41.91$ at $50\%$ signal efficiency and
-$9.29$ at $80\%$. The published hlDNN values, taken from Table~4 of
+$9.29$ at $80\%$. Their statistical uncertainties, from the bootstrap of
+Section~\ref{sec:precision}, are $\pm 0.00008$ on the AUC, $\pm 0.12$ on the
+background rejection at $50\%$ and $\pm 0.015$ at $80\%$. Across the six training seeds
+the background rejection at $50\%$ ranges from $41.74$ to $41.91$, with a standard
+deviation of $0.07$, so the seed dependence of the nominal performance is smaller than
+its statistical uncertainty. The published hlDNN values, taken from Table~4 of
 Ref.~\cite{ATLAS2024}, are listed beside them purely as an external reference in the
 same fifteen-variable feature space. We did not train that
 network, did not attempt to reproduce it, and the difference between the two rows is
@@ -678,7 +798,7 @@ Panel~(a) of Fig.~\ref{fig:perf} shows the
 $\pt$ dependence of background rejection, which falls from $93.4$ in the
 $350$--$550$~GeV bin to $28.6$ in the $2950$--$3150$~GeV bin.
 
-\input{tables/layout/table1_nominal_performance.tex}
+\input{tables/ext/table1_nominal_performance_precision.tex}
 
 \begin{figure}[tbp]
   \centering
@@ -694,7 +814,8 @@ $350$--$550$~GeV bin to $28.6$ in the $2950$--$3150$~GeV bin.
     eye, and the ratio introduces no quantity that is not already in the upper panel.
     Curves are computed from the frozen prediction files with the unweighted convention
     of Section~\ref{sec:syst}; the areas under the curve quoted in the legend are the
-    same values as in Table~\ref{tab:nominal-performance}. Open markers are the two
+    frozen values, the nominal one as in Table~\ref{tab:nominal-performance} and the
+    two varied ones as quoted in Section~\ref{sec:nominal}. Open markers are the two
     working points reported in this paper, labelled with the frozen
     background-rejection values of Table~\ref{tab:nominal-performance} rather than with
     values read off the curve.}
@@ -713,10 +834,10 @@ $350$--$550$~GeV bin to $28.6$ in the $2950$--$3150$~GeV bin.
     resolution), track (efficiency and fake-rate envelopes combined in quadrature with
     track bias), modelling (signal and background parton shower and hadronisation), and
     ISR/FSR (the four shower-weight scale envelopes); Total is their quadrature sum.
-    No uncertainty band is drawn on any curve: each point is a single ratio of two
-    measured background rejections and we have not estimated its statistical error, so
-    the bin-to-bin structure should be read as measured values without an attached
-    precision. The step in the modelling curve between the $1.35$--$1.55$~TeV and
+    The error bars in (a) and the shaded bands in (b) are $\pm1$ standard deviation
+    of 100 Poisson bootstrap replicas, drawn around the frozen measured values
+    (Section~\ref{sec:precision}); their bin-by-bin values are given in
+    Supplementary Table~S8. The step in the modelling curve between the $1.35$--$1.55$~TeV and
     $1.55$--$1.75$~TeV bins is the official extrapolation convention described in
     Section~\ref{sec:syst}: signal modelling is measured only below $1.5$~TeV and is
     held at its maximum measured value from $1.55$~TeV upwards. Bin-by-bin values for
@@ -747,12 +868,49 @@ bias.
 The $\pt$ dependence in Fig.~\ref{fig:perf}(b) is not flat. The total is largest in the
 lowest bin ($39.3\%$), falls to about $26\%$ between $0.95$ and $1.55$~TeV, and rises
 again above $1.55$~TeV as the extrapolated signal-modelling term takes over. The
-cluster and track curves fluctuate bin to bin at the few-percent level. We report that
-fluctuation without interpreting it: no uncertainty band is attached to these ratios in
-this work, so we cannot distinguish sample statistics from genuine $\pt$ dependence,
-and we do not claim that the fluctuation is a finite-statistics effect.
+cluster and track curves fluctuate bin to bin at the few-percent level.
 
-\input{tables/layout/table2_inclusive_systematics_wp50.tex}
+The bootstrap of Section~\ref{sec:precision} separates that structure from sample
+statistics. In each bin the statistical standard deviation of the total is $1.3$ to
+$2.6$ percentage points (Supplementary Table~S8). A $\chi^2$ comparison of each binned
+detector curve with a $\pt$-independent constant, treating the fourteen bins as
+independent and the bootstrap standard deviations as Gaussian, gives
+$\chi^2 = 55.7$ for 13 degrees of freedom for the energy-scale envelope and $45.7$ for
+the cluster category, so their $\pt$ dependence is genuine. For the track category it
+gives $\chi^2 = 5.4$, and for \texttt{cer}, \texttt{cpos} and track bias $15.9$, $3.4$
+and $4.7$: the bin-to-bin fluctuation of these curves is compatible with statistics
+alone, and in eight of the fourteen bins the \texttt{cpos} and the track-bias values are
+each smaller than their own statistical standard deviation. The values of $\chi^2$ for
+these small components are lower than 13 degrees of freedom would make likely, which
+is itself a sign that taking the modulus compresses their bin-to-bin scatter; for them
+the test is qualitative. Because every component is a
+modulus, noise also biases it upward: the replica mean of the binned total lies $0.8$ to
+$1.6$ percentage points above the measured value.
+
+Inclusively, the statistical precision is sufficient for nearly every component
+(Table~\ref{tab:inclusive-systematics-wp50}). The energy-scale envelope is
+$9.58 \pm 0.33\%$, signal modelling $18.59 \pm 0.50\%$, signal FSR
+$11.34 \pm 0.64\%$ and the total $25.83 \pm 0.58\%$, and every entry of the table except
+two lies at least five standard deviations from zero. Of the two background
+modelling comparisons that the table combines, the parton-shower one is
+$1.29 \pm 0.40\%$. The exceptions are \texttt{cpos}, at
+$1.13 \pm 0.33\%$, and track bias, at $0.16 \pm 0.32\%$ with a replica mean of
+$0.45\%$; track bias is consistent with zero and does not meet the documentation's
+requirement that the statistical uncertainty be smaller than the difference it
+measures~\cite{ATLASGitLab}.
+
+The dependence on the training seed is of the same order as the statistical precision
+of the total and smaller than it for the nominal performance. Over six seeds the total
+is $26.32 \pm 0.47\%$, ranging from $25.83\%$ to $27.01\%$, and the modelling term
+$20.65 \pm 0.43\%$; the frozen seed gives the lowest total and the lowest modelling term of the six,
+about one standard deviation below the six-seed means. The two effects
+are not independent, since a refitted model places a different set of jets near the
+working-point threshold, and we do not combine them. Together they indicate that the
+frozen total is determined to about $0.6$ percentage points statistically and a further
+$0.5$ from the choice of seed, and none of the conclusions drawn from the budget depends
+on either. The per-seed values are listed in Supplementary Table~S9.
+
+\input{tables/ext/table2_inclusive_systematics_precision.tex}
 
 \subsection{Paired SHAP-Delta}
 \label{sec:shapresults}
@@ -768,10 +926,10 @@ followed by ECF$_1$, $L_2$, thrust major and $\tau_4^{\mathrm{WTA}}$. \texttt{ce
 led by ECF$_3$ at about half that size ($0.062$), with $\tau_4^{\mathrm{WTA}}$ close
 behind. \texttt{cpos} differs in both size and shape: its largest drift is an order of
 magnitude smaller ($\tau_4^{\mathrm{WTA}}$, $0.013$) and the energy correlators no
-longer lead. That the two variations which change constituent energies move the energy
-correlators most, while the variation that changes constituent positions does not, is
-consistent with what each variation does to the inputs; we report the association and
-do not claim a causal mechanism.
+longer lead. That the two variations which change constituent energies move ECF$_3$ and ECF$_1$
+most, while the variation that changes constituent positions does not, is
+what one expects from what each variation does to the inputs, and
+Section~\ref{sec:degreeresults} measures that input response directly.
 
 Global feature-importance orderings are highly stable under all four variations, and
 change only minimally. On the $100{,}000$-pair samples the Spearman correlation between
@@ -821,6 +979,68 @@ as such.
 \end{figure*}
 
 \input{tables/layout/table3_shap_delta_100k_summary.tex}
+
+\subsection{Momentum-scale degree and the scale-free test}
+\label{sec:degreeresults}
+
+Table~\ref{tab:feature-response} gives the per-jet response of every input on all
+matched pairs, and Supplementary Table~S10 its full distribution. Under \texttt{esup} the summed constituent transverse momentum ECF$_1$
+rises by a median $7.41\%$, and the response of every other input is ordered by its degree:
+$+4.29\%$ to $+5.48\%$ for the other three quantities with $d=1$, $+12.57\%$ for
+ECF$_2$, $+17.63\%$ for ECF$_3$, and between $-1.87\%$ and $+0.28\%$ for the nine
+dimensionless ones. \texttt{esdown} mirrors this with opposite sign. The dimensionful
+responses are smaller than a uniform rescaling would give ($15.36\%$ for ECF$_2$ and
+$23.91\%$ for ECF$_3$), and the dimensionless ones are not exactly zero. Both show that
+the variation is not a uniform rescaling of all constituents, which is consistent with
+the documentation's description of it as acting on the calorimeter-reconstructed
+constituents~\cite{ATLASGitLab}; we have not checked which constituents are left
+unscaled. Under \texttt{cer} the median responses vanish but individual
+jets move, and ECF$_3$ again has the largest median absolute response of all fifteen
+inputs, $4.88\%$, against $3.59\%$ for ECF$_2$ and at most $2.46\%$ for any dimensionless
+input. Under \texttt{cpos} no input moves by more than $0.12\%$ in median absolute
+value, and ECF$_3$ and $\tau_4^{\mathrm{WTA}}$ respond almost equally ($0.117\%$ and
+$0.115\%$).
+
+\input{tables/ext/table6_feature_response_degree.tex}
+
+This accounts for the leading entry of the attribution pattern of
+Section~\ref{sec:shapresults}. ECF$_3$, the input of highest degree, is the input whose
+value moves most for the same physical jet under the two energy-scale variations and
+under \texttt{cer}, and it is the input whose attribution moves most under all three.
+It does not account for the rest of the ordering. Under \texttt{esup}, ECF$_2$ has the
+second-largest response but almost the smallest attribution drift, while $L_2$ and
+thrust major, which move by less than $1\%$, rank third and fourth; under
+\texttt{cpos}, where ECF$_3$ and $\tau_4^{\mathrm{WTA}}$ respond almost equally, the
+drift is led by $\tau_4^{\mathrm{WTA}}$. The attribution of an input depends on how
+much the model relies on it and, through interactions in the trees, on the inputs that
+do move, so the per-jet response explains which input leads but not the full
+ordering.
+
+The scale-free test asks the same question of the uncertainty budget
+(Table~\ref{tab:scale-free}). Restricted to the nine dimensionless inputs, the same
+configuration has an energy-scale uncertainty of $2.03 \pm 0.14\%$, against
+$9.45 \pm 0.11\%$ with all fifteen inputs, a cluster total of $2.75\%$ against
+$9.91\%$, and a modelling term of $6.60\%$ against $20.65\%$, so that the total falls
+from $26.32\%$ to $15.80\%$ (six-seed means and standard deviations). The price is
+discrimination: the AUC falls from $0.9320$ to $0.8761$ and the background rejection at
+$50\%$ signal efficiency from $41.82$ to $18.88$. Of the four categories only ISR/FSR
+rises, from $12.22\%$ to $13.81\%$, almost entirely through the signal final-state
+radiation envelope, which goes from $11.43\%$ to $13.48\%$. Adding back the five
+dimensionful quantities as ratios $X/\mathrm{ECF}_1^{\,d}$, which restores their shape
+but not their scale, recovers little: background rejection $19.48$ and total
+uncertainty $16.13\%$.
+
+\input{tables/ext/table7_scale_free_variants.tex}
+
+Within this feature space, then, the discriminating power and the two largest detector
+and modelling sensitivities have a common origin: the absolute momentum scale carried by
+the six dimensionful inputs. With no explicit jet $\pt$ or mass among the inputs, these
+are the only quantities that carry it. They are what the energy-scale variation shifts,
+and removing them also reduces the generator-modelling term by a factor of three; we
+have not tested why the generator comparison depends on them. We have not separated
+how much of that information is jet mass and how much jet $\pt$. The pattern is the
+trade-off between accuracy and precision that Ref.~\cite{ATLAS2024} reports between
+architectures, seen here inside a single feature space and attributed to specific inputs.
 
 \subsection{Conformal coverage}
 \label{sec:conformalresults}
@@ -893,7 +1113,7 @@ same set of samples.
 \subsection{What the results support}
 \label{sec:support}
 
-Three statements are supported by the frozen artifacts.
+Four statements are supported by the frozen artifacts and the extension studies.
 
 The first is about the dataset rather than about any tagger. A robustness study on this
 release cannot rely on stored high-level branches for the four validated pairable
@@ -910,7 +1130,9 @@ dominates the systematic budget. At $50\%$ signal efficiency the modelling term 
 $20.0\%$ against $10.1\%$ for the calorimeter cluster category and $4.5\%$ for
 tracking. Removing the two detector categories entirely would take the total from $25.8\%$ to
 $23.4\%$, so on this tagger the leverage sits in the generator comparison rather than in
-the detector terms.
+the detector terms. This ordering is not a statistical accident: the statistical
+uncertainty of the modelling term is $0.49\%$ and its spread over training seeds
+$0.43\%$.
 
 The third concerns what SHAP and conformal diagnostics add beyond a performance number.
 They are sensitive to different things. Attribution drift under the energy-scale
@@ -921,6 +1143,16 @@ Neither of these is visible in AUC, which changes by $0.003$ between nominal and
 \texttt{esup}. We regard both as diagnostics that describe how a classifier's behaviour
 shifts, not as significance tests.
 
+The fourth concerns where this tagger's sensitivity comes from. The inputs that respond
+most to the calorimeter energy scale are those of highest degree in the constituent
+momenta, the largest attribution drift falls on the one of highest degree, and removing the absolute momentum scale
+from the inputs removes most of the energy-scale and modelling uncertainty together with
+more than half of the background rejection. These are measurements on one model class
+and one feature space. The degree of each input, however, is a property of its
+definition rather than of gradient boosting, so the same input-level reasoning applies
+to any tagger built on these quantities, although we have not tested how other
+architectures weigh them.
+
 \subsection{Limitations}
 \label{sec:limitations}
 
@@ -930,7 +1162,9 @@ five-million-jet nominal subset taken from the first fifty released
 $500{,}385$ held out. The released training partition is much larger, and the files were
 taken as a contiguous block rather than a random draw across the partition; we did not
 demonstrate that this block is representative of the whole, and we did not run a
-training-size scan. The gap to the published hlDNN reference in
+training-size scan. The size is close to the six million jets of the reference training
+script, but the dataset documentation states that state-of-the-art performance requires
+the entire partition~\cite{ATLASGitLab}. The gap to the published hlDNN reference in
 Table~\ref{tab:nominal-performance} is therefore not attributable to any single cause,
 and we do not attempt to decompose it.
 
@@ -948,7 +1182,8 @@ are re-simulations of the same jets.
 The SHAP results are for one model. TreeSHAP is exact for the fitted trees, so there is
 no attribution-estimator uncertainty, but the attributions themselves depend on the
 training sample, the seed and the hyperparameters, and we quantify only the dependence
-on the evaluation sample size. Carrying the same paired construction to a second
+on the evaluation sample size; the six-seed study of Section~\ref{sec:precision} covers
+performance and uncertainties, not attributions. Carrying the same paired construction to a second
 architecture would test how much of the pattern is a property of the feature space
 rather than of gradient boosting.
 
@@ -959,10 +1194,16 @@ coverage and its deviation; we do not attach a confidence statement to it, and t
 deviations we observe are small enough that we would not read a physical claim into
 their ordering.
 
-No statistical uncertainty is attached to any of the ratios in this paper. Bootstrap
-confidence intervals on the systematic ratios, a multi-seed study of the tagger, and a
-comparison across disjoint training blocks would each sharpen what can be said, and we
-regard them as the natural next step rather than as part of the present result.
+The statistical uncertainties of this paper describe the finite size of the evaluation
+samples. The six-seed study varies the training seed but not the training jets, so the
+statistical uncertainty of the training sample itself is not covered, and a comparison
+across disjoint training blocks remains to be done. Because each uncertainty component
+is a modulus, its bootstrap distribution is skewed when the component is small, and the
+standard deviations quoted for \texttt{cpos}, track bias and the smaller binned entries
+indicate a size rather than a Gaussian error. The input-set variants have only the
+six-seed spread and no bootstrap of their own. Their differences from the full tagger
+are many times the statistical precision of the frozen result, but the small difference
+between the uncertainties of the two reduced input sets should not be interpreted.
 
 Finally, the binned uncertainty of Fig.~\ref{fig:perf}(b) covers $350$--$3150$~GeV, the
 range the reference implementation defines. That range holds $8{,}959{,}008$ of the
@@ -996,20 +1237,34 @@ accuracy $0.8559$, and background rejection $41.91$ at $50\%$ signal efficiency 
 10{,}306{,}812 test jets. Evaluated with the procedure the record prescribes, the total
 relative systematic uncertainty on background rejection is $25.8\%$: generator
 modelling $20.0\%$, ISR/FSR scales $12.0\%$, calorimeter clusters $10.1\%$, tracking
-$4.5\%$. The published ATLAS high-level network is quoted alongside only as an external
-reference in the same feature space.
+$4.5\%$. A bootstrap that preserves the jet-by-jet pairing of the calorimeter
+variations gives the total a statistical uncertainty of $0.6$ percentage points, and six
+training seeds spread it by $0.5$; every inclusive entry of the uncertainty table except \texttt{cpos}
+and track bias is at least five statistical standard deviations from zero, and the $\pt$ dependence of
+the energy-scale and cluster terms is genuine while that of the track terms is compatible
+with statistics. The published ATLAS high-level network is quoted alongside only as an
+external reference in the same feature space.
 
 On the four calorimeter-cluster variations that pair jet-by-jet with the nominal sample,
-paired TreeSHAP attribution drift concentrates on ECF$_3$, $\tau_4^{\mathrm{WTA}}$ and
-$L_2$ for the energy-scale and energy-resolution variations and on
-$\tau_4^{\mathrm{WTA}}$ at an order of magnitude smaller size for the position
-variation, while global importance rankings change minimally: the Spearman correlation
+paired TreeSHAP attribution drift concentrates on ECF$_3$ for the energy-scale and
+energy-resolution variations, followed by ECF$_1$ and $L_2$ under the energy scale and
+by $\tau_4^{\mathrm{WTA}}$ under the energy resolution, and on $\tau_4^{\mathrm{WTA}}$
+at an order of magnitude smaller size for the position variation, while global importance rankings change minimally: the Spearman correlation
 between nominal and varied orderings is at least $0.993$ for all-jet rankings and at
 least $0.986$ across every systematic-by-class combination. Class-conditional conformal
 prediction sets calibrated once on nominal validation data and applied unchanged to the
 nominal test sample and all nine detector-systematic samples retain class-conditional
 coverage within one percentage point of the $90\%$ target throughout, with the two
 energy-scale directions displacing the signal and background classes in opposite senses.
+
+The leading attribution drift follows the degree of each input in the constituent
+momenta: under \texttt{esup} ECF$_3$, of degree three, moves by a median $17.6\%$ per jet,
+against $7.4\%$ for the summed constituent momentum and less than $2\%$ for every
+dimensionless input. Retraining on the nine dimensionless inputs lowers the six-seed
+mean total uncertainty from $26.3\%$ to $15.8\%$, through the energy-scale and modelling terms, but
+lowers background rejection from $41.8$ to $18.9$, so within this feature space the
+discrimination and the leading sensitivities share one origin, the absolute momentum
+scale of the dimensionful inputs.
 
 The reading we would defend is narrow. A tagger's response to a systematic variation has
 structure that a single performance number does not show, and on a public dataset that
@@ -1026,9 +1281,16 @@ Portal Record 80030, \url{https://doi.org/10.7483/OPENDATA.ATLAS.SOAY.LABE}.]
 
 \subsection*{Code Availability Statement}
 
-Code/software will be made available on reasonable request. [Authors' comment: The
-code/software generated during and/or analysed during the current study are available
-from the corresponding author on reasonable request.]
+This manuscript has associated code/software in a data repository. [Authors' comment:
+The analysis code, the trained tagger and the frozen results quoted in this paper are
+publicly available at
+\url{https://github.com/adeelrahmat64-beep/atlas80030-tagger-robustness}. Release
+v1.1.0 adds the scripts and outputs of the statistical-precision, training-seed and
+input-degree studies (\texttt{uncertainty\_chain.py}, \texttt{stat\_bootstrap.py},
+\texttt{tagger\_variants.py} and \texttt{feature\_response.py}) to the first release,
+v1.0.0 (\url{https://doi.org/10.5281/zenodo.23083866}). Every release is archived on
+Zenodo under the concept DOI \url{https://doi.org/10.5281/zenodo.23083865}, which
+always resolves to the latest version.]
 
 \section*{Acknowledgements}
 
@@ -1235,6 +1497,14 @@ SciPost Phys. \textbf{7} (2019) 034,
 \url{https://doi.org/10.21468/SciPostPhys.7.3.034},
 arXiv:1905.09127.
 
+\bibitem{ATLASGitLab}
+ATLAS Collaboration,
+\emph{ATLAS top tagging open data: reference analysis software and documentation (README.md)},
+commit \texttt{5bc3c8d70cf8736d24b\linebreak[0]969972a3dd365017a9e24},
+\url{https://gitlab.cern.ch/atlas/ATLAS-top-tagging-open-data/-/tree/%
+5bc3c8d70cf8736d24b969972a3dd365017a9e24}
+[accessed September and October 2026].
+
 \bibitem{Larkoski2014WTA}
 A.~J.~Larkoski, D.~Neill, and J.~Thaler,
 \emph{Jet shapes with the broadening axis},
@@ -1305,14 +1575,6 @@ in: Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HP
 (2015) 7:1--7:6,
 \url{https://doi.org/10.1145/2833157.2833162}.
 
-\bibitem{ATLASGitLab}
-ATLAS Collaboration,
-\emph{ATLAS top tagging open data: reference analysis software},
-commit \texttt{5bc3c8d70cf8736d24b\linebreak[0]969972a3dd365017a9e24},
-\url{https://gitlab.cern.ch/atlas/ATLAS-top-tagging-open-data/-/tree/%
-5bc3c8d70cf8736d24b969972a3dd365017a9e24}
-[accessed September 2026].
-
 \bibitem{Virtanen2020}
 P.~Virtanen et al.,
 \emph{SciPy 1.0: fundamental algorithms for scientific computing in Python},
@@ -1330,6 +1592,18 @@ Programming Systems Languages \& Applications (OOPSLA) (2014) 453--472,
 F.~Pedregosa et al.,
 \emph{Scikit-learn: machine learning in Python},
 J. Mach. Learn. Res. \textbf{12} (2011) 2825--2830.
+
+\bibitem{Efron1979}
+B.~Efron,
+\emph{Bootstrap methods: another look at the jackknife},
+Ann. Stat. \textbf{7} (1979) 1--26,
+\url{https://doi.org/10.1214/aos/1176344552}.
+
+\bibitem{Hanley2006}
+J.~A.~Hanley and B.~MacGibbon,
+\emph{Creating non-parametric bootstrap samples using Poisson frequencies},
+Comput. Methods Programs Biomed. \textbf{83} (2006) 57--62,
+\url{https://doi.org/10.1016/j.cmpb.2006.04.006}.
 
 \bibitem{Tibshirani2019}
 R.~J.~Tibshirani, R.~F.~Barber, E.~J.~Cand\`{e}s, and A.~Ramdas,

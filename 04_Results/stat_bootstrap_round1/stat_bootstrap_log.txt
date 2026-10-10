@@ -1,0 +1,152 @@
+# ATLAS 80030 stat_bootstrap  2026-10-09 17:19:05
+# output D:\SSD\HEP\Research Papers\ATLAS 80030\04_Results\stat_bootstrap_round1
+# frozen model SHA-256 63a23308efbf2ce90418c8e657730f571db4798fc9ca2fb3692cb986de405f4c
+# base seed 20261009; replicas requested 100
+  loaded test_nominal    10,306,812 jets
+  loaded esup             4,999,999 jets
+  loaded esdown           4,999,999 jets
+  loaded cer              4,999,756 jets
+  loaded cpos             4,999,999 jets
+  loaded teg              4,999,998 jets
+  loaded tej              4,999,999 jets
+  loaded tfl              4,999,996 jets
+  loaded tfj              4,999,983 jets
+  loaded bias             4,999,999 jets
+  loaded ttbar_pythia       193,792 jets
+  loaded ttbar_herwig       180,811 jets
+  loaded cluster          5,000,002 jets
+  loaded string           4,999,996 jets
+  loaded angular          4,899,999 jets
+  loaded dipole           4,900,000 jets
+  self-check PASS: frozen metrics reproduced exactly (total 25.8286%) in 720s
+  paired esup     4,999,999 of  4,999,999 eligible jets (100.000%) share their nominal partner's weight
+  paired esdown   4,999,999 of  4,999,999 eligible jets (100.000%) share their nominal partner's weight
+  paired cer      4,995,058 of  4,999,756 eligible jets (99.906%) share their nominal partner's weight
+  paired cpos     4,999,999 of  4,999,999 eligible jets (100.000%) share their nominal partner's weight
+  replica    1/100   231.6s  total 25.275%  ~382 min left
+  replica    2/100   170.8s  total 25.776%  ~279 min left
+  replica    3/100   180.7s  total 25.641%  ~292 min left
+  replica    4/100   142.2s  total 25.307%  ~227 min left
+  replica    5/100   258.5s  total 27.076%  ~409 min left
+  replica    6/100   203.1s  total 26.062%  ~318 min left
+  replica    7/100   173.2s  total 26.000%  ~268 min left
+  replica    8/100   149.9s  total 25.120%  ~230 min left
+  replica    9/100   156.2s  total 26.140%  ~237 min left
+  replica   10/100   238.9s  total 26.739%  ~358 min left
+  replica   11/100   256.3s  total 25.497%  ~380 min left
+  replica   12/100   281.2s  total 24.392%  ~412 min left
+  replica   13/100   269.1s  total 25.958%  ~390 min left
+  replica   14/100   280.3s  total 26.658%  ~402 min left
+  replica   15/100  1332.8s  total 26.539%  ~1888 min left
+  replica   16/100   129.9s  total 26.892%  ~182 min left
+  replica   17/100   139.8s  total 26.230%  ~193 min left
+  replica   18/100   143.6s  total 25.342%  ~196 min left
+  replica   19/100   241.9s  total 25.059%  ~327 min left
+  replica   20/100   193.2s  total 26.017%  ~258 min left
+  replica   21/100   140.0s  total 25.683%  ~184 min left
+  replica   22/100   233.5s  total 25.646%  ~304 min left
+  replica   23/100   237.9s  total 26.185%  ~305 min left
+  replica   24/100   238.3s  total 26.403%  ~302 min left
+  replica   25/100   237.3s  total 25.199%  ~297 min left
+  replica   26/100   183.9s  total 25.225%  ~227 min left
+  replica   27/100   831.9s  total 25.171%  ~1012 min left
+  replica   28/100    95.8s  total 25.949%  ~115 min left
+  replica   29/100   115.8s  total 25.623%  ~137 min left
+  replica   30/100   114.7s  total 25.942%  ~134 min left
+  replica   31/100   115.6s  total 25.383%  ~133 min left
+  replica   32/100   114.6s  total 26.971%  ~130 min left
+  replica   33/100   114.2s  total 25.821%  ~128 min left
+  replica   34/100   114.6s  total 25.505%  ~126 min left
+  replica   35/100   113.8s  total 26.116%  ~123 min left
+  replica   36/100   113.7s  total 25.986%  ~121 min left
+  replica   37/100   116.1s  total 26.960%  ~122 min left
+  replica   38/100   115.5s  total 26.201%  ~119 min left
+  replica   39/100   116.5s  total 25.952%  ~118 min left
+  replica   40/100   114.9s  total 26.274%  ~115 min left
+  replica   41/100   114.9s  total 25.345%  ~113 min left
+  replica   42/100   114.3s  total 26.508%  ~110 min left
+  replica   43/100   114.9s  total 26.490%  ~109 min left
+  replica   44/100   115.9s  total 26.246%  ~108 min left
+  replica   45/100   115.7s  total 25.866%  ~106 min left
+  replica   46/100   116.1s  total 26.845%  ~105 min left
+  replica   47/100   114.3s  total 25.395%  ~101 min left
+  replica   48/100   115.9s  total 25.258%  ~100 min left
+  replica   49/100   114.7s  total 25.647%  ~98 min left
+  replica   50/100   115.7s  total 25.841%  ~96 min left
+  replica   51/100   114.2s  total 25.938%  ~93 min left
+  replica   52/100   116.1s  total 25.545%  ~93 min left
+  replica   53/100   114.5s  total 25.642%  ~90 min left
+  replica   54/100   115.7s  total 26.151%  ~89 min left
+  replica   55/100   114.4s  total 25.831%  ~86 min left
+  replica   56/100   116.1s  total 25.885%  ~85 min left
+  replica   57/100   114.0s  total 26.595%  ~82 min left
+  replica   58/100   116.7s  total 25.657%  ~82 min left
+  replica   59/100   115.1s  total 26.281%  ~79 min left
+  replica   60/100   116.9s  total 26.219%  ~78 min left
+  replica   61/100   114.0s  total 26.294%  ~74 min left
+  replica   62/100   116.3s  total 25.861%  ~74 min left
+  replica   63/100   114.1s  total 26.731%  ~70 min left
+  replica   64/100   115.8s  total 25.852%  ~70 min left
+  replica   65/100   116.4s  total 25.821%  ~68 min left
+  replica   66/100   116.1s  total 26.681%  ~66 min left
+  replica   67/100   115.2s  total 25.572%  ~63 min left
+  replica   68/100   115.5s  total 26.247%  ~62 min left
+  replica   69/100   115.0s  total 26.012%  ~59 min left
+  replica   70/100   114.7s  total 26.546%  ~57 min left
+  replica   71/100   115.3s  total 25.441%  ~56 min left
+  replica   72/100   114.2s  total 25.277%  ~53 min left
+  replica   73/100   115.2s  total 26.041%  ~52 min left
+  replica   74/100   113.7s  total 25.654%  ~49 min left
+  replica   75/100   115.8s  total 25.167%  ~48 min left
+  replica   76/100   114.0s  total 25.318%  ~46 min left
+  replica   77/100   116.0s  total 26.357%  ~44 min left
+  replica   78/100   114.0s  total 25.497%  ~42 min left
+  replica   79/100   115.2s  total 26.243%  ~40 min left
+  replica   80/100   114.1s  total 24.987%  ~38 min left
+  replica   81/100   115.6s  total 24.813%  ~37 min left
+  replica   82/100   114.1s  total 26.176%  ~34 min left
+  replica   83/100   115.3s  total 27.424%  ~33 min left
+  replica   84/100   113.9s  total 26.152%  ~30 min left
+  replica   85/100   115.9s  total 26.928%  ~29 min left
+  replica   86/100   114.0s  total 25.373%  ~27 min left
+  replica   87/100   115.4s  total 25.140%  ~25 min left
+  replica   88/100   114.6s  total 25.698%  ~23 min left
+  replica   89/100   115.9s  total 25.425%  ~21 min left
+  replica   90/100   114.7s  total 25.083%  ~19 min left
+  replica   91/100   115.1s  total 26.005%  ~17 min left
+  replica   92/100   115.0s  total 25.921%  ~15 min left
+  replica   93/100   115.0s  total 25.656%  ~13 min left
+  replica   94/100   115.9s  total 25.918%  ~12 min left
+  replica   95/100   114.8s  total 25.598%  ~10 min left
+  replica   96/100   115.2s  total 24.360%  ~8 min left
+  replica   97/100   114.0s  total 25.778%  ~6 min left
+  replica   98/100   116.0s  total 26.590%  ~4 min left
+  replica   99/100   113.8s  total 25.943%  ~2 min left
+  replica  100/100   115.3s  total 25.016%  ~0 min left
+
+  inclusive results (central value, bootstrap std), in percent:
+    inc_es              9.577  +- 0.328
+    inc_cer             2.885  +- 0.357
+    inc_cpos            1.134  +- 0.330
+    inc_cluster        10.066  +- 0.426
+    inc_eff             2.468  +- 0.454
+    inc_fake            3.777  +- 0.447
+    inc_bias            0.155  +- 0.316
+    inc_track           4.514  +- 0.546
+    inc_sig_model      18.589  +- 0.502
+    inc_bkg_ps          1.286  +- 0.401
+    inc_bkg_had         7.288  +- 0.372
+    inc_bkg_model       7.401  +- 0.371
+    inc_model          20.008  +- 0.493
+    inc_sig_ISR         0.189  +- 0.029
+    inc_sig_FSR        11.340  +- 0.642
+    inc_bkg_ISR         1.873  +- 0.250
+    inc_bkg_FSR         3.597  +- 0.510
+    inc_scale          12.045  +- 0.653
+    inc_total          25.829  +- 0.579
+    nominal BR@50     41.906  +- 0.119
+    nominal BR@80      9.288  +- 0.015
+    nominal AUC      0.93199  +- 0.00008
+
+  wrote D:\SSD\HEP\Research Papers\ATLAS 80030\04_Results\stat_bootstrap_round1\stat_bootstrap_summary.json
+done.

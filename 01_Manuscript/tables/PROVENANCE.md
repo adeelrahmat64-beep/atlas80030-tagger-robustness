@@ -95,3 +95,40 @@ AUC values in the frozen metrics artifact, and its working-point markers carry t
 frozen background-rejection values rather than values read off the curve.
 
 All frozen table copies match their sources: **YES**.
+
+## Revision 3 (10 October 2026): robustness extension
+
+Nothing above is changed. The new tables are written by
+`tables/make_extension_tables.py` from three new result folders, each produced by a
+script in `03_Code_files/` that first reproduces the frozen result exactly:
+
+| Result folder | Script | Self-check before any new number |
+|---|---|---|
+| `04_Results/stat_bootstrap_round1/` | `stat_bootstrap.py` (uses `uncertainty_chain.py`) | unit weights reproduce every frozen metric exactly |
+| `04_Results/tagger_variants_round1/` | `tagger_variants.py` | seed-42 refit has the frozen SHA-256 and bit-identical predictions |
+| `04_Results/feature_response_round1/` | `feature_response.py` | ECF1 median equals the stale-HLF audit (+7.406764%) |
+
+The generator refuses to write unless: the frozen rows of Tables 3 and 4 are carried
+over verbatim and equal the bootstrap central values and the seed-42 run; the
+bootstrap standard deviations recompute from `replicas.jsonl`; and every six-seed
+summary recomputes from the individual runs.
+
+| Generated file | SHA-256 | Used as |
+|---|---|---|
+| `tables/ext/table1_nominal_performance_precision.tex` | `9819dbebdf7933a0...` | main Table 3 (frozen rows + stat. and seed rows) |
+| `tables/ext/table2_inclusive_systematics_precision.tex` | `8edf040b299c58a2...` | main Table 4 (frozen column + stat. and seed columns) |
+| `tables/ext/table6_feature_response_degree.tex` | `1130ee189ff83f20...` | main Table 6 |
+| `tables/ext/table7_scale_free_variants.tex` | `5814f66f20b17660...` | main Table 7 |
+| `tables/ext/supp_s8_bootstrap_binned.tex` | `88b898c37483505b...` | Supplementary Table S8 |
+| `tables/ext/supp_s9_seed_runs.tex` | `e79d14224c8324d2...` | Supplementary Table S9 |
+| `tables/ext/supp_s10_feature_response.tex` | `604532356e525ed8...` | Supplementary Table S10 |
+
+`figures/figure2_performance_systematics.pdf` (SHA-256 `4d7daa720077861b...`) now
+carries the bootstrap error bars and bands. `render_figures.py` reads
+`stat_bootstrap_round1/stat_bootstrap_summary.json` and asserts that its central
+values equal the frozen figure CSV (to 1e-9) before drawing them; the plotted
+central values are unchanged.
+
+`sources/atlas_readme_5bc3c8d7_quotes.md` records the README statements the text
+quotes, with the README's git blob id and SHA-256 at the frozen commit.
+`verify_manuscript.py` checks every quoted fragment against it.

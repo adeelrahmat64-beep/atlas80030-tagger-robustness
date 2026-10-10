@@ -1,0 +1,61 @@
+# ATLAS 80030 tagger_variants  2026-10-09 13:36:46
+# output D:\SSD\HEP\Research Papers\ATLAS 80030\04_Results\tagger_variants_round1
+# xgboost 3.2.0; seeds [42, 1, 2, 3, 4, 5]
+# full15: 15 features: fjet_Tau1_wta, fjet_Tau2_wta, fjet_Tau3_wta, fjet_Tau4_wta, fjet_Split12, fjet_Split23, fjet_ECF1, fjet_ECF2, fjet_ECF3, fjet_C2, fjet_D2, fjet_L2, fjet_L3, fjet_Qw, fjet_ThrustMaj
+# ratios9: 9 features: fjet_Tau1_wta, fjet_Tau2_wta, fjet_Tau3_wta, fjet_Tau4_wta, fjet_C2, fjet_D2, fjet_L2, fjet_L3, fjet_ThrustMaj
+# pt_normalised14: 14 features: fjet_Tau1_wta, fjet_Tau2_wta, fjet_Tau3_wta, fjet_Tau4_wta, fjet_C2, fjet_D2, fjet_L2, fjet_L3, fjet_ThrustMaj, fjet_Split12/ECF1^1, fjet_Split23/ECF1^1, fjet_ECF2/ECF1^2, fjet_ECF3/ECF1^3, fjet_Qw/ECF1^1
+  training set verified against frozen split: 4,499,612 train / 500,385 validation  (12s)
+  CONTROL full15 seed 42: validation AUC 0.931901 (frozen 0.931901); max |score difference| vs frozen model 0
+  trained full15            seed  42  validation AUC 0.93190  88s
+  trained full15            seed   1  validation AUC 0.93190  88s
+  trained full15            seed   2  validation AUC 0.93178  166s
+  trained full15            seed   3  validation AUC 0.93195  158s
+  trained full15            seed   4  validation AUC 0.93191  127s
+  trained full15            seed   5  validation AUC 0.93186  129s
+  trained ratios9           seed  42  validation AUC 0.87574  113s
+  trained ratios9           seed   1  validation AUC 0.87570  192s
+  trained ratios9           seed   2  validation AUC 0.87577  125s
+  trained ratios9           seed   3  validation AUC 0.87572  62s
+  trained ratios9           seed   4  validation AUC 0.87575  63s
+  trained ratios9           seed   5  validation AUC 0.87578  67s
+  trained pt_normalised14   seed  42  validation AUC 0.87752  84s
+  trained pt_normalised14   seed   1  validation AUC 0.87754  82s
+  trained pt_normalised14   seed   2  validation AUC 0.87753  82s
+  trained pt_normalised14   seed   3  validation AUC 0.87760  85s
+  trained pt_normalised14   seed   4  validation AUC 0.87755  91s
+  trained pt_normalised14   seed   5  validation AUC 0.87756  100s
+  frozen reference rows loaded for 16 samples
+  CONTROL predictions bit-identical to frozen: True
+  evaluated full15            seed  42  AUC 0.93199  BR50 41.91  ES 9.58%  cluster 10.07%  total 25.83%  676s
+  evaluated full15            seed   1  AUC 0.93198  BR50 41.74  ES 9.35%  cluster 9.84%  total 26.28%  338s
+  evaluated full15            seed   2  AUC 0.93193  BR50 41.78  ES 9.59%  cluster 10.03%  total 27.01%  346s
+  evaluated full15            seed   3  AUC 0.93198  BR50 41.75  ES 9.33%  cluster 9.84%  total 25.96%  337s
+  evaluated full15            seed   4  AUC 0.93200  BR50 41.86  ES 9.41%  cluster 9.86%  total 26.76%  423s
+  evaluated full15            seed   5  AUC 0.93199  BR50 41.88  ES 9.42%  cluster 9.84%  total 26.09%  525s
+  evaluated ratios9           seed  42  AUC 0.87608  BR50 18.88  ES 2.03%  cluster 2.78%  total 15.89%  651s
+  evaluated ratios9           seed   1  AUC 0.87601  BR50 18.86  ES 1.77%  cluster 2.43%  total 15.61%  361s
+  evaluated ratios9           seed   2  AUC 0.87605  BR50 18.90  ES 2.20%  cluster 2.94%  total 15.93%  337s
+  evaluated ratios9           seed   3  AUC 0.87607  BR50 18.87  ES 2.05%  cluster 2.86%  total 15.98%  336s
+  evaluated ratios9           seed   4  AUC 0.87606  BR50 18.90  ES 2.04%  cluster 2.69%  total 15.90%  337s
+  evaluated ratios9           seed   5  AUC 0.87608  BR50 18.88  ES 2.08%  cluster 2.80%  total 15.51%  338s
+  evaluated pt_normalised14   seed  42  AUC 0.87795  BR50 19.46  ES 2.11%  cluster 2.86%  total 16.22%  376s
+  evaluated pt_normalised14   seed   1  AUC 0.87792  BR50 19.51  ES 2.12%  cluster 2.84%  total 16.00%  350s
+  evaluated pt_normalised14   seed   2  AUC 0.87792  BR50 19.46  ES 2.25%  cluster 3.01%  total 16.01%  3477s
+  evaluated pt_normalised14   seed   3  AUC 0.87795  BR50 19.44  ES 2.26%  cluster 3.00%  total 16.22%  833s
+  evaluated pt_normalised14   seed   4  AUC 0.87791  BR50 19.48  ES 2.11%  cluster 2.78%  total 16.34%  573s
+  evaluated pt_normalised14   seed   5  AUC 0.87793  BR50 19.52  ES 2.10%  cluster 2.88%  total 15.97%  790s
+
+  mean +- std over seeds
+  quantity                        full15                   ratios9           pt_normalised14
+  AUC                   0.9320 +- 0.0000           0.8761 +- 0.0000           0.8779 +- 0.0000 
+  BR@50                41.8185 +- 0.0727          18.8817 +- 0.0159          19.4774 +- 0.0324 
+  BR@80                 9.2859 +- 0.0061           4.5907 +- 0.0038           4.6842 +- 0.0028 
+  ES %                  9.4467 +- 0.1112           2.0286 +- 0.1406           2.1565 +- 0.0764 
+  cluster %             9.9118 +- 0.1080           2.7472 +- 0.1772           2.8955 +- 0.0912 
+  track %               4.3251 +- 0.1165           2.7891 +- 0.1263           2.4854 +- 0.1237 
+  modelling %          20.6514 +- 0.4275           6.6043 +- 0.2219           6.4540 +- 0.1407 
+  ISR/FSR %            12.2157 +- 0.3714          13.8085 +- 0.1644          14.2755 +- 0.1353 
+  total %              26.3203 +- 0.4679          15.8016 +- 0.1948          16.1257 +- 0.1499 
+
+  wrote D:\SSD\HEP\Research Papers\ATLAS 80030\04_Results\tagger_variants_round1\tagger_variants_summary.json
+done.

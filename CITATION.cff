@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the paper below and ATLAS Open Data Record 80030."
 title: "Code and frozen results for: Systematic robustness of a boosted top-quark tagger on ATLAS open data"
-version: "1.0.0"
-date-released: "2026-10-01"
+version: "1.1.0"
+date-released: "2026-10-10"
 license: MIT
 authors:
   - family-names: Rahmat

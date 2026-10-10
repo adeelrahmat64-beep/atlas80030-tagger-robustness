@@ -10,6 +10,7 @@ cd "$(dirname "$0")"
 
 python3 tables/make_layout_tables.py
 python3 tables/make_supplementary_tables.py
+python3 tables/make_extension_tables.py
 python3 figures_src/render_figures.py
 
 for i in 1 2 3; do pdflatex -interaction=nonstopmode atlas80030_main.tex >/dev/null; done

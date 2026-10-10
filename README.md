@@ -33,7 +33,7 @@ released constituents carry the variation. This repository:
 | Folder | Contents |
 |---|---|
 | `03_Code_files/` | The complete analysis pipeline (see order below). `atlas_config.py` is the single source of truth for paths, dataset names and the frozen reconstruction fingerprint. |
-| `04_Results/` | Frozen outputs of every campaign the paper quotes: closure audits, cache audit, pairing logs, metrics, SHAP-Delta round 3, conformal coverage, the stored-branch audit, publication figure data and tables. Each run log sits beside a snapshot of the exact code that produced it. |
+| `04_Results/` | Frozen outputs of every campaign the paper quotes: closure audits, cache audit, pairing logs, metrics, SHAP-Delta round 3, conformal coverage, the stored-branch audit, publication figure data and tables, and (since v1.1.0) the three robustness extensions `stat_bootstrap_round1/`, `tagger_variants_round1/` and `feature_response_round1/`. Each run log sits beside a snapshot of the exact code that produced it. |
 | `ATLAS_80030_Data/models/` | The final tagger (`atlas_tagger_xgb_final_production_round1.joblib`), its train/validation split and metadata. |
 | `ATLAS_80030_Data/predictions/` | Final metrics (JSON/CSV/TXT), the uncertainty summary and the prediction manifest. Per-jet prediction files are not included (size). |
 | `01_Manuscript/` | LaTeX sources of the paper and supplement, the four figures, all tables, the figure and table generators, and `verify_manuscript.py`. |
@@ -50,10 +50,10 @@ python verify_manuscript.py
 
 The verifier re-reads the frozen artifacts in `04_Results/` and
 `ATLAS_80030_Data/` and checks every numerical claim, cross-reference and
-citation in the manuscript (437 checks). Expected output:
+citation in the manuscript (616 checks). Expected output:
 
 ```
-PASSED 437   FAILED 0
+PASSED 616   FAILED 0
 All manuscript numerical and cross-reference checks passed.
 ```
 
@@ -86,16 +86,46 @@ own options in its header.
 | 10 | `shap_delta.py --run-campaign` | Paired TreeSHAP attribution drift |
 | 11 | `conformal_coverage.py` | Class-conditional conformal coverage |
 | 12 | `publication/make_publication_figures.py`, `publication/make_publication_tables.py` | Frozen figure data and tables |
-| 13 | `01_Manuscript/build.sh` | Tables, figures, both PDFs, verification |
+| 13 | `feature_response.py`, `tagger_variants.py`, `stat_bootstrap.py` (run all three with `run_robustness_extensions.ps1`) | Robustness extensions (v1.1.0, see below) |
+| 14 | `01_Manuscript/build.sh` | Tables, figures, both PDFs, verification |
 
-Steps 3–11 need the downloaded data. Step 13 needs only this repository plus
+Steps 3–11 and 13 need the downloaded data. Step 14 needs only this repository plus
 `numpy`, `matplotlib`, a LaTeX installation with `pdflatex`, and `bash` (on
 Windows, Git Bash): it regenerates the layout and supplementary tables and the
-four figures from the frozen inputs in `04_Results/`, compiles both PDFs and
+four figures from the frozen inputs in `04_Results/` (plus Tables 6–7 and S8–S10 from the extension results), compiles both PDFs and
 runs the verifier. The regenerated tables are byte-identical to the committed
 ones; the figure PDFs are redrawn from the same data but are not byte-identical
 (PDF metadata and matplotlib version), and the verifier asserts that the ROC
 AUCs drawn equal the frozen metrics.
+
+## Robustness extensions (added in v1.1.0)
+
+Version 1.1.0 adds the code and frozen outputs behind Sections 4.2, 4.3 and 5.4,
+Tables 6–7 and Supplementary Tables S8–S10 of revision 3 of the paper. No frozen
+number of v1.0.0 changes; every new result goes to a new folder.
+
+| Script | What it does | Output folder | Paper |
+|---|---|---|---|
+| `uncertainty_chain.py` | The frozen uncertainty chain of `atlas_metrics.py` as an in-memory function (writes nothing). Checked bit-for-bit against the frozen metrics JSON before any use. | — | used by the three below |
+| `feature_response.py` | Per-jet relative response `sys/nom − 1` of each input under esup, esdown, cer and cpos on the exactly paired jets. Minutes. | `04_Results/feature_response_round1/` | §4.3, §5.4, Table 6, Table S10 |
+| `tagger_variants.py` | Six training seeds (1–5 and 42) of the full 15-input tagger, and two scale-free input sets (9 dimensionless ratios; 14 pT-normalised inputs), with all uncertainties. About 2 h. | `04_Results/tagger_variants_round1/` | §4.2, §5.4, Table 7, Table S9 |
+| `stat_bootstrap.py` | Poisson bootstrap of the frozen predictions, 100 replicas, base seed `20261009`, keeping the pairing correlations; statistical error on every metric and systematic component, and the bin-to-bin χ². About 3 h (supports `--resume`). | `04_Results/stat_bootstrap_round1/` | §4.2, Tables 3–4, Fig. 2 bands, Table S8 |
+
+`run_robustness_extensions.ps1` (repository root, PowerShell) runs the three in
+order; on the authors' machine the whole run took about 8.3 hours. Each script
+first checks itself against the frozen results and stops on any mismatch. The
+manuscript-side tables are written by `01_Manuscript/tables/make_extension_tables.py`.
+
+The 18 retrained variant models (`tagger_variants_round1/models/*.joblib`,
+about 44 MB) are not included to keep the repository small; `tagger_variants.py`
+regenerates them with fixed seeds, and every number they produce is in
+`tagger_variants_summary.json` and `runs.json`. The quotes from the ATLAS
+reference README used in the paper are recorded with the blob hash in
+`01_Manuscript/sources/atlas_readme_5bc3c8d7_quotes.md`.
+
+The bootstrap recorded the SHA-256 of the metrics JSON as checked out on Windows
+(CRLF line endings); git stores it with LF. The verifier accepts either form,
+which is still an exact content match.
 
 ## Notes
 
@@ -127,7 +157,7 @@ AUCs drawn equal the frozen metrics.
   empty file stays to keep the record complete.
 - **Not included (size):** raw HDF5 data, the 810-file feature cache, paired
   frames, per-jet prediction files, numba caches, per-jet SHAP exports of
-  round 2 and superseded audit rounds. All except the raw data are regenerated
+  round 2, superseded audit rounds and the 18 tagger-variant models. All except the raw data are regenerated
   by the pipeline.
 
 ## Citation

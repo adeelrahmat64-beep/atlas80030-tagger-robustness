@@ -11,8 +11,12 @@ Cosmetic revisions applied in this version, in response to the external review:
                      the nominal one, so the three curves are distinguishable
                      where they overlap on the logarithmic axis; colours and
                      dash patterns are colour-blind safe and mutually distinct.
-  Fig 2 (perf/syst)  unchanged: panel labels sit above the frame and the 50%
-                     working point is stated on both axis labels.
+  Fig 2 (perf/syst)  panel labels sit above the frame and the 50% working point
+                     is stated on both axis labels.  October 2026: statistical
+                     bands (+-1 s.d. of 100 bootstrap replicas) are drawn on
+                     every curve of panel (b) and as error bars in panel (a),
+                     read from stat_bootstrap_round1/stat_bootstrap_summary.json
+                     after checking that its central values equal the frozen CSV.
   Fig 3 (SHAP)       every heat-map cell now carries its numerical value, and
                      the colour bar is labelled; column labels use the dataset
                      names CPOS and CER.
@@ -76,6 +80,12 @@ FEATURES = (
 )
 SYSTEMATICS = ("esup", "esdown", "cpos", "cer")
 SYSTEMATIC_LABELS = ("ES up", "ES down", "CPOS", "CER")
+BOOTSTRAP = Path(os.environ["ATLAS80030_BOOTSTRAP"]) if "ATLAS80030_BOOTSTRAP" in os.environ \
+    else _first(PROJECT / "04_Results" / "stat_bootstrap_round1" / "stat_bootstrap_summary.json",
+                LOCAL / "stat_bootstrap_summary.json")
+# Figure 2(b) curve -> key of the same quantity in the bootstrap summary
+BOOT_KEY = {"cluster": "cluster", "track": "track", "modelling": "model",
+            "isr_fsr": "scale", "total": "total"}
 CONFORMAL_ORDER = ("test_nominal", "esup", "esdown", "cer", "cpos",
                    "teg", "tej", "tfl", "tfj", "bias")
 
@@ -185,11 +195,26 @@ def figure_performance(rows: list[dict[str, str]]) -> None:
             for k in ("cluster", "track", "modelling", "isr_fsr")}
     comp["total"] = np.array([float(r["total_uncertainty_percent"]) for r in rows])
 
+    # Statistical bands (October 2026 extension): +-1 standard deviation of the
+    # 100 Poisson bootstrap replicas, drawn around the frozen measured values.
+    # The bootstrap re-runs the frozen chain; its central values must reproduce
+    # the frozen figure CSV before any band is drawn.
+    boot = json.loads(BOOTSTRAP.read_text(encoding="utf-8"))
+    assert boot["replicas"] == 100
+    band = {}
+    for key, bkey in BOOT_KEY.items():
+        central = 100.0 * np.array(boot["central"][bkey])
+        assert np.allclose(central, comp[key], rtol=0.0, atol=1e-9), key
+        band[key] = 100.0 * np.array(boot["bootstrap"][bkey]["std"])
+    assert np.allclose(boot["central"]["nominal_binned_br"], br, rtol=0.0, atol=1e-9)
+    br_sd = np.array(boot["bootstrap"]["nominal_binned_br"]["std"])
+
     fig, axes = plt.subplots(1, 2, figsize=(7.35, 3.30), sharex=True)
 
     ax = axes[0]
     ax.stairs(br, edges, color="#202020", linewidth=1.8)
-    ax.plot(ctr, br, linestyle="none", marker="o", markersize=3.0, color="#202020")
+    ax.errorbar(ctr, br, yerr=br_sd, linestyle="none", marker="o", markersize=3.0,
+                color="#202020", elinewidth=1.0, capsize=1.8)
     ax.set_xlabel(r"Jet $p_{\mathrm{T}}$ [TeV]")
     ax.set_ylabel(r"Background rejection $1/\epsilon_{\mathrm{bkg}}$"
                   "\n" r"at $\epsilon_{\mathrm{sig}}=50\%$")
@@ -205,6 +230,9 @@ def figure_performance(rows: list[dict[str, str]]) -> None:
               ("isr_fsr", "ISR/FSR", "#CC79A7", ":"),
               ("total", "Total", "#202020", "-"))
     for key, label, colour, ls in styles:
+        ax.stairs(comp[key] + band[key], edges, baseline=comp[key] - band[key],
+                  fill=True, color=colour, alpha=0.20 if key == "total" else 0.14,
+                  linewidth=0.0)
         ax.stairs(comp[key], edges, label=label, color=colour, linestyle=ls,
                   linewidth=2.1 if key == "total" else 1.35)
     ax.set_xlabel(r"Jet $p_{\mathrm{T}}$ [TeV]")
